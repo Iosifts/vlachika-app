@@ -1,0 +1,1587 @@
+{
+  "unit": {
+    "number": 2,
+    "title": "Cunushteare",
+    "slug": "enotita-2-cunushteare",
+    "language": "Βλάχικα",
+    "script_policy": "Η γραφή ακολουθεί ακριβώς το υλικό των μαθημάτων, χωρίς αντικατάσταση χαρακτήρων.",
+    "available_material": [
+      "θεωρία",
+      "λεξιλόγιο",
+      "διάλογοι",
+      "ασκήσεις",
+      "απαντήσεις",
+      "προφορικά"
+    ]
+  },
+  "source_files": [
+    {
+      "role": "theory",
+      "filename": "Ενότητα 2η-Cunushteare.docx"
+    },
+    {
+      "role": "vocabulary",
+      "filename": "Λεξιλόγιο 2_.docx"
+    },
+    {
+      "role": "exercises",
+      "filename": "2. Ασκήσεις.docx"
+    },
+    {
+      "role": "answers",
+      "filename": "Απαντήσεις 2_.docx"
+    }
+  ],
+  "homepage_card": {
+    "title": "Ενότητα 2 — Cunushteare",
+    "description": "Χαιρετισμοί, γνωριμία, προσωπικές αντωνυμίες, ρήμα «είμαι», μικροί διάλογοι.",
+    "buttons": [
+      "Θεωρία",
+      "Λεξιλόγιο",
+      "Ασκήσεις",
+      "Κάρτες",
+      "Quiz"
+    ]
+  },
+  "theory": {
+    "overview_phrases": [
+      {
+        "vlach": "Bunâ dzuâ",
+        "greek": "καλημέρα"
+      },
+      {
+        "vlach": "Bunâ searâ",
+        "greek": "καλησπέρα"
+      },
+      {
+        "vlach": "Cari hi tine?",
+        "greek": "Ποιος είσαι εσύ?"
+      },
+      {
+        "vlach": "Cari tsî  i numa?",
+        "greek": "Ποιο είναι το όνομά σου?"
+      },
+      {
+        "vlach": "Cumu ti cljeamâ?",
+        "greek": "Πώς ονομάζεσαι?"
+      },
+      {
+        "vlach": "Io hiu Tachi",
+        "greek": "Εγώ είμαι ο Τάκης."
+      },
+      {
+        "vlach": "Numa amea easte...",
+        "greek": "Το όνομά μου είναι…."
+      },
+      {
+        "vlach": "Mi cljeamâ...",
+        "greek": "Ονομάζομαι...."
+      },
+      {
+        "vlach": "Di iu hi tine?",
+        "greek": "Από πού είσαι εσύ?"
+      },
+      {
+        "vlach": "(Nu) hiu Armânu/-â.",
+        "greek": "(Δεν) είμαι βλάχος/-α."
+      },
+      {
+        "vlach": "Io hiu di Grecia /Arbinisii",
+        "greek": "Εγώ είμαι από την Ελλάδα/ Αλβανία."
+      },
+      {
+        "vlach": "Hoara amea easte Perĭvolea/Kortsha.",
+        "greek": "Το χωριό μου είναι το Περιβόλι/ η Κορυτσά."
+      }
+    ],
+    "personal_pronouns": {
+      "note": "Ο πίνακας δίνει 3 μορφές/παραλλαγές ανά πρόσωπο, χωρίς ξεχωριστές ονομασίες στη σελίδα.",
+      "items": [
+        {
+          "greek_person": "Εγώ",
+          "variant_forms": [
+            "io",
+            "mine",
+            "eu"
+          ]
+        },
+        {
+          "greek_person": "Εσύ",
+          "variant_forms": [
+            "tine",
+            "tine",
+            "tine"
+          ]
+        },
+        {
+          "greek_person": "Αυτός",
+          "variant_forms": [
+            "elu",
+            "elu",
+            "nâsu"
+          ]
+        },
+        {
+          "greek_person": "Αυτή",
+          "variant_forms": [
+            "ea",
+            "ea",
+            "nâsâ"
+          ]
+        },
+        {
+          "greek_person": "Εμείς",
+          "variant_forms": [
+            "noi",
+            "noi",
+            "noi"
+          ]
+        },
+        {
+          "greek_person": "Εσείς",
+          "variant_forms": [
+            "voi",
+            "voi",
+            "voi"
+          ]
+        },
+        {
+          "greek_person": "Αυτοί",
+          "variant_forms": [
+            "elji",
+            "elji",
+            "nâshĭ"
+          ]
+        },
+        {
+          "greek_person": "Αυτές",
+          "variant_forms": [
+            "eali",
+            "eali",
+            "nâsi"
+          ]
+        }
+      ]
+    },
+    "verb_to_be": {
+      "title": "Το ρήμα «Είμαι» στα βλάχικα.",
+      "items": [
+        {
+          "greek_person": "Εγώ είμαι",
+          "form_set_1": "Io himŭ/ hiu",
+          "form_set_2": "Mine escu"
+        },
+        {
+          "greek_person": "Εσύ είσαι",
+          "form_set_1": "Tine hi",
+          "form_set_2": "Tine estsĭ"
+        },
+        {
+          "greek_person": "Αυτός είναι",
+          "form_set_1": "Nâsu easte",
+          "form_set_2": "elu easte"
+        },
+        {
+          "greek_person": "Αυτή είναι",
+          "form_set_1": "Nâsâ easte",
+          "form_set_2": "ea easte"
+        },
+        {
+          "greek_person": "Εμείς είμαστε",
+          "form_set_1": "Noi himu",
+          "form_set_2": "Noi himu"
+        },
+        {
+          "greek_person": "Εσείς είστε",
+          "form_set_1": "Voi hicĭ",
+          "form_set_2": "Voi hicĭ"
+        },
+        {
+          "greek_person": "Αυτοί είναι",
+          "form_set_1": "Nâshĭ suntu/sunu",
+          "form_set_2": "Elji suntu"
+        },
+        {
+          "greek_person": "Αυτές είναι",
+          "form_set_1": "Nâsi suntu/sunu",
+          "form_set_2": "Eali suntu"
+        }
+      ]
+    },
+    "dialogues": [
+      {
+        "id": "2.1.a",
+        "title": "Tachi & Maria",
+        "lines": [
+          {
+            "speaker": "Tachi",
+            "text": "Bunâ dzuâ!"
+          },
+          {
+            "speaker": "Maria",
+            "text": "Bunâ dzuâ! Cari hi tine?"
+          },
+          {
+            "speaker": "Tachi",
+            "text": "Io hiu Tachi. Cumu ti cljeamâ tine?"
+          },
+          {
+            "speaker": "Maria",
+            "text": "Mi cljeamâ Maria. D’iu hi Tachi?"
+          },
+          {
+            "speaker": "Tachi",
+            "text": "Io hiu di Arbinisii. Tine d’ iu hi?"
+          },
+          {
+            "speaker": "Maria",
+            "text": "Hiu Armânâ di Grecia. Hoara amea easte Perĭvolea."
+          },
+          {
+            "speaker": "Tachi",
+            "text": "Shĭ io Armânu hiu.. di Kortsha!"
+          },
+          {
+            "speaker": "Lena",
+            "text": "Bunâ searâ! Io hiu Lena."
+          }
+        ]
+      },
+      {
+        "id": "2.1.b",
+        "title": "Lena & Yachi",
+        "lines": [
+          {
+            "speaker": "Lena",
+            "text": "Bunâ searâ! Io hiu Lena."
+          },
+          {
+            "speaker": "Yachi",
+            "text": "Mi hârsescu multu Lena! Numa amea easte Yachi."
+          },
+          {
+            "speaker": "Lena",
+            "text": "Shĭ io mi hârsescu Yachi ci ti cunoscu. Hi Grecu?"
+          },
+          {
+            "speaker": "Yachi",
+            "text": "Nu hiu Grecu, hiu Arbinesu."
+          },
+          {
+            "speaker": "Lena",
+            "text": "Shĭ io Arbineasâ hiu ma bânedzu tu Grecia."
+          },
+          {
+            "speaker": "Yachi",
+            "text": "Si armâni ghine Lena!"
+          },
+          {
+            "speaker": "Lena",
+            "text": "Oarâ bunâ Yachi!"
+          },
+          {
+            "speaker": "Flora",
+            "text": "Bunâ searâ!"
+          }
+        ]
+      },
+      {
+        "id": "2.1.c",
+        "title": "Flora & Nia",
+        "lines": [
+          {
+            "speaker": "Flora",
+            "text": "Bunâ searâ!"
+          },
+          {
+            "speaker": "Nia",
+            "text": "Bunâ searâ! Ghine vinishĭ!"
+          },
+          {
+            "speaker": "Flora",
+            "text": "Ghine ti aflai!"
+          },
+          {
+            "speaker": "Nia",
+            "text": "Cari tsî i numa?"
+          },
+          {
+            "speaker": "Flora",
+            "text": "Hiu Flora. Tine, cumu ti grescu?"
+          },
+          {
+            "speaker": "Nia",
+            "text": "Mi grescu Nia."
+          },
+          {
+            "speaker": "Flora",
+            "text": "Nia...mŭshatâ numâ! Ma lipseashte si fugu tora."
+          },
+          {
+            "speaker": "Nia",
+            "text": "Noapte bunâ si ai Flora!"
+          },
+          {
+            "speaker": "Flora",
+            "text": "Noapte bunâ Nia!"
+          }
+        ]
+      }
+    ],
+    "lesson_2_2": {
+      "title": "ΜΑΘΗΜΑ ΓΝΩΡΙΜΙΑΣ",
+      "greetings": [
+        {
+          "vlach": "Bunâ dzuâ",
+          "greek": "καλημέρα."
+        },
+        {
+          "vlach": "Bunâ tahĭna",
+          "greek": "καλό πρωί."
+        },
+        {
+          "vlach": "Prândzu bunu",
+          "greek": "καλό μεσημέρι."
+        },
+        {
+          "vlach": "Bunu dupu prândzu",
+          "greek": "μετά το μεσημέρι και πριν το απόγευμα."
+        },
+        {
+          "vlach": "Bunâ mirinde",
+          "greek": "καλό απόγευμα."
+        },
+        {
+          "vlach": "Bunâ  searâ",
+          "greek": "καλησπέρα."
+        },
+        {
+          "vlach": "Noapte bunâ",
+          "greek": "καλό βράδυ/καληνύχτα."
+        },
+        {
+          "vlach": "Bunâ siptâmânâ",
+          "greek": "Καλή εβδομάδα."
+        },
+        {
+          "vlach": "Bunâ Sâmbâtâ sh’ Duminicâ",
+          "greek": "Καλό Σαβ/κο, καλό ΣΚ."
+        }
+      ],
+      "ask_how_are_you": [
+        {
+          "vlach": "Cumu hi?",
+          "greek": "πως είσαι;"
+        },
+        {
+          "vlach": "Ci faci?",
+          "greek": "τι κάνεις;"
+        },
+        {
+          "vlach": "Ci adari?",
+          "greek": "τι κάνεις;"
+        },
+        {
+          "vlach": "Ηicĭ /Ηi ghine?",
+          "greek": "είστε/είσαι καλά;"
+        },
+        {
+          "vlach": "Cumu ti duci?",
+          "greek": "πώς τα πας;"
+        }
+      ],
+      "answers_how_are_you": [
+        {
+          "vlach": "Ηiu ghine/bunâ",
+          "greek": "είμαι καλά"
+        },
+        {
+          "vlach": "Hiu ashĭ sh’ ashĭ",
+          "greek": "είμαι έτσι και έτσι."
+        },
+        {
+          "vlach": "Nu hiu ghine",
+          "greek": "δεν είμαι καλά."
+        },
+        {
+          "vlach": "Nu hiu sh’ ahâtu ghine asadzâ",
+          "greek": "δεν είμαι και τόσο καλά σήμερα."
+        },
+        {
+          "vlach": "Hiu sânâtoasâ",
+          "greek": "είμαι υγιής / γερή."
+        },
+        {
+          "vlach": "Hiu nipŭtutâ / lângitâ",
+          "greek": "είμαι άρρωστη."
+        },
+        {
+          "vlach": "Hiu trâ moarte",
+          "greek": "είμαι του θανατά."
+        },
+        {
+          "vlach": "Nu mi ducu ghine",
+          "greek": "δεν πάω καλά."
+        }
+      ],
+      "ask_name": [
+        {
+          "vlach": "Cumu ti cljeamâ?",
+          "greek": "Πώς σε λένε; / Πώς ονομάζεσαι;"
+        },
+        {
+          "vlach": "Cari tsî i numa?",
+          "greek": "Ποιο είναι το όνομα σου;"
+        },
+        {
+          "vlach": "A cui hi tine?",
+          "greek": "Ποιανού είσαι εσύ?"
+        }
+      ],
+      "answers_name": [
+        {
+          "vlach": "Mi cljeamâ Lenâ"
+        },
+        {
+          "vlach": "Numa amea easte Lenâ"
+        },
+        {
+          "vlach": "Hiu Lenachia alu Kapsali"
+        },
+        {
+          "vlach": "Hiu nipoata alu Vasili alu Kapsali"
+        },
+        {
+          "vlach": "Hiu hiljea ali Litse alu Kapsali."
+        },
+        {
+          "vlach": "Hiu Tsalu Yiani alu Tzaruhi."
+        }
+      ],
+      "ask_origin": [
+        {
+          "vlach": "D’iu hi?",
+          "greek": "Από που είσαι;"
+        },
+        {
+          "vlach": "Di cari hoarâ/ câsâbâ hi?",
+          "greek": "Από ποιο χωριό/ κωμόπολη-πόλη είσαι; Vâsilie-pulitie- statu"
+        },
+        {
+          "vlach": "Cari tsî i hoara",
+          "greek": "Ποιο είναι το χωριό σου;"
+        },
+        {
+          "vlach": "Iu bânedzĭ / armâni / stai?",
+          "greek": "Που ζεις / κατοικείς / μένεις;"
+        }
+      ],
+      "answers_origin": [
+        {
+          "vlach": "Hoara amea easte Perĭvolea",
+          "greek": "Το δικό μου χωριό είναι το Περιβόλι"
+        },
+        {
+          "vlach": "Hiu di……",
+          "greek": "Είμαι από."
+        },
+        {
+          "vlach": "Hoara amea s’cljeamâ….",
+          "greek": "Το χωριό μου λέγεται……."
+        },
+        {
+          "vlach": "Hiu di unâ hoarâ ci s’cljeamâ.........",
+          "greek": "Είμαι από ένα χωριό που ονομάζεται…..."
+        }
+      ]
+    },
+    "notes_on_ci_iu": {
+      "ci_meanings": [
+        {
+          "vlach": "Ci?",
+          "greek": "Tι;  (Ερώτηση & σε θαυμαστικές προτάσεις)"
+        },
+        {
+          "vlach": "Ci",
+          "greek": "Που. (Κατάφαση, αναφορικό)"
+        }
+      ],
+      "examples": [
+        {
+          "vlach": "Π.χ     Ci easte aestâ carte?",
+          "greek": "Τι είναι αυτό το γράμμα;"
+        },
+        {
+          "vlach": "Ci mare thamâ!",
+          "greek": "Τι μεγάλο θαύμα!"
+        },
+        {
+          "vlach": "Acelu bârbatu ci vedzĭ easte multu mŭshatu.",
+          "greek": "Εκείνος ο άντρας που βλέπεις είναι πολύ όμορφος."
+        },
+        {
+          "vlach": "Easte ci  nu vrei! (ειδικός σύνδεσμος)",
+          "greek": "Είναι που δεν θέλεις!"
+        }
+      ],
+      "iu_examples": [
+        {
+          "vlach": "Αλλά  Ιu ti duci?",
+          "greek": "Πού πας;"
+        },
+        {
+          "vlach": "Nu spunu iu mi ducu.",
+          "greek": "Δεν φανερώνω που πηγαίνω."
+        }
+      ]
+    },
+    "verbs": {
+      "mi_ducu": [
+        {
+          "form": "Mi ducu",
+          "greek": "πηγαίνω",
+          "variant_form": "negu"
+        },
+        {
+          "form": "Ti duci",
+          "greek": "πηγαίνεις",
+          "variant_form": "negi"
+        },
+        {
+          "form": "S’ duce",
+          "greek": "πηγαίνει",
+          "variant_form": "neage"
+        },
+        {
+          "form": "Nâ (du) cemu",
+          "greek": "πηγαίνουμε",
+          "variant_form": "nigemu"
+        },
+        {
+          "form": "Vâ (du) cecĭ",
+          "greek": "πηγαίνετε",
+          "variant_form": "nigecĭ"
+        },
+        {
+          "form": "S’ ducu",
+          "greek": "πηγαίνουν",
+          "variant_form": "negu"
+        }
+      ],
+      "mi_cljeama": [
+        {
+          "form": "Mi cljeamâ",
+          "greek": "με ονομάζουν"
+        },
+        {
+          "form": "Ti cljeamâ",
+          "greek": "σε ονομάζουν"
+        },
+        {
+          "form": "S’ cljeamâ",
+          "greek": "τον/ την/ το ονομάζουν"
+        },
+        {
+          "form": "Nâ cljeamâ",
+          "greek": "μας ονομάζουν"
+        },
+        {
+          "form": "Vâ cljeamâ",
+          "greek": "σας ονομάζουν"
+        },
+        {
+          "form": "S’ cljeamâ",
+          "greek": "τους/ τις/ τα ονομάζουν"
+        }
+      ]
+    },
+    "oral_practice": [
+      {
+        "number": 1,
+        "prompt": "- Καθώς επιστρέφεις με το λεωφορείο σπίτι σου μετά τη δουλειά, κάθεσαι δίπλα σε κάποια άγνωστη. Μίλα της…."
+      },
+      {
+        "number": 2,
+        "prompt": "- Πηγαίνοντας σπίτι με τα πόδια, συναντάς κάποιον γνωστό σου με την γυναίκα του την οποία όμως δεν γνωρίζεις. Μίλα τους….."
+      }
+    ]
+  },
+  "vocabulary": {
+    "section_2_main": [
+      {
+        "vlach": "bunâ",
+        "greek": "καλή"
+      },
+      {
+        "vlach": "dzuâ",
+        "greek": "μέρα"
+      },
+      {
+        "vlach": "searâ",
+        "greek": "απόγευμα"
+      },
+      {
+        "vlach": "numâ",
+        "greek": "όνομα"
+      },
+      {
+        "vlach": "amea",
+        "greek": "δική μου"
+      },
+      {
+        "vlach": "mi cljeamâ",
+        "greek": "ονομάζομαι"
+      },
+      {
+        "vlach": "Armânu/ -â",
+        "greek": "Βλάχος/ -α"
+      }
+    ],
+    "section_2_1": [
+      {
+        "vlach": "ghine vinishĭ",
+        "greek": "καλώς όρισες/ ήρθες"
+      },
+      {
+        "vlach": "ghine ti aflai",
+        "greek": "καλώς σε βρήκα"
+      },
+      {
+        "vlach": "si armâni ghine",
+        "greek": "να μείνεις καλά"
+      },
+      {
+        "vlach": "oarâ bunâ!",
+        "greek": "ώρα καλή!"
+      },
+      {
+        "vlach": "cumu ti  grescu",
+        "greek": "πώς σε φωνάζουν; Πώς σε λένε;"
+      },
+      {
+        "vlach": "mi grescu",
+        "greek": "με φωνάζουν"
+      },
+      {
+        "vlach": "mi hârsescu",
+        "greek": "χαίρομαι"
+      },
+      {
+        "vlach": "shĭ io",
+        "greek": "κι εγώ (επίσης)"
+      },
+      {
+        "vlach": "ci ti cunoscu",
+        "greek": "που σε γνωρίζω"
+      },
+      {
+        "vlach": "fugu",
+        "greek": "φεύγω"
+      },
+      {
+        "vlach": "tora",
+        "greek": "τώρα"
+      },
+      {
+        "vlach": "si ai",
+        "greek": "να έχεις"
+      },
+      {
+        "vlach": "shĭ",
+        "greek": "και"
+      },
+      {
+        "vlach": "multu",
+        "greek": "πολύ"
+      },
+      {
+        "vlach": "ma",
+        "greek": "αλλά, μα"
+      },
+      {
+        "vlach": "prinde si",
+        "greek": "πρέπει να"
+      }
+    ],
+    "section_2_2": [
+      {
+        "vlach": "tahĭna",
+        "greek": "πρωί"
+      },
+      {
+        "vlach": "prândzu",
+        "greek": "μεσημέρι"
+      },
+      {
+        "vlach": "mirinde",
+        "greek": "νωρίς το απόγευμα"
+      },
+      {
+        "vlach": "siptâmânâ",
+        "greek": "εβδομάδα"
+      },
+      {
+        "vlach": "noapte",
+        "greek": "νύχτα"
+      },
+      {
+        "vlach": "Sâmbâtâ",
+        "greek": "Σάββατο"
+      },
+      {
+        "vlach": "Duminicâ",
+        "greek": "Κυριακή"
+      },
+      {
+        "vlach": "ashĭ",
+        "greek": "έτσι"
+      },
+      {
+        "vlach": "ahâtu",
+        "greek": "τόσο"
+      },
+      {
+        "vlach": "asadzâ",
+        "greek": "σήμερα"
+      },
+      {
+        "vlach": "nipŭtutâ",
+        "greek": "άρρωστη"
+      },
+      {
+        "vlach": "lângitâ",
+        "greek": "άρρωστη"
+      },
+      {
+        "vlach": "moarte",
+        "greek": "θάνατος"
+      },
+      {
+        "vlach": "hilje",
+        "greek": "κόρη"
+      },
+      {
+        "vlach": "nipoatâ",
+        "greek": "εγγονή, ανιψιά"
+      },
+      {
+        "vlach": "câsâbâ",
+        "greek": "κωμόπολη, πόλη"
+      },
+      {
+        "vlach": "unâ",
+        "greek": "μια"
+      },
+      {
+        "vlach": "a cui",
+        "greek": "τίνος? Ποιανού?"
+      },
+      {
+        "vlach": "alu Vasili",
+        "greek": "του Βασίλη"
+      },
+      {
+        "vlach": "ali Litse",
+        "greek": "της Λίτσας"
+      },
+      {
+        "vlach": "faci",
+        "greek": "κάνεις"
+      },
+      {
+        "vlach": "adari",
+        "greek": "κάνεις"
+      },
+      {
+        "vlach": "ti duci",
+        "greek": "πηγαίνεις"
+      },
+      {
+        "vlach": "bânedzĭ",
+        "greek": "ζεις"
+      },
+      {
+        "vlach": "armâni",
+        "greek": "μένεις, κατοικείς"
+      },
+      {
+        "vlach": "stai",
+        "greek": "μένεις"
+      },
+      {
+        "vlach": "ci",
+        "greek": "τι, που"
+      }
+    ],
+    "exercise_a_vocabulary": [
+      {
+        "vlach": "bunu",
+        "greek": "καλός"
+      },
+      {
+        "vlach": "hoarâ",
+        "greek": "χωριό"
+      },
+      {
+        "vlach": "featâ",
+        "greek": "κορίτσι"
+      },
+      {
+        "vlach": "fĭtshioru",
+        "greek": "αγόρι"
+      },
+      {
+        "vlach": "bârbatu",
+        "greek": "άντρας/ σύζυγος"
+      },
+      {
+        "vlach": "mŭljeare",
+        "greek": "γυναίκα/ σύζυγος"
+      },
+      {
+        "vlach": "minduitsĭ",
+        "greek": "μυαλωμένοι"
+      },
+      {
+        "vlach": "mŭshati",
+        "greek": "όμορφες"
+      },
+      {
+        "vlach": "picuraru",
+        "greek": "βοσκός"
+      },
+      {
+        "vlach": "cusurinâ",
+        "greek": "ξαδέρφη"
+      },
+      {
+        "vlach": "vrutsĭ oaspitsĭ",
+        "greek": "αγαπημένοι καλεσμένοι"
+      },
+      {
+        "vlach": "agru",
+        "greek": "χωράφι"
+      },
+      {
+        "vlach": "gâljinâ",
+        "greek": "κότα"
+      },
+      {
+        "vlach": "cutetshiu",
+        "greek": "κοτέτσι"
+      },
+      {
+        "vlach": "calu",
+        "greek": "άλογο"
+      },
+      {
+        "vlach": "sânâtosu",
+        "greek": "υγιές, δυνατό"
+      },
+      {
+        "vlach": "fĭtshiorĭlji",
+        "greek": "τα αγόρια"
+      },
+      {
+        "vlach": "analti",
+        "greek": "ψηλές"
+      }
+    ],
+    "useful_vocabulary": [
+      {
+        "vlach": "aestu",
+        "greek": "αυτός (δεικτική αντωνυμία)"
+      },
+      {
+        "vlach": "aestâ",
+        "greek": "αυτή (δεικτική αντωνυμία)"
+      },
+      {
+        "vlach": "acelŭ",
+        "greek": "εκείνος (δεικτική αντωνυμία)"
+      },
+      {
+        "vlach": "acea",
+        "greek": "εκείνη (δεικτική αντωνυμία)"
+      },
+      {
+        "vlach": "easte",
+        "greek": "υπάρχει"
+      },
+      {
+        "vlach": "suntu",
+        "greek": "υπάρχουν"
+      },
+      {
+        "vlach": "di",
+        "greek": "από"
+      },
+      {
+        "vlach": "iu",
+        "greek": "πού; που, όπου"
+      },
+      {
+        "vlach": "cumu",
+        "greek": "πως"
+      },
+      {
+        "vlach": "cari",
+        "greek": "ποιος, ποια, ποιο, ποιοι, ποιες, ποια"
+      },
+      {
+        "vlach": "A cui",
+        "greek": "τίνος;  Ποιανού;"
+      },
+      {
+        "vlach": "Ci",
+        "greek": "τι;"
+      },
+      {
+        "vlach": "Shĭ",
+        "greek": "και"
+      },
+      {
+        "vlach": "Multu",
+        "greek": "πολύ"
+      },
+      {
+        "vlach": "ma",
+        "greek": "αλλά, μα"
+      },
+      {
+        "vlach": "prinde si",
+        "greek": "πρέπει να"
+      }
+    ],
+    "notes": [
+      "Σημείωση: tu + χώρα"
+    ]
+  },
+  "flashcards": [
+    {
+      "front": "bunâ",
+      "back": "καλή"
+    },
+    {
+      "front": "dzuâ",
+      "back": "μέρα"
+    },
+    {
+      "front": "searâ",
+      "back": "απόγευμα"
+    },
+    {
+      "front": "numâ",
+      "back": "όνομα"
+    },
+    {
+      "front": "amea",
+      "back": "δική μου"
+    },
+    {
+      "front": "mi cljeamâ",
+      "back": "ονομάζομαι"
+    },
+    {
+      "front": "Armânu/ -â",
+      "back": "Βλάχος/ -α"
+    },
+    {
+      "front": "ghine vinishĭ",
+      "back": "καλώς όρισες/ ήρθες"
+    },
+    {
+      "front": "ghine ti aflai",
+      "back": "καλώς σε βρήκα"
+    },
+    {
+      "front": "si armâni ghine",
+      "back": "να μείνεις καλά"
+    },
+    {
+      "front": "oarâ bunâ!",
+      "back": "ώρα καλή!"
+    },
+    {
+      "front": "cumu ti  grescu",
+      "back": "πώς σε φωνάζουν; Πώς σε λένε;"
+    },
+    {
+      "front": "mi grescu",
+      "back": "με φωνάζουν"
+    },
+    {
+      "front": "mi hârsescu",
+      "back": "χαίρομαι"
+    },
+    {
+      "front": "shĭ io",
+      "back": "κι εγώ (επίσης)"
+    },
+    {
+      "front": "ci ti cunoscu",
+      "back": "που σε γνωρίζω"
+    },
+    {
+      "front": "fugu",
+      "back": "φεύγω"
+    },
+    {
+      "front": "tora",
+      "back": "τώρα"
+    },
+    {
+      "front": "si ai",
+      "back": "να έχεις"
+    },
+    {
+      "front": "shĭ",
+      "back": "και"
+    },
+    {
+      "front": "multu",
+      "back": "πολύ"
+    },
+    {
+      "front": "ma",
+      "back": "αλλά, μα"
+    },
+    {
+      "front": "prinde si",
+      "back": "πρέπει να"
+    },
+    {
+      "front": "tahĭna",
+      "back": "πρωί"
+    },
+    {
+      "front": "prândzu",
+      "back": "μεσημέρι"
+    },
+    {
+      "front": "mirinde",
+      "back": "νωρίς το απόγευμα"
+    },
+    {
+      "front": "siptâmânâ",
+      "back": "εβδομάδα"
+    },
+    {
+      "front": "noapte",
+      "back": "νύχτα"
+    },
+    {
+      "front": "Sâmbâtâ",
+      "back": "Σάββατο"
+    },
+    {
+      "front": "Duminicâ",
+      "back": "Κυριακή"
+    },
+    {
+      "front": "ashĭ",
+      "back": "έτσι"
+    },
+    {
+      "front": "ahâtu",
+      "back": "τόσο"
+    },
+    {
+      "front": "asadzâ",
+      "back": "σήμερα"
+    },
+    {
+      "front": "nipŭtutâ",
+      "back": "άρρωστη"
+    },
+    {
+      "front": "lângitâ",
+      "back": "άρρωστη"
+    },
+    {
+      "front": "moarte",
+      "back": "θάνατος"
+    },
+    {
+      "front": "hilje",
+      "back": "κόρη"
+    },
+    {
+      "front": "nipoatâ",
+      "back": "εγγονή, ανιψιά"
+    },
+    {
+      "front": "câsâbâ",
+      "back": "κωμόπολη, πόλη"
+    },
+    {
+      "front": "unâ",
+      "back": "μια"
+    },
+    {
+      "front": "a cui",
+      "back": "τίνος? Ποιανού?"
+    },
+    {
+      "front": "alu Vasili",
+      "back": "του Βασίλη"
+    },
+    {
+      "front": "ali Litse",
+      "back": "της Λίτσας"
+    },
+    {
+      "front": "faci",
+      "back": "κάνεις"
+    },
+    {
+      "front": "adari",
+      "back": "κάνεις"
+    },
+    {
+      "front": "ti duci",
+      "back": "πηγαίνεις"
+    },
+    {
+      "front": "bânedzĭ",
+      "back": "ζεις"
+    },
+    {
+      "front": "armâni",
+      "back": "μένεις, κατοικείς"
+    },
+    {
+      "front": "stai",
+      "back": "μένεις"
+    },
+    {
+      "front": "ci",
+      "back": "τι, που"
+    },
+    {
+      "front": "bunu",
+      "back": "καλός"
+    },
+    {
+      "front": "hoarâ",
+      "back": "χωριό"
+    },
+    {
+      "front": "featâ",
+      "back": "κορίτσι"
+    },
+    {
+      "front": "fĭtshioru",
+      "back": "αγόρι"
+    },
+    {
+      "front": "bârbatu",
+      "back": "άντρας/ σύζυγος"
+    },
+    {
+      "front": "mŭljeare",
+      "back": "γυναίκα/ σύζυγος"
+    },
+    {
+      "front": "minduitsĭ",
+      "back": "μυαλωμένοι"
+    },
+    {
+      "front": "mŭshati",
+      "back": "όμορφες"
+    },
+    {
+      "front": "picuraru",
+      "back": "βοσκός"
+    },
+    {
+      "front": "cusurinâ",
+      "back": "ξαδέρφη"
+    },
+    {
+      "front": "vrutsĭ oaspitsĭ",
+      "back": "αγαπημένοι καλεσμένοι"
+    },
+    {
+      "front": "agru",
+      "back": "χωράφι"
+    },
+    {
+      "front": "gâljinâ",
+      "back": "κότα"
+    },
+    {
+      "front": "cutetshiu",
+      "back": "κοτέτσι"
+    },
+    {
+      "front": "calu",
+      "back": "άλογο"
+    },
+    {
+      "front": "sânâtosu",
+      "back": "υγιές, δυνατό"
+    },
+    {
+      "front": "fĭtshiorĭlji",
+      "back": "τα αγόρια"
+    },
+    {
+      "front": "analti",
+      "back": "ψηλές"
+    },
+    {
+      "front": "aestu",
+      "back": "αυτός (δεικτική αντωνυμία)"
+    },
+    {
+      "front": "aestâ",
+      "back": "αυτή (δεικτική αντωνυμία)"
+    },
+    {
+      "front": "acelŭ",
+      "back": "εκείνος (δεικτική αντωνυμία)"
+    },
+    {
+      "front": "acea",
+      "back": "εκείνη (δεικτική αντωνυμία)"
+    },
+    {
+      "front": "easte",
+      "back": "υπάρχει"
+    },
+    {
+      "front": "suntu",
+      "back": "υπάρχουν"
+    },
+    {
+      "front": "di",
+      "back": "από"
+    },
+    {
+      "front": "iu",
+      "back": "πού; που, όπου"
+    },
+    {
+      "front": "cumu",
+      "back": "πως"
+    },
+    {
+      "front": "cari",
+      "back": "ποιος, ποια, ποιο, ποιοι, ποιες, ποια"
+    },
+    {
+      "front": "A cui",
+      "back": "τίνος;  Ποιανού;"
+    },
+    {
+      "front": "Ci",
+      "back": "τι;"
+    },
+    {
+      "front": "Shĭ",
+      "back": "και"
+    },
+    {
+      "front": "Multu",
+      "back": "πολύ"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "2.1",
+      "title": "Συμπληρώστε τα κενά με τον σωστό τύπο του ρήματος «είμαι».",
+      "type": "fill_in_verb_form",
+      "items": [
+        {
+          "number": 1,
+          "prompt": "Mine ………………. bunâ featâ / bunu fĭtshioru.",
+          "answer_with_filled_form": "Mine ……escu…………. bunâ featâ / bunu fĭtshioru."
+        },
+        {
+          "number": 2,
+          "prompt": "Noi  ………………….. mintuitsĭ bârbatsĭ.",
+          "answer_with_filled_form": "Noi  ………himu………….. mintuitsĭ bârbatsĭ."
+        },
+        {
+          "number": 3,
+          "prompt": "Nâsi …………………. mŭshati feati.",
+          "answer_with_filled_form": "Nâse ……suntu……. mŭshate feate."
+        },
+        {
+          "number": 4,
+          "prompt": "Noi  ………………... di Samarina.",
+          "answer_with_filled_form": "Noi  ……himu…………... di Samarina."
+        },
+        {
+          "number": 5,
+          "prompt": "Elu  ………………….. bunu picuraru.",
+          "answer_with_filled_form": "Elŭ  ……easte…………….. bunu picuraru."
+        },
+        {
+          "number": 6,
+          "prompt": "Ea  ………………….. cusurina amea di tu Americhi.",
+          "answer_with_filled_form": "Ia  ………easte………….. cusurina amea di tu Amerikiu."
+        },
+        {
+          "number": 7,
+          "prompt": "Voi  …………………….. vrutsĭ oaspitsĭ.",
+          "answer_with_filled_form": "Voi  ……hicĭ……………….. vrutsĭ oaspitsĭ."
+        },
+        {
+          "number": 8,
+          "prompt": "Elji ………………….. la agru.",
+          "answer_with_filled_form": "Eljĭ …………suntu……….. la agru."
+        },
+        {
+          "number": 9,
+          "prompt": "Gâljina  …………………….. tu cutetshiu.",
+          "answer_with_filled_form": "Gâljina  ………easte…………….. tu cutetshiu."
+        },
+        {
+          "number": 10,
+          "prompt": "Aestu calu  ………………….. sânâtosu.",
+          "answer_with_filled_form": "Aestu calu  ………easte………….. sânâtosu."
+        },
+        {
+          "number": 11,
+          "prompt": "Fĭtshiorĭlji …………………. la scoalâ cu dhascalu.",
+          "answer_with_filled_form": "Fĭtshiorĭlji ………suntu…………. la sculjio/ scoalâ cu dhaskalu."
+        },
+        {
+          "number": 12,
+          "prompt": "Cari  …………………………. feata acea analta?",
+          "answer_with_filled_form": "Cari  ………easte…………………. feata acea analta?"
+        },
+        {
+          "number": 13,
+          "prompt": "Di cari hoarâ ………………………tine?",
+          "answer_with_filled_form": "Di cari hoarâ …………hi……………tine?"
+        }
+      ]
+    },
+    {
+      "id": "2.2",
+      "title": "Χρησιμοποιώντας το λεξιλόγιο και το ρήμα «είμαι» σχηματίστε 5 προτάσεις.",
+      "type": "open_production",
+      "content": {
+        "prompt": "Χρησιμοποιώντας το λεξιλόγιο και το ρήμα «είμαι» σχηματίστε 5 προτάσεις.",
+        "answer_count_requested": 5,
+        "lines_in_source": [
+          "…………………………………………………………………………………………………………………",
+          "…………………………………………………………………………………………………………………",
+          "…………………………………………………………………………………………………………………",
+          "…………………………………………………………………………………………………………………",
+          "…………………………………………………………………………………………………………………"
+        ],
+        "official_answers": null
+      }
+    },
+    {
+      "id": "2.3",
+      "title": "Να μετατρέψετε τους παρακάτω διαλόγους από την ελληνική στη βλάχικη γλώσσα.",
+      "type": "translation_dialogue",
+      "items": [
+        {
+          "source_line": "Γιώργος: Καλημέρα. Ποιος είσαι εσύ;",
+          "answer_line_label": "Yioryi",
+          "official_answer": "Yioryi: Bunâ dzuâ. Cari hi tine?"
+        },
+        {
+          "source_line": "Μιχάλης: Καλημέρα. Εγώ είμαι ο Μιχάλης του Πίχα.",
+          "answer_line_label": "Miha",
+          "official_answer": "Miha: Bunâ dzuâ. Io hiu Miha alŭ Pihâ."
+        },
+        {
+          "source_line": "Γιώργος: Κι εγώ είμαι ο Γιώργος του Τέγου.",
+          "answer_line_label": "Yioryi",
+          "official_answer": "Yioryi: Sh’ io hiu Yioryi alŭ Teyu."
+        },
+        {
+          "source_line": "Μιχάλης: Από πού είσαι Γιώργο;",
+          "answer_line_label": "Miha",
+          "official_answer": "Miha: D’iu hi Yioryi?"
+        },
+        {
+          "source_line": "Γιώργος: Εγώ είμαι από τη Νάουσα. Εσύ από πού είσαι;",
+          "answer_line_label": "Yioryi",
+          "official_answer": "Yioryi: Io hiu di Nausta. Tine d’iu hi?"
+        },
+        {
+          "source_line": "Μιχάλης: Εγώ είμαι από το Μέτσοβο, το χωριό του Νίκου.",
+          "answer_line_label": "Miha",
+          "official_answer": "Miha: Io hiu di Amindjiu, hoarâ alŭ Cola."
+        },
+        {
+          "source_line": "Κώστας: Καλησπέρα, Νίκο.",
+          "answer_line_label": "Costa",
+          "official_answer": "Costa: Bunâ searâ Cola."
+        },
+        {
+          "source_line": "Νίκος: Καλησπέρα, Κώστα.",
+          "answer_line_label": "Cola",
+          "official_answer": "Cola: Bunâ searâ Costa."
+        },
+        {
+          "source_line": "Κώστας: Τι κάνεις; Πώς είσαι;",
+          "answer_line_label": "Costa",
+          "official_answer": "Costa: Ci faci? Cumu hi?"
+        },
+        {
+          "source_line": "Νίκος: Εγώ είμαι καλά. Εσύ πώς είσαι;",
+          "answer_line_label": "Cola",
+          "official_answer": "Cola: Io hiu ghine. Tine cumu hi?"
+        },
+        {
+          "source_line": "Κώστας: Είμαι πολύ καλά. Η οικογένεια πώς είναι;",
+          "answer_line_label": "Costa",
+          "official_answer": "Costa: Hiu multu ghine. Fumealjea cumu easte?"
+        },
+        {
+          "source_line": "Νίκος: Είναι πολύ καλά.",
+          "answer_line_label": "Cola",
+          "official_answer": "Cola: Easte multu ghine."
+        }
+      ]
+    },
+    {
+      "id": "2.4",
+      "title": "Βάλε τη λέξη στη σωστή θέση",
+      "type": "categorization",
+      "word_bank": [
+        "dzuâ",
+        "numâ",
+        "Armânu",
+        "oarâ",
+        "prândzu",
+        "mirinde",
+        "noapte",
+        "hilje",
+        "bârbatu",
+        "mŭljeare",
+        "calu",
+        "cale",
+        "agru",
+        "câsâbâ",
+        "searâ",
+        "picuraru",
+        "fĭtshioru",
+        "golu"
+      ],
+      "categories": [
+        {
+          "header": "Aestu & acelu",
+          "official_answers_as_list": [
+            "Armânu",
+            "prândzu",
+            "bârbatu",
+            "calu",
+            "agru",
+            "câsâbâ",
+            "picuraru",
+            "fĭtshioru",
+            "golu"
+          ]
+        },
+        {
+          "header": "Aestâ & acea",
+          "official_answers_as_list": [
+            "dzuâ",
+            "numâ",
+            "oarâ",
+            "mirinde",
+            "noapte",
+            "hilje",
+            "muljeare",
+            "cale",
+            "searâ"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2.5",
+      "title": "Κάνε αντιστοίχιση με τη σωστή μετάφραση.",
+      "type": "matching_translation",
+      "left_items": [
+        "1.Cari di voi i Yioryi alu Nacu?",
+        "2. A cui hoarâ easte aestâ?",
+        "3. Cumu fuge chirolu!",
+        "4. Ci mintuitsĭ fĭtshiori!",
+        "5. Ci adari acia, Maria?",
+        "6. Iu armâni Athinâ?",
+        "7. D’ iu hi?",
+        "8. Acia iu ti duci easte casa ali Marie.",
+        "9. Yiani easte di în Tricolu",
+        "10. Feata acea ci fuge easte multu mŭshatâ!"
+      ],
+      "right_items": [
+        "a. Ο Γιάννης είναι από τα Τρίκαλα.",
+        "b. Εκεί όπου πας είναι το σπίτι της Μαρίας.",
+        "c. Το κορίτσι εκείνο που φεύγει είναι πολύ όμορφο.",
+        "d. Ποιος από εσάς είναι ο Γιώργος Νάκος;",
+        "e. Τι μυαλωμένα παιδιά!",
+        "f. Τίνος χωριό είναι αυτό;",
+        "g. Που μένεις στην Αθήνα;",
+        "h. Τι κάνεις εκεί, Μαρία;",
+        "i. Από πού είσαι;",
+        "j. Πώς περνάει ο καιρός!"
+      ],
+      "solution_map_inferred": {
+        "1": "d",
+        "2": "f",
+        "3": "j",
+        "4": "e",
+        "5": "h",
+        "6": "g",
+        "7": "i",
+        "8": "b",
+        "9": "a",
+        "10": "c"
+      },
+      "solution_note": "Το αρχείο απαντήσεων επαναλαμβάνει τα δύο σύνολα προτάσεων, αλλά δεν δίνει ρητά γράμμα-προς-γράμμα αντιστοίχιση. Ο παραπάνω χάρτης προκύπτει από το νόημα των προτάσεων."
+    },
+    {
+      "id": "2.6",
+      "title": "Αντιστοίχισε τις προτάσεις.",
+      "type": "matching_sentences",
+      "left_items": [
+        "1. Nu ti cunoscu. Cari hi tine?",
+        "2. Aestâ i hiljea amea.",
+        "3.Bânedzu tu Grecia.",
+        "4.A cui hicĭ voi?",
+        "5.Iu ti duci?"
+      ],
+      "right_items": {
+        "a": "a. Sh’ io di Grecia hiu.",
+        "b": "b. Himu fumealje alu Delâ.",
+        "c": "Mi grescu Toli.",
+        "d": "d. Mi ducu Athinâ.",
+        "e": "e. Ci mŭshatâ featâ!"
+      },
+      "solution_map_inferred": {
+        "1": "c",
+        "2": "e",
+        "3": "a",
+        "4": "b",
+        "5": "d"
+      },
+      "solution_note": "Στο αρχείο απαντήσεων η τρίτη επιλογή εμφανίζεται χωρίς γράμμα. Εδώ δηλώνεται ως «c» μόνο για τεχνική χρήση στο JSON."
+    }
+  ],
+  "source_notes": [
+    "Το αρχείο ασκήσεων της 2ης ενότητας περιλαμβάνει και υλικό σε πίνακες, όχι μόνο απλές παραγράφους.",
+    "Οι ασκήσεις αντιστοίχισης δεν έχουν πλήρη ρητή χαρτογράφηση μέσα στο αρχείο απαντήσεων· όπου χρειάστηκε, η αντιστοίχιση σημειώθηκε ως inferred.",
+    "Η γραφή διατηρείται όπως εμφανίζεται στα αρχεία, ακόμη και όπου υπάρχουν παραλλαγές όπως mŭljeare / muljeare ή mintuitsĭ / minduitsĭ."
+  ],
+  "ui_suggestions": {
+    "flashcards_from_vocabulary": true,
+    "quiz_candidates": [
+      "χαιρετισμός -> σημασία",
+      "ποια ερώτηση ταιριάζει σε ποια απάντηση",
+      "συμπλήρωση τύπων του «είμαι»",
+      "ταξινόμηση aestu/acelu και aestâ/acea",
+      "αντιστοίχιση βλάχικης πρότασης με ελληνική μετάφραση"
+    ]
+  }
+}

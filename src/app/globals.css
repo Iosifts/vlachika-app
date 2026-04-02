@@ -1,26 +1,125 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Base neutrals — calmer and less creamy */
+  --color-warm-50: #f7f8fb;
+  --color-warm-100: #eef1f5;
+  --color-warm-200: #dde3ea;
+  --color-warm-300: #c8d0da;
+  --color-warm-400: #9aa7b6;
+  --color-warm-500: #6f7d8f;
+  --color-warm-600: #556274;
+  --color-warm-700: #3f4b5c;
+  --color-warm-800: #263241;
+  --color-warm-900: #17212b;
+
+  /* Soft moss */
+  --color-olive-50: #f2f7f3;
+  --color-olive-100: #ddebe0;
+  --color-olive-200: #bdd7c2;
+  --color-olive-300: #97bd9f;
+  --color-olive-400: #709d7a;
+  --color-olive-500: #557f5f;
+  --color-olive-600: #43664c;
+  --color-olive-700: #35503b;
+  --color-olive-800: #2b4130;
+  --color-olive-900: #223426;
+
+  /* Dusty rose — softer, not loud */
+  --color-rose-50: #fbf4f5;
+  --color-rose-100: #f4e5e7;
+  --color-rose-200: #e8cdd3;
+  --color-rose-300: #d6a8b2;
+  --color-rose-400: #bd7f8d;
+  --color-rose-500: #9d6272;
+  --color-rose-600: #7f4d5b;
+  --color-rose-700: #663f4b;
+  --color-rose-800: #53343e;
+  --color-rose-900: #442c34;
+
+  /* Elegant blue */
+  --color-sky-50: #f2f7fb;
+  --color-sky-100: #e1edf7;
+  --color-sky-200: #c4dbef;
+  --color-sky-300: #9fc1e0;
+  --color-sky-400: #739dca;
+  --color-sky-500: #4f7da9;
+  --color-sky-600: #3d6389;
+  --color-sky-700: #324f6d;
+  --color-sky-800: #2a425a;
+  --color-sky-900: #223648;
+
+  /* Bronze accent — replace the aggressive red CTA feeling */
+  --color-terra-50: #faf6f1;
+  --color-terra-100: #efe5d8;
+  --color-terra-200: #dec9ae;
+  --color-terra-300: #cda883;
+  --color-terra-400: #b9875e;
+  --color-terra-500: #9a6d49;
+  --color-terra-600: #7d573a;
+  --color-terra-700: #644631;
+  --color-terra-800: #50382a;
+  --color-terra-900: #3f2d22;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --page-bg: #f7f8fb;
+  --card-bg: rgba(255, 255, 255, 0.82);
+  --card-border: rgba(38, 50, 65, 0.08);
+  --shadow-soft: 0 10px 30px rgba(23, 33, 43, 0.06);
+  --shadow-hover: 0 16px 40px rgba(23, 33, 43, 0.10);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(79, 125, 169, 0.08), transparent 28%),
+    radial-gradient(circle at 20% 20%, rgba(85, 127, 95, 0.05), transparent 20%),
+    var(--page-bg);
+  color: var(--color-warm-800);
+}
+
+/* Vlach text styling — always preserve exact characters */
+.vlach-text {
+  font-style: italic;
+  color: var(--color-rose-700);
+  font-weight: 500;
+}
+
+.greek-text {
+  color: var(--color-warm-600);
+}
+
+/* Reusable surface helpers */
+.surface-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(8px);
+}
+
+.surface-card:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+/* Flashcard flip animation */
+.flip-card {
+  perspective: 1000px;
+}
+.flip-card-inner {
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+.flip-card-inner.flipped {
+  transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+  backface-visibility: hidden;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
 }

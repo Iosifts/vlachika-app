@@ -1,0 +1,1439 @@
+{
+  "unit": {
+    "number": 6,
+    "title_gr": "Numiri & Oara, Μέρες, Μήνες, Εποχές",
+    "title_vlach": "Numiri & Oara",
+    "slug": "enotita-6-numiri-oara-meres-mines-epoxes",
+    "language": "Vlachika / Greek",
+    "script_policy": "Να διατηρείται ακριβώς η γραφή των πηγών, χωρίς αντικατάσταση χαρακτήρων.",
+    "material_status": "substantial",
+    "available_material": [
+      "θεωρία",
+      "λεξιλόγιο",
+      "ασκήσεις",
+      "ενσωματωμένες εικόνες για μήνες/εποχές",
+      "ενσωματωμένη εικόνα άσκησης ώρας"
+    ],
+    "missing_or_not_found": [
+      "ξεχωριστό αρχείο απαντήσεων 6"
+    ]
+  },
+  "source_files": [
+    "Ενότητα 6-Numiri & Oara, Μέρες, Μήνες, Εποχές (1).docx",
+    "Λεξιλόγιο 6. (1).docx",
+    "Ασκήσεις 6. (2).docx"
+  ],
+  "homepage_card": {
+    "title": "Ενότητα 6 — Numiri & Oara, Μέρες, Μήνες, Εποχές",
+    "description": "Αριθμοί, ώρα, μέρες, μήνες, εποχές και λεξιλόγιο σχετικό με χρόνο, γιορτές και καθημερινές ερωτήσεις.",
+    "buttons": [
+      "Θεωρία",
+      "Λεξιλόγιο",
+      "Ασκήσεις",
+      "Κάρτες",
+      "Quiz"
+    ]
+  },
+  "theory": {
+    "intro_title": "Ενότητα 6",
+    "sections": [
+      {
+        "section_id": "6.1",
+        "title": "Numiri",
+        "teaching_goal": "Βασικοί αριθμοί και δομές για μεγαλύτερους αριθμούς.",
+        "notes": [
+          "Μόνο για τους αριθμούς 11 – 29 μπαίνει πρώτα η μονάδα και μετά η δεκάδα."
+        ],
+        "content": {
+          "numbers_0_29": [
+            {
+              "number": "0",
+              "vlach": "midhen/ zero/ nulâ"
+            },
+            {
+              "number": "1",
+              "vlach": "unâ (unu)"
+            },
+            {
+              "number": "2",
+              "vlach": "dau (doi)"
+            },
+            {
+              "number": "3",
+              "vlach": "trei"
+            },
+            {
+              "number": "4",
+              "vlach": "patru"
+            },
+            {
+              "number": "5",
+              "vlach": "cinci"
+            },
+            {
+              "number": "6",
+              "vlach": "shase"
+            },
+            {
+              "number": "7",
+              "vlach": "shapte"
+            },
+            {
+              "number": "8",
+              "vlach": "optu"
+            },
+            {
+              "number": "9",
+              "vlach": "nau"
+            },
+            {
+              "number": "10",
+              "vlach": "dzace"
+            },
+            {
+              "number": "11",
+              "vlach": "usprâcĭ"
+            },
+            {
+              "number": "12",
+              "vlach": "dosprâcĭ"
+            },
+            {
+              "number": "13",
+              "vlach": "tresprâcĭ"
+            },
+            {
+              "number": "14",
+              "vlach": "pasprâcĭ"
+            },
+            {
+              "number": "15",
+              "vlach": "cisprâcĭ"
+            },
+            {
+              "number": "16",
+              "vlach": "shasprâcĭ"
+            },
+            {
+              "number": "17",
+              "vlach": "shaptĭsprâcĭ"
+            },
+            {
+              "number": "18",
+              "vlach": "optŭsprâcĭ"
+            },
+            {
+              "number": "19",
+              "vlach": "nausprâcĭ"
+            },
+            {
+              "number": "20",
+              "vlach": "yinghicĭ"
+            },
+            {
+              "number": "21",
+              "vlach": "usprâ-yinghicĭ"
+            },
+            {
+              "number": "22",
+              "vlach": "dosprâ-yinghicĭ"
+            },
+            {
+              "number": "23",
+              "vlach": "tresprâ-yinghicĭ"
+            },
+            {
+              "number": "24",
+              "vlach": "pasprâ-yinghicĭ"
+            },
+            {
+              "number": "25",
+              "vlach": "cisprâ-yinghicĭ"
+            },
+            {
+              "number": "26",
+              "vlach": "shasprâ-yinghicĭ"
+            },
+            {
+              "number": "27",
+              "vlach": "shaptĭsprâ-yinghicĭ"
+            },
+            {
+              "number": "28",
+              "vlach": "optŭsprâ-yinghicĭ"
+            },
+            {
+              "number": "29",
+              "vlach": "nausprâ-yinghicĭ"
+            }
+          ],
+          "tens_hundreds_and_large": [
+            {
+              "number": "30",
+              "vlach": "treidzâcĭ"
+            },
+            {
+              "number": "40",
+              "vlach": "patrudzâcĭ"
+            },
+            {
+              "number": "50",
+              "vlach": "cindzâcĭ"
+            },
+            {
+              "number": "60",
+              "vlach": "shaidzâcĭ"
+            },
+            {
+              "number": "70",
+              "vlach": "shaptĭdzâcĭ"
+            },
+            {
+              "number": "80",
+              "vlach": "optudzâcĭ"
+            },
+            {
+              "number": "90",
+              "vlach": "naudzâcĭ"
+            },
+            {
+              "number": "100",
+              "vlach": "unâ sutâ"
+            },
+            {
+              "number": "200",
+              "vlach": "dau suti"
+            },
+            {
+              "number": "1.000",
+              "vlach": "unâ njiljie"
+            },
+            {
+              "number": "2.000",
+              "vlach": "dau njilji"
+            },
+            {
+              "number": "1.000.000",
+              "vlach": "unâ milione"
+            },
+            {
+              "number": "2.000.000",
+              "vlach": "dau milioni"
+            }
+          ],
+          "footnotes": [
+            {
+              "id": 1,
+              "text": "Doau Μέτσοβο"
+            },
+            {
+              "id": 2,
+              "text": "Noau Μέτσοβο"
+            },
+            {
+              "id": 3,
+              "text": "Συρράκο, Σαμαρίνα, Ρεμένοι yinghicĭ unâ, yinghicĭ dau κ.τ.λ"
+            }
+          ]
+        }
+      },
+      {
+        "section_id": "6.2",
+        "title": "întrebu oara/ sihatea",
+        "title_gr": "Ρωτώ την ώρα",
+        "teaching_goal": "Ερωτήσεις και βασικές φράσεις για την ώρα.",
+        "content": {
+          "phrases": [
+            {
+              "vlach": "Ci oarâ easte?",
+              "greek": "τι ώρα είναι?"
+            },
+            {
+              "vlach": "Câtu easte oara?",
+              "greek": "πόσο είναι η ώρα?"
+            },
+            {
+              "vlach": "Câtu s’are dusâ (oara)?",
+              "greek": "πόσο έχει πάει"
+            },
+            {
+              "vlach": "(oara) easte…",
+              "greek": "είναι"
+            },
+            {
+              "vlach": "s’ are dusâ…",
+              "greek": "έχει πάει"
+            },
+            {
+              "vlach": "s’ aproachie…",
+              "greek": "πλησιάζει"
+            },
+            {
+              "vlach": "adjiunge….",
+              "greek": "φτάνει"
+            },
+            {
+              "vlach": "are tricutâ di",
+              "greek": "έχει περάσει από"
+            },
+            {
+              "vlach": "tu patruli",
+              "greek": "στις 4.00"
+            },
+            {
+              "vlach": "tu unâ",
+              "greek": "στη μία"
+            },
+            {
+              "vlach": "di tu dauli pânâ tu treili",
+              "greek": "από τις 2.00 ως τις 3.00"
+            },
+            {
+              "vlach": "câtrâ tu cincili",
+              "greek": "κατά τις 5.00"
+            },
+            {
+              "vlach": "shĭ",
+              "greek": "και"
+            },
+            {
+              "vlach": "fârâ",
+              "greek": "παρά"
+            },
+            {
+              "vlach": "(unu) cartu/ (unu) tshirecu",
+              "greek": "τέταρτο"
+            },
+            {
+              "vlach": "disâ/djiumitate",
+              "greek": "μισή"
+            },
+            {
+              "vlach": "minutu/minuti",
+              "greek": "λεπτό"
+            },
+            {
+              "vlach": "întreagâ",
+              "greek": "ολόκληρη, ακριβώς"
+            }
+          ],
+          "distinctions": [
+            {
+              "vlach": "oarâ",
+              "greek": "ώρα/φορά"
+            },
+            {
+              "vlach": "ori",
+              "greek": "φορές"
+            },
+            {
+              "vlach": "oarâ/ori di chiro",
+              "greek": "ώρες"
+            }
+          ],
+          "demonstratives": [
+            {
+              "vlach": "acelu –acelji",
+              "greek": "εκείνος- εκείνοι"
+            },
+            {
+              "vlach": "acea- aceali",
+              "greek": "εκείνη- εκείνες"
+            },
+            {
+              "vlach": "aestu –aeshĭtsĭ",
+              "greek": "αυτός- αυτοί"
+            },
+            {
+              "vlach": "aestâ – aesti",
+              "greek": "αυτή- αυτές"
+            }
+          ]
+        }
+      },
+      {
+        "section_id": "6.3",
+        "title": "Iu aljiurea avemu numiri?",
+        "teaching_goal": "Χρήση αριθμών σε μήνες, έτη, ηλικία, τιμές και βάρος.",
+        "content": {
+          "question_patterns": [
+            {
+              "vlach": "Câtu are/ easte mesŭlu?",
+              "greek": "πόσο έχει/ είναι ο μήνας?"
+            },
+            {
+              "vlach": "Ci anu avemu?",
+              "greek": "τι χρονιά έχουμε?"
+            },
+            {
+              "vlach": "Cari anu?",
+              "greek": "ποια χρονιά?"
+            },
+            {
+              "vlach": "Câtu face?",
+              "greek": "πόσο κάνει/κοστίζει"
+            },
+            {
+              "vlach": "Di câtsĭ anji hi?",
+              "greek": "πόσο χρονών είσαι?"
+            },
+            {
+              "vlach": "Câtu dhixeashte?/ Câtu greu easte?",
+              "greek": "πόσο ζυγίζει?"
+            }
+          ],
+          "quantifier_notes": [
+            {
+              "vlach": "câtu – câtsĭ",
+              "greek": "πόσος – πόσοι"
+            },
+            {
+              "vlach": "câtâ – câti",
+              "greek": "πόση - πόσες"
+            },
+            {
+              "vlach": "Câtu mŭshatâ easte feata aceâ!",
+              "greek": "παράδειγμα επιρρηματικής χρήσης"
+            },
+            {
+              "vlach": "Câtu afischi suntu nâshti oaminji!",
+              "greek": "παράδειγμα"
+            }
+          ]
+        }
+      },
+      {
+        "section_id": "6.4",
+        "title": "Epuhiili di anu & meshĭlji",
+        "teaching_goal": "Εποχές και μήνες του χρόνου.",
+        "content": {
+          "source_type": "embedded images in source document",
+          "season_month_blocks": [
+            {
+              "season": "primuvearâ",
+              "months": [
+                "Aprilu",
+                "Martsu",
+                "Maiu"
+              ],
+              "source": "embedded image"
+            },
+            {
+              "season": "Vearâ",
+              "months": [
+                "Tshirisharu",
+                "Alunaru",
+                "Avyustu"
+              ],
+              "source": "embedded image"
+            },
+            {
+              "season": "toamnâ",
+              "months": [
+                "Yismatshunu",
+                "Ayiu Dhimitri/Sumedru",
+                "Hamenu/Brumaru"
+              ],
+              "source": "embedded image"
+            },
+            {
+              "season": "earnâ",
+              "months": [
+                "Andreu",
+                "Yinaru",
+                "Flivaru/Shcutru"
+              ],
+              "source": "embedded image"
+            }
+          ],
+          "footnotes": [
+            {
+              "id": 4,
+              "text": "Οι μήνες γένους αρσενικο…..αλλά όχι με τον Απρίλη αρθρο"
+            },
+            {
+              "id": 5,
+              "text": "Alunaru ή Curigu"
+            }
+          ]
+        }
+      },
+      {
+        "section_id": "6.5",
+        "title": "Dzîlili di siptâmanâ",
+        "teaching_goal": "Μέρες της εβδομάδας και βασικές χρονικές ερωτήσεις.",
+        "content": {
+          "days_of_week": [
+            {
+              "vlach": "Lune",
+              "greek": "Δευτέρα"
+            },
+            {
+              "vlach": "Martsĭ",
+              "greek": "Τρίτη"
+            },
+            {
+              "vlach": "Njiercuri",
+              "greek": "Τετάρτη"
+            },
+            {
+              "vlach": "Djoe",
+              "greek": "Πέμπτη"
+            },
+            {
+              "vlach": "Vinjiri",
+              "greek": "Παρασκευή"
+            },
+            {
+              "vlach": "Sâmbâtâ",
+              "greek": "Σάββατο"
+            },
+            {
+              "vlach": "Duminicâ",
+              "greek": "Κυριακή"
+            }
+          ],
+          "question_prompts": [
+            "Câti ori di chiro are dzua?",
+            "Câti dzîli are siptâmâna?",
+            "Câti dzîli are unu mesu?",
+            "Câti siptâmani are unu mesu?",
+            "Câtsĭ meshĭ are unu anu?",
+            "Cându ti fitashĭ/ amintashĭ?",
+            "Tu…....... di….."
+          ],
+          "footnotes": [
+            {
+              "id": 6,
+              "text": "Οι μέρες είναι γένος θηλυκού επομένως παίρνουν το αντίστοιχο άρθρο όλες εκτός της Τρίτης που δεν παίρνει άρθρο ποτέ."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Λεξιλόγιο Ενότητας 6",
+    "sections": [
+      {
+        "title": "Γιορτές / Χρόνος",
+        "items": [
+          {
+            "vlach": "aljiurea",
+            "greek": "αλλού"
+          },
+          {
+            "vlach": "Cârtshunu, Hristu",
+            "greek": "Χριστούγεννα"
+          },
+          {
+            "vlach": "Pashte",
+            "greek": "Πάσχα"
+          },
+          {
+            "vlach": "protu, primu",
+            "greek": "πρώτος"
+          },
+          {
+            "vlach": "telefteu, ultimu",
+            "greek": "τελευταίος"
+          },
+          {
+            "vlach": "îmbairâ",
+            "greek": "αρχίζει, ξεκινάει"
+          },
+          {
+            "vlach": "cadu",
+            "greek": "πέφτω"
+          },
+          {
+            "vlach": "brumâ",
+            "greek": "πάχνη"
+          },
+          {
+            "vlach": "Evaghelismo",
+            "greek": "Ευαγγελισμός"
+          },
+          {
+            "vlach": "altâ",
+            "greek": "άλλη"
+          },
+          {
+            "vlach": "nâinte di",
+            "greek": "μπροστά από, πριν από"
+          },
+          {
+            "vlach": "dupu",
+            "greek": "μετά"
+          },
+          {
+            "vlach": "shcurtu",
+            "greek": "κοντός, σύντομος"
+          },
+          {
+            "vlach": "tu mese",
+            "greek": "στη μέση, ανάμεσα"
+          },
+          {
+            "vlach": "yiurtâsimu",
+            "greek": "γιορτάζουμε"
+          },
+          {
+            "vlach": "Stâ Mâria",
+            "greek": "Παναγία, Δεκαπενταύγουστος"
+          },
+          {
+            "vlach": "tasi",
+            "greek": "για να, ώστε"
+          }
+        ]
+      },
+      {
+        "title": "Καθημερινή χρήση",
+        "items": [
+          {
+            "vlach": "îmvetsu",
+            "greek": "μαθαίνω"
+          },
+          {
+            "vlach": "atobâ",
+            "greek": "μπάλα"
+          },
+          {
+            "vlach": "ascultu",
+            "greek": "ακούω, υπακούω"
+          },
+          {
+            "vlach": "radhiu",
+            "greek": "ραδιόφωνο"
+          }
+        ]
+      },
+      {
+        "title": "Μέρες της εβδομάδας",
+        "items": [
+          {
+            "vlach": "Lune",
+            "greek": "Δευτέρα"
+          },
+          {
+            "vlach": "Martsĭ",
+            "greek": "Τρίτη"
+          },
+          {
+            "vlach": "Njiercuri",
+            "greek": "Τετάρτη"
+          },
+          {
+            "vlach": "Djoe",
+            "greek": "Πέμπτη"
+          },
+          {
+            "vlach": "Vinjiri",
+            "greek": "Παρασκευή"
+          },
+          {
+            "vlach": "Sâmbâtâ",
+            "greek": "Σάββατο"
+          },
+          {
+            "vlach": "Duminicâ",
+            "greek": "Κυριακή"
+          }
+        ]
+      },
+      {
+        "title": "Μήνες και εποχές",
+        "items": [
+          {
+            "season": "primuvearâ",
+            "months": [
+              "Aprilu",
+              "Martsu",
+              "Maiu"
+            ]
+          },
+          {
+            "season": "Vearâ",
+            "months": [
+              "Tshirisharu",
+              "Alunaru",
+              "Avyustu"
+            ]
+          },
+          {
+            "season": "toamnâ",
+            "months": [
+              "Yismatshunu",
+              "Ayiu Dhimitri/Sumedru",
+              "Hamenu/Brumaru"
+            ]
+          },
+          {
+            "season": "earnâ",
+            "months": [
+              "Andreu",
+              "Yinaru",
+              "Flivaru/Shcutru"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "type": "number",
+      "front": "0",
+      "back": "midhen/ zero/ nulâ"
+    },
+    {
+      "type": "number",
+      "front": "1",
+      "back": "unâ (unu)"
+    },
+    {
+      "type": "number",
+      "front": "2",
+      "back": "dau (doi)"
+    },
+    {
+      "type": "number",
+      "front": "3",
+      "back": "trei"
+    },
+    {
+      "type": "number",
+      "front": "4",
+      "back": "patru"
+    },
+    {
+      "type": "number",
+      "front": "5",
+      "back": "cinci"
+    },
+    {
+      "type": "number",
+      "front": "6",
+      "back": "shase"
+    },
+    {
+      "type": "number",
+      "front": "7",
+      "back": "shapte"
+    },
+    {
+      "type": "number",
+      "front": "8",
+      "back": "optu"
+    },
+    {
+      "type": "number",
+      "front": "9",
+      "back": "nau"
+    },
+    {
+      "type": "number",
+      "front": "10",
+      "back": "dzace"
+    },
+    {
+      "type": "number",
+      "front": "11",
+      "back": "usprâcĭ"
+    },
+    {
+      "type": "number",
+      "front": "12",
+      "back": "dosprâcĭ"
+    },
+    {
+      "type": "number",
+      "front": "13",
+      "back": "tresprâcĭ"
+    },
+    {
+      "type": "number",
+      "front": "14",
+      "back": "pasprâcĭ"
+    },
+    {
+      "type": "day_of_week",
+      "front": "Lune",
+      "back": "Δευτέρα"
+    },
+    {
+      "type": "day_of_week",
+      "front": "Martsĭ",
+      "back": "Τρίτη"
+    },
+    {
+      "type": "day_of_week",
+      "front": "Njiercuri",
+      "back": "Τετάρτη"
+    },
+    {
+      "type": "day_of_week",
+      "front": "Djoe",
+      "back": "Πέμπτη"
+    },
+    {
+      "type": "day_of_week",
+      "front": "Vinjiri",
+      "back": "Παρασκευή"
+    },
+    {
+      "type": "day_of_week",
+      "front": "Sâmbâtâ",
+      "back": "Σάββατο"
+    },
+    {
+      "type": "day_of_week",
+      "front": "Duminicâ",
+      "back": "Κυριακή"
+    },
+    {
+      "type": "month",
+      "front": "Aprilu",
+      "back": "primuvearâ"
+    },
+    {
+      "type": "month",
+      "front": "Martsu",
+      "back": "primuvearâ"
+    },
+    {
+      "type": "month",
+      "front": "Maiu",
+      "back": "primuvearâ"
+    },
+    {
+      "type": "month",
+      "front": "Tshirisharu",
+      "back": "Vearâ"
+    },
+    {
+      "type": "month",
+      "front": "Alunaru",
+      "back": "Vearâ"
+    },
+    {
+      "type": "month",
+      "front": "Avyustu",
+      "back": "Vearâ"
+    },
+    {
+      "type": "month",
+      "front": "Yismatshunu",
+      "back": "toamnâ"
+    },
+    {
+      "type": "month",
+      "front": "Ayiu Dhimitri/Sumedru",
+      "back": "toamnâ"
+    },
+    {
+      "type": "month",
+      "front": "Hamenu/Brumaru",
+      "back": "toamnâ"
+    },
+    {
+      "type": "month",
+      "front": "Andreu",
+      "back": "earnâ"
+    },
+    {
+      "type": "month",
+      "front": "Yinaru",
+      "back": "earnâ"
+    },
+    {
+      "type": "month",
+      "front": "Flivaru/Shcutru",
+      "back": "earnâ"
+    },
+    {
+      "type": "vocabulary",
+      "front": "aljiurea",
+      "back": "αλλού"
+    },
+    {
+      "type": "vocabulary",
+      "front": "Cârtshunu, Hristu",
+      "back": "Χριστούγεννα"
+    },
+    {
+      "type": "vocabulary",
+      "front": "Pashte",
+      "back": "Πάσχα"
+    },
+    {
+      "type": "vocabulary",
+      "front": "protu, primu",
+      "back": "πρώτος"
+    },
+    {
+      "type": "vocabulary",
+      "front": "telefteu, ultimu",
+      "back": "τελευταίος"
+    },
+    {
+      "type": "vocabulary",
+      "front": "îmbairâ",
+      "back": "αρχίζει, ξεκινάει"
+    },
+    {
+      "type": "vocabulary",
+      "front": "cadu",
+      "back": "πέφτω"
+    },
+    {
+      "type": "vocabulary",
+      "front": "brumâ",
+      "back": "πάχνη"
+    },
+    {
+      "type": "vocabulary",
+      "front": "Evaghelismo",
+      "back": "Ευαγγελισμός"
+    },
+    {
+      "type": "vocabulary",
+      "front": "altâ",
+      "back": "άλλη"
+    },
+    {
+      "type": "vocabulary",
+      "front": "nâinte di",
+      "back": "μπροστά από, πριν από"
+    },
+    {
+      "type": "vocabulary",
+      "front": "dupu",
+      "back": "μετά"
+    },
+    {
+      "type": "vocabulary",
+      "front": "shcurtu",
+      "back": "κοντός, σύντομος"
+    },
+    {
+      "type": "vocabulary",
+      "front": "tu mese",
+      "back": "στη μέση, ανάμεσα"
+    },
+    {
+      "type": "vocabulary",
+      "front": "yiurtâsimu",
+      "back": "γιορτάζουμε"
+    },
+    {
+      "type": "vocabulary",
+      "front": "Stâ Mâria",
+      "back": "Παναγία, Δεκαπενταύγουστος"
+    },
+    {
+      "type": "vocabulary",
+      "front": "tasi",
+      "back": "για να, ώστε"
+    },
+    {
+      "type": "vocabulary",
+      "front": "îmvetsu",
+      "back": "μαθαίνω"
+    },
+    {
+      "type": "vocabulary",
+      "front": "atobâ",
+      "back": "μπάλα"
+    },
+    {
+      "type": "vocabulary",
+      "front": "ascultu",
+      "back": "ακούω, υπακούω"
+    },
+    {
+      "type": "vocabulary",
+      "front": "radhiu",
+      "back": "ραδιόφωνο"
+    },
+    {
+      "type": "time_phrase",
+      "front": "Ci oarâ easte?",
+      "back": "τι ώρα είναι?"
+    },
+    {
+      "type": "time_phrase",
+      "front": "Câtu easte oara?",
+      "back": "πόσο είναι η ώρα?"
+    },
+    {
+      "type": "time_phrase",
+      "front": "Câtu s’are dusâ (oara)?",
+      "back": "πόσο έχει πάει"
+    },
+    {
+      "type": "time_phrase",
+      "front": "(oara) easte…",
+      "back": "είναι"
+    },
+    {
+      "type": "time_phrase",
+      "front": "s’ are dusâ…",
+      "back": "έχει πάει"
+    },
+    {
+      "type": "time_phrase",
+      "front": "s’ aproachie…",
+      "back": "πλησιάζει"
+    },
+    {
+      "type": "time_phrase",
+      "front": "adjiunge….",
+      "back": "φτάνει"
+    },
+    {
+      "type": "time_phrase",
+      "front": "are tricutâ di",
+      "back": "έχει περάσει από"
+    },
+    {
+      "type": "time_phrase",
+      "front": "tu patruli",
+      "back": "στις 4.00"
+    },
+    {
+      "type": "time_phrase",
+      "front": "tu unâ",
+      "back": "στη μία"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "6-ex-1",
+      "title": "Γράψε τους αριθμούς.",
+      "type": "number_to_words",
+      "items": [
+        {
+          "prompt": "1.543",
+          "answer": "unâ njilje cinci suti patrudzâcĭ trei",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "63.616",
+          "answer": "shaidzâcĭ trei njilji shase suti shasprâcĭ",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "153",
+          "answer": "unâ sutâ cindzâcĭ trei",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "777",
+          "answer": "shapte suti shaptĭdzâcĭ shapte",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "948",
+          "answer": "nau suti patrudzâcĭ optu",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "2.020",
+          "answer": "dau njilji yinghicĭ",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "33.745",
+          "answer": "treidzâcĭ trei njilji shapte suti patrudzâcĭ cinci",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "5.123.467",
+          "answer": "cinci milioni unâ sutâ tresprâ-yinghicĭ njilji patru suti shaidzâcĭ shapte",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "222.000",
+          "answer": "dau suti dosprâ-yinghicĭ njilji",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "9.045",
+          "answer": "nau njilji patrudzâcĭ cinci",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "87.216",
+          "answer": "optudzâcĭ shapte njilji dau suti shasprâcĭ",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "323",
+          "answer": "trei suti tresprâ-yinghicĭ",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "50.105",
+          "answer": "cindzâcĭ njilji unâ sutâ cinci",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "42.240",
+          "answer": "patrudzâcĭ dau njilji dau suti patrudzâcĭ",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "424",
+          "answer": "patru suti pasprâ-yinghicĭ",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "60.065",
+          "answer": "shaidzâcĭ njilji shaidzâcĭ cinci",
+          "confidence": "inferred_from_theory"
+        }
+      ]
+    },
+    {
+      "id": "6-ex-2",
+      "title": "Ποιός αριθμός είναι;",
+      "type": "words_to_number",
+      "items": [
+        {
+          "prompt": "usprâ-yinghicĭ njilji trei suti patru",
+          "answer": "21.304",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "shaidzâdzĭ shasi milioni, una sutâ patru njilji yinghicĭ",
+          "answer": null,
+          "confidence": "uncertain"
+        },
+        {
+          "prompt": "shapti suti trei njilji",
+          "answer": "703.000",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "dau njilji cisprâ-yinghicĭ",
+          "answer": "2.025",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "shasprâ-yinghicĭ",
+          "answer": "26",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "trei suti cisprâcĭ",
+          "answer": "315",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "nausprâ-yinghicĭ njilji pasprâ-yinghicĭ",
+          "answer": "29.024",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "optŭdzâcĭ optu njilji unâ",
+          "answer": "88.001",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "patru suti pasprâcĭ",
+          "answer": "414",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "usprâ-yinghicĭ njilji dosprâcĭ",
+          "answer": "21.012",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "cisprâcĭ milioni cinci suti cindzâcĭ cinci",
+          "answer": "15.000.555",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "nau njilji usprâcĭ",
+          "answer": "9.011",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "unâ sutâ shasprâcĭ",
+          "answer": "116",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "shaptĭdzâcĭ trei njilji shaptĭdzâcĭ",
+          "answer": "73.070",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "shaptĭsprâ-yinghicĭ",
+          "answer": "27",
+          "confidence": "inferred_from_theory"
+        },
+        {
+          "prompt": "unâ njilje nau suti patrudzâcĭ unâ",
+          "answer": "1.941",
+          "confidence": "inferred_from_theory"
+        }
+      ]
+    },
+    {
+      "id": "6-ex-3",
+      "title": "Τι ώρα είναι;",
+      "type": "clock_image",
+      "source_image": "embedded image in Ασκήσεις 6. (2).docx",
+      "items": [
+        {
+          "id": 1,
+          "answer": null,
+          "note": "clock exercise present as embedded image; answer left blank in JSON"
+        },
+        {
+          "id": 2,
+          "answer": null,
+          "note": "clock exercise present as embedded image; answer left blank in JSON"
+        },
+        {
+          "id": 3,
+          "answer": null,
+          "note": "clock exercise present as embedded image; answer left blank in JSON"
+        },
+        {
+          "id": 4,
+          "answer": null,
+          "note": "clock exercise present as embedded image; answer left blank in JSON"
+        },
+        {
+          "id": 5,
+          "answer": null,
+          "note": "clock exercise present as embedded image; answer left blank in JSON"
+        },
+        {
+          "id": 6,
+          "answer": null,
+          "note": "clock exercise present as embedded image; answer left blank in JSON"
+        },
+        {
+          "id": 7,
+          "answer": null,
+          "note": "clock exercise present as embedded image; answer left blank in JSON"
+        },
+        {
+          "id": 8,
+          "answer": null,
+          "note": "clock exercise present as embedded image; answer left blank in JSON"
+        },
+        {
+          "id": 9,
+          "answer": null,
+          "note": "clock exercise present as embedded image; answer left blank in JSON"
+        },
+        {
+          "id": 10,
+          "answer": null,
+          "note": "clock exercise present as embedded image; answer left blank in JSON"
+        },
+        {
+          "id": 11,
+          "answer": null,
+          "note": "clock exercise present as embedded image; answer left blank in JSON"
+        },
+        {
+          "id": 12,
+          "answer": null,
+          "note": "clock exercise present as embedded image; answer left blank in JSON"
+        }
+      ]
+    },
+    {
+      "id": "6-ex-4",
+      "title": "Συμπλήρωσε τα κενά με τους μήνες.",
+      "type": "fill_in_the_blank",
+      "items": [
+        {
+          "prompt": "Cârtshunŭlu easte tu   __________.",
+          "answer": "Andreu",
+          "answer_type": "month",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "Pashtile easte tu  __________.",
+          "answer": "Aprilu",
+          "answer_type": "month",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "Protŭlu mesu di anu easte  __________.",
+          "answer": "Yinaru",
+          "answer_type": "month",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "Telefteulu mesu di anu easte __________.",
+          "answer": "Andreu",
+          "answer_type": "month",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "Veara îmbairâ tu __________.",
+          "answer": "Tshirisharu",
+          "answer_type": "month",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "Mesŭlu ci cade brumâ s’ dzîce __________.",
+          "answer": "Hamenu/Brumaru",
+          "answer_type": "month",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "Evaghelismolu easte tu __________ di __________.",
+          "answer": [
+            "25",
+            "Martsu"
+          ],
+          "answer_type": "day_and_month",
+          "confidence": "partly_inferred"
+        },
+        {
+          "prompt": "Brumarŭlu s’ dzîce shĭ  __________.",
+          "answer": "Hamenu",
+          "answer_type": "alternate_month_name",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "Altâ numâ tî Ayiu Dhimitri easte__________.",
+          "answer": "Sumedru",
+          "answer_type": "alternate_month_name",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "Nâinte di Alunarŭlu easte __________.",
+          "answer": "Tshirisharu",
+          "answer_type": "month",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "Dupu Avyustu easte  __________.",
+          "answer": "Yismatshunu",
+          "answer_type": "month",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "Sculjiadzĭlji îmbairâ tu __________.",
+          "answer": "Yismatshunu",
+          "answer_type": "month",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "Ma shcurtŭlu mesu di anu easte __________.",
+          "answer": "Flivaru/Shcutru",
+          "answer_type": "month",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "Tu mese di Aprilu sh’ Tshirisharŭlu easte __________.",
+          "answer": "Maiu",
+          "answer_type": "month",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "Mesŭlu ci yiurtâsimu Stâ Mâria easte __________.",
+          "answer": "Avyustu",
+          "answer_type": "month",
+          "confidence": "inferred"
+        }
+      ]
+    },
+    {
+      "id": "6-ex-5",
+      "title": "Συμπλήρωσε τα κενά με τις μέρες.",
+      "type": "fill_in_the_blank",
+      "items": [
+        {
+          "prompt": "Astadzâ i __________ sh’ mi ducu la sculjio.(Δευτέρα)",
+          "answer": "Lune",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "__________ amu mathima tasi îmvetsu limba armâneasca.  (Τετάρτη)",
+          "answer": "Njiercuri",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "Cathe __________ mi djocu cu sotsĭlji amei cu atoba. (Πέμπτη)",
+          "answer": "Djoe",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "__________ easte prota dzua di siptâmânâ. (Κυριακή)",
+          "answer": "Duminicâ",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "__________ sh’  Duminicâ nu mi ducu la lucru. (Σάββατο)",
+          "answer": "Sâmbâtâ",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "Cathe  __________ ascultu cântici tu radhiu. (Παρασκευή)",
+          "answer": "Vinjiri",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "__________ easte nâinte di Vinjiri. (Πέμπτη)",
+          "answer": "Djoe",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "Dupu Martsĭ easte __________. (Τετάρτη)",
+          "answer": "Njiercuri",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "__________ nâ ducemu tî café cu soatsili di la lucru. (Πέμπτη)",
+          "answer": "Djoe",
+          "confidence": "inferred"
+        },
+        {
+          "prompt": "__________ easte nâinte di Njercuri ma dupu Lune.(Τρίτη)",
+          "answer": "Martsĭ",
+          "confidence": "inferred"
+        }
+      ]
+    }
+  ],
+  "source_notes": [
+    "Δεν υπάρχει ξεχωριστό αρχείο απαντήσεων 6 στα διαθέσιμα uploads.",
+    "Οι απαντήσεις για τις ασκήσεις μηνών και ημερών ανασυντέθηκαν από τη θεωρία, το λεξιλόγιο και τις ενσωματωμένες εικόνες του αρχείου.",
+    "Η άσκηση της ώρας υπάρχει ως ενσωματωμένη εικόνα και δεν συνοδεύεται από καθαρό κείμενο λύσεων.",
+    "Τα ονόματα των μηνών/εποχών προήλθαν από ενσωματωμένες εικόνες του αρχείου της ενότητας."
+  ],
+  "ui_suggestions": {
+    "flashcards_from_vocabulary": [
+      "numbers_0_29",
+      "days_of_week",
+      "months_and_seasons",
+      "time_phrases"
+    ],
+    "quiz_candidates": [
+      "μετατροπή αριθμών από ψηφία σε λέξεις",
+      "μετατροπή από λέξεις σε αριθμούς",
+      "συμπλήρωση μήνα",
+      "συμπλήρωση μέρας",
+      "ερωτήσεις για την ώρα"
+    ],
+    "interactive_blocks": [
+      "drag-and-drop μήνες στις σωστές εποχές",
+      "flashcards αριθμών",
+      "κενά με μήνες/μέρες",
+      "clock-reading widget"
+    ]
+  }
+}
