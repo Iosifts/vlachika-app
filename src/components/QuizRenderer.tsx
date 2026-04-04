@@ -7,7 +7,7 @@ import { updateQuizScore } from "@/lib/progress";
 interface Props {
   flashcards: Flashcard[];
   vocabulary: VocabularySection[];
-  lessonNumber: number;
+  moduleId: string;
 }
 
 interface QuizQuestion {
@@ -76,7 +76,7 @@ function generateQuestions(
 export default function QuizRenderer({
   flashcards,
   vocabulary,
-  lessonNumber,
+  moduleId,
 }: Props) {
   const [started, setStarted] = useState(false);
   const [currentQ, setCurrentQ] = useState(0);
@@ -106,7 +106,7 @@ export default function QuizRenderer({
     return (
       <div className="text-center py-12">
         <h3 className="text-xl font-semibold text-warm-800 mb-3">
-          Quiz — Ενότητα {lessonNumber}
+          Quiz
         </h3>
         <p className="text-warm-600 mb-6">
           Ερωτήσεις πολλαπλής επιλογής βασισμένες στο λεξιλόγιο και τις κάρτες
@@ -179,7 +179,7 @@ export default function QuizRenderer({
     if (currentQ + 1 >= questions.length) {
       const finalScore =
         selected === q.correctAnswer ? score : score; // score already updated
-      updateQuizScore(lessonNumber, finalScore);
+      updateQuizScore(moduleId, finalScore);
       setFinished(true);
     } else {
       setCurrentQ((c) => c + 1);

@@ -6,10 +6,10 @@ import { updateFlashcardCount } from "@/lib/progress";
 
 interface Props {
   flashcards: Flashcard[];
-  lessonNumber: number;
+  moduleId: string;
 }
 
-export default function FlashcardViewer({ flashcards, lessonNumber }: Props) {
+export default function FlashcardViewer({ flashcards, moduleId }: Props) {
   const [current, setCurrent] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [practiced, setPracticed] = useState(0);
@@ -43,9 +43,9 @@ export default function FlashcardViewer({ flashcards, lessonNumber }: Props) {
   // Save progress
   useEffect(() => {
     if (practiced > 0) {
-      updateFlashcardCount(lessonNumber, practiced);
+      updateFlashcardCount(moduleId, practiced);
     }
-  }, [practiced, lessonNumber]);
+  }, [practiced, moduleId]);
 
   // Keyboard navigation
   useEffect(() => {

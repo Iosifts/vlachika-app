@@ -1,138 +1,141 @@
-// ─── Lesson metadata ────────────────────────────────────────
-export interface LessonMeta {
-  number: number;
-  title: string;
-  titleVlach?: string;
-  slug: string;
-  description: string;
-  materialStatus?: string;
-  available: boolean;
-  buttons: string[];
-}
+// ═══════════════════════════════════════════════════════════════
+// Module system — core types
+// ═══════════════════════════════════════════════════════════════
 
-// ─── Homepage card (normalised from JSON) ───────────────────
-export interface HomepageCard {
-  title: string;
-  description: string;
-  buttons: string[];
-}
+/** Every module has a type that determines its visual treatment and behaviour */
+export type ModuleType =
+  | "lesson"
+  | "exercise_set"
+  | "documentation_project"
+  | "fieldwork_task"
+  | "archive"
+  | "vocabulary_bank"
+  | "grammar_focus"
+  | "coming_soon";
 
-// ─── Theory ─────────────────────────────────────────────────
-export interface AlphabetEntry {
-  letters: string;
-  pronunciation?: string;
-  examples: string[];
-}
+/** Lifecycle status */
+export type ModuleStatus =
+  | "published"
+  | "draft"
+  | "partial"
+  | "coming_soon"
+  | "archived";
 
-export interface ConsonantCombination {
-  combination: string;
-  pronunciation: string;
-  example: string;
-}
+/** Who is the target audience for this module? */
+export type ModuleAudience =
+  | "learner"
+  | "contributor"
+  | "researcher"
+  | "all";
 
-export interface SimpleVowel {
-  symbol: string;
-  description: string;
-}
+/** Accent colour key (maps to CSS palette) */
+export type AccentColor =
+  | "rose"
+  | "olive"
+  | "sky"
+  | "terra"
+  | "warm";
 
-export interface Diphthong {
-  symbol: string;
-  pronounced_as?: string;
-  note?: string;
-  examples?: string[];
-}
+// ─── Module ─────────────────────────────────────────────────
 
-export interface VowelData {
-  simple_vowels: SimpleVowel[];
-  diphthongs: Diphthong[];
-  notes: string[];
-}
-
-export interface ComparisonPair {
-  left: string;
-  right: string;
-}
-
-export interface GuidedPracticeGroup {
-  header: string;
-  words: string[];
-}
-
-// ─── Pronouns / Verbs (Unit 2) ─────────────────────────────
-export interface PronounItem {
-  greek_person: string;
-  variant_forms: string[];
-}
-
-export interface VerbConjugation {
-  greek_person: string;
-  form_set_1: string;
-  form_set_2: string;
-}
-
-export interface DialogueLine {
-  speaker: string;
-  text: string;
-}
-
-export interface Dialogue {
+export interface Module {
   id: string;
+  type: ModuleType;
+  status: ModuleStatus;
   title: string;
-  lines: DialogueLine[];
+  subtitle?: string;
+  description: string;
+  audience: ModuleAudience;
+  tags?: string[];
+  order: number;
+  accentColor: AccentColor;
+  sections: ModuleSection[];
+  /** ISO date string of last edit */
+  lastUpdated?: string;
+  /** Arbitrary extra metadata (legacy unit number, source files, etc.) */
+  meta?: Record<string, unknown>;
 }
 
-export interface OverviewPhrase {
-  vlach: string;
-  greek: string;
+// ─── Section types ──────────────────────────────────────────
+
+export type SectionType =
+  | "theory"
+  | "vocabulary"
+  | "exercises"
+  | "flashcards"
+  | "quiz"
+  | "examples"
+  | "instructions"
+  | "phrase_collection"
+  | "audio_upload"
+  | "metadata_form"
+  | "notes"
+  | "registration_archive"
+  | "speaker_registration"
+  | "links"
+  | "resources"
+  | "review_status";
+
+export interface ModuleSection {
+  id: string;
+  type: SectionType;
+  title: string;
+  description?: string;
+  icon?: string;
+  order: number;
+  /* eslint-disable @typescript-eslint/no-explicit-any */
+  data: any;
 }
 
-// ─── Definite article tables (Unit 3) ───────────────────────
-export interface ParadigmRow {
-  singular_indefinite: string;
-  singular_definite: string;
-  plural_indefinite: string;
-  plural_definite: string;
+// ═══════════════════════════════════════════════════════════════
+// Native module content blocks
+// ═══════════════════════════════════════════════════════════════
+
+export interface TheoryContentBlock {
+  type:
+    | "heading"
+    | "paragraph"
+    | "callout"
+    | "bullet_list"
+    | "numbered_list"
+    | "example_pair"
+    | "table"
+    | "dialogue"
+    | "youtube"
+    | "quote";
+  title?: string;
+  text?: string;
+  items?: string[];
+  columns?: string[];
+  rows?: Array<Record<string, string>>;
+  vlach?: string;
+  greek?: string;
+  lines?: Array<{
+    speaker?: string;
+    text: string;
+    greek?: string;
+  }>;
+  url?: string;
+  caption?: string;
+  tone?: "info" | "warning" | "success" | "neutral";
 }
 
-export interface PatternRule {
-  gender: string;
-  rule: string;
-  example: string;
+export interface TheoryContent {
+  intro?: string;
+  paragraphs?: string[];
+  bulletPoints?: string[];
+  examples?: Array<{
+    title?: string;
+    vlach?: string;
+    greek?: string;
+  }>;
+  blocks?: TheoryContentBlock[];
 }
 
-export interface ConjugationRow {
-  person?: string;
-  greek_person?: string;
-  form?: string;
-  [key: string]: string | undefined;
-}
+// ═══════════════════════════════════════════════════════════════
+// Vocabulary types
+// ═══════════════════════════════════════════════════════════════
 
-// ─── Indefinite article table (Unit 4) ──────────────────────
-export interface NounArticleRow {
-  noun_singular: string;
-  definite: string;
-  indefinite: string;
-  note?: string;
-}
-
-// ─── Numbers / Time (Unit 6) ────────────────────────────────
-export interface NumberEntry {
-  number: string;
-  vlach: string;
-}
-
-export interface PhraseEntry {
-  vlach: string;
-  greek: string;
-}
-
-export interface SeasonMonthBlock {
-  season: string;
-  months: string[];
-  source?: string;
-}
-
-// ─── Vocabulary ─────────────────────────────────────────────
 export interface VocabularyItem {
   vlach: string;
   greek?: string | null;
@@ -146,51 +149,103 @@ export interface VocabularySection {
   items: VocabularyItem[];
 }
 
-// ─── Exercises ──────────────────────────────────────────────
-export interface ExerciseItem {
-  number?: number | string;
-  prompt?: string;
-  source_line?: string;
-  official_answer?: string;
-  official_translation?: string;
-  solved_text?: string;
-}
+// ═══════════════════════════════════════════════════════════════
+// Flashcard type
+// ═══════════════════════════════════════════════════════════════
 
-export interface Exercise {
-  id: string;
-  title: string;
-  type: string;
-  instruction?: string;
-  items: ExerciseItem[];
-  table_columns?: string[];
-  rows?: Record<string, string>[];
-}
-
-// ─── Flashcards ─────────────────────────────────────────────
 export interface Flashcard {
   type?: string;
   front: string;
   back: string;
 }
 
-// ─── Full lesson (normalised, consumed by UI) ───────────────
-export interface Lesson {
-  meta: LessonMeta;
-  theory: Record<string, unknown>;
-  vocabulary: VocabularySection[];
-  /* eslint-disable @typescript-eslint/no-explicit-any */
-  exercises: any[];
-  flashcards: Flashcard[];
+export interface LinkItem {
+  label: string;
+  url: string;
+  description?: string;
+  kind?: "youtube" | "article" | "audio" | "download" | "external";
 }
 
-// ─── Progress ───────────────────────────────────────────────
-export interface LessonProgress {
+export interface ResourceItem {
+  title: string;
+  description?: string;
+  url?: string;
+  type?: "pdf" | "worksheet" | "audio" | "video" | "reference" | "download";
+  metadata?: string;
+}
+
+export interface ExampleItem {
+  title?: string;
+  vlach?: string;
+  greek?: string;
+  note?: string;
+}
+
+export interface ReviewChecklistItem {
+  label: string;
+  done?: boolean;
+  notes?: string;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// Progress tracking
+// ═══════════════════════════════════════════════════════════════
+
+export interface ModuleProgress {
   viewedSections: string[];
   flashcardsPracticed: number;
   quizScore: number | null;
   completed: boolean;
+  /** For contribution modules: locally stored submissions */
+  submissions?: unknown[];
 }
 
 export interface AppProgress {
-  [lessonNumber: number]: LessonProgress;
+  [moduleId: string]: ModuleProgress;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// Contribution / documentation types
+// ═══════════════════════════════════════════════════════════════
+
+export interface PhraseEntry {
+  id: string;
+  vlach: string;
+  greek?: string;
+  context?: string;
+  speakerName?: string;
+  speakerAge?: string;
+  speakerPlace?: string;
+  audioFileName?: string;
+  dateRecorded?: string;
+  notes?: string;
+  status?: "draft" | "submitted" | "approved" | "flagged";
+}
+
+export interface SpeakerMetadata {
+  name: string;
+  age?: string;
+  place?: string;
+  region?: string;
+  dialect?: string;
+  notes?: string;
+}
+
+export interface RegistrationAudioFile {
+  id: string;
+  name: string;
+  size: number;
+  type: string;
+  url: string;
+  addedAt: string;
+}
+
+export interface SpeakerRegistration {
+  id: string;
+  createdAt: string;
+  updatedAt: string;
+  metadata: Record<string, string>;
+  phrases: PhraseEntry[];
+  audioFiles: RegistrationAudioFile[];
+  notes: string;
 }
