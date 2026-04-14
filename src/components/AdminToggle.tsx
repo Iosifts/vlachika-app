@@ -2,12 +2,31 @@
 
 import { useAdmin } from "./AdminContext";
 
+const ADMIN_PASSWORD = "vlaxika26";
+
 export default function AdminToggle() {
   const { isAdmin, toggle } = useAdmin();
 
+  const handleClick = () => {
+    if (isAdmin) {
+      // Turning OFF — no password needed
+      toggle();
+      return;
+    }
+
+    // Turning ON — ask for password
+    const input = prompt("Κωδικός admin:");
+    if (input === null) return; // cancelled
+    if (input !== ADMIN_PASSWORD) {
+      alert("Λάθος κωδικός.");
+      return;
+    }
+    toggle();
+  };
+
   return (
     <button
-      onClick={toggle}
+      onClick={handleClick}
       title={isAdmin ? "Απενεργοποίηση admin" : "Ενεργοποίηση admin"}
       className={`relative flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${
         isAdmin

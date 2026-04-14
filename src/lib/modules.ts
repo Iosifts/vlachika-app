@@ -74,6 +74,11 @@ function loadLegacySources(): Array<Record<string, unknown>> {
         unknown
       >;
     })
+    .filter((data) => {
+      // Ignore native Module-format files that were accidentally placed in the
+      // legacy directory. The legacy adapter expects the older lesson shape.
+      return !(typeof data.id === "string" && Array.isArray(data.sections));
+    })
     .sort((a, b) => {
       const aUnit = typeof a.unit === "object" && a.unit && "number" in a.unit
         ? Number((a.unit as { number?: unknown }).number)
@@ -148,22 +153,22 @@ function buildAllModules(): Module[] {
   return modules;
 }
 
-const allModules = buildAllModules();
-
 // ─── Public API ─────────────────────────────────────────────
 
 export function getAllModules(): Module[] {
-  return allModules;
+  return buildAllModules();
 }
 
 export function getModuleById(id: string): Module | undefined {
-  return allModules.find((m) => m.id === id);
+  return getAllModules().find((m) => m.id === id);
 }
 
 export function getModulesByType(type: Module["type"]): Module[] {
-  return allModules.filter((m) => m.type === type);
+  return getAllModules().filter((m) => m.type === type);
 }
 
 export function getPublishedModules(): Module[] {
-  return allModules.filter((m) => m.status !== "draft" && m.status !== "archived");
+  return getAllModules().filter(
+    (m) => m.status !== "draft" && m.status !== "archived"
+  );
 }

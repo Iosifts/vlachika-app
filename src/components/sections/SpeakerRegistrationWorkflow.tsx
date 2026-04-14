@@ -1,58 +1,12 @@
 "use client";
 
-import { useState, useCallback, useRef } from "react";
-import type {
-  ModuleSection,
-  PhraseEntry,
-  RegistrationAudioFile,
-  SpeakerRegistration,
-} from "@/lib/types";
-import {
-  loadActiveRegistration,
-  loadRegistrations,
-  createAndActivateRegistration,
-  setActiveRegistrationId,
-  updateRegistrationMetadata,
-  updateRegistrationPhrases,
-  updateRegistrationAudioFiles,
-  updateRegistrationNotes,
-} from "@/lib/registrations";
+import { useState, useEffect, useRef } from "react";
+import type { ModuleSection, PhraseEntry } from "@/lib/types";
+import { useActiveRegistration } from "@/hooks/useActiveRegistration";
 
 interface Props {
   section: ModuleSection;
   moduleId: string;
-}
-
-// ─── Helpers ────────────────────────────────────────────────
-
-function createEmptyEntry(): PhraseEntry {
-  return {
-    id: crypto.randomUUID(),
-    vlach: "",
-    greek: "",
-    context: "",
-    notes: "",
-    status: "draft",
-  };
-}
-
-function speakerLabel(reg: SpeakerRegistration): string {
-  const name =
-    reg.metadata.speakerName || reg.metadata.name || "";
-  const place =
-    reg.metadata.speakerPlace || reg.metadata.place || "";
-  if (name && place) return `${name} — ${place}`;
-  if (name) return name;
-  return "";
-}
-
-function hasContent(reg: SpeakerRegistration): boolean {
-  return (
-    !!reg.metadata.speakerName ||
-    reg.phrases.length > 0 ||
-    reg.audioFiles.length > 0 ||
-    !!reg.notes
-  );
 }
 
 function formatSize(bytes: number) {
@@ -61,8 +15,6 @@ function formatSize(bytes: number) {
   return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
 }
 
-// ─── Main component ─────────────────────────────────────────
-
 export default function SpeakerRegistrationWorkflow({
   section,
   moduleId,
@@ -70,175 +22,140 @@ export default function SpeakerRegistrationWorkflow({
   const { metadataFields, phraseFields, suggestedPrompts, audioConfig } =
     section.data;
 
-  // ── State ──────────────────────────────────────────────────
-
-  const [registration, setRegistration] = useState<SpeakerRegistration>(() =>
-    loadActiveRegistration(moduleId)
-  );
-
-  // UI state
-  const [speakerSaved, setSpeakerSaved] = useState(() => hasContent(registration));
-  const [showPhraseForm, setShowPhraseForm] = useState(false);
-  const [currentPhrase, setCurrentPhrase] = useState<PhraseEntry>(createEmptyEntry());
-  const [editingPhraseId, setEditingPhraseId] = useState<string | null>(null);
-  const [showSwitcher, setShowSwitcher] = useState(false);
-  const [savedFlash, setSavedFlash] = useState<string | null>(null);
+  const reg = useActiveRegistration(moduleId);
   const audioInputRef = useRef<HTMLInputElement>(null);
 
-  // ── Reload registration from storage ───────────────────────
+  // Local UI state
+  const [speakerSaved, setSpeakerSaved] = useState(false);
+  const [showPhraseForm, setShowPhraseForm] = useState(false);
+  const [currentPhrase, setCurrentPhrase] = useState<PhraseEntry>(reg.emptyPhrase());
+  const [editingPhraseId, setEditingPhraseId] = useState<string | null>(null);
+  const [showSwitcher, setShowSwitcher] = useState(false);
+  const hasInitialized = useRef(false);
 
-  const reload = useCallback(() => {
-    const fresh = loadActiveRegistration(moduleId);
-    setRegistration(fresh);
-    setSpeakerSaved(hasContent(fresh));
-  }, [moduleId]);
-
-  // ── Flash "saved" indicator ────────────────────────────────
-
-  const flash = useCallback((label: string) => {
-    setSavedFlash(label);
-    setTimeout(() => setSavedFlash(null), 1500);
+  // Init on mount
+  useEffect(() => {
+    reg.init();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // ── Speaker metadata ──────────────────────────────────────
+  // Set speakerSaved ONLY on initial load — not while user is typing
+  useEffect(() => {
+    if (reg.loading || hasInitialized.current) return;
+    hasInitialized.current = true;
+    const hasName = !!reg.registration.metadata.speakerName?.trim();
+    const hasContent =
+      hasName ||
+      reg.registration.phrases.length > 0 ||
+      reg.registration.audioFiles.length > 0;
+    setSpeakerSaved(hasContent && hasName);
+  }, [reg.loading, reg.registration]);
 
-  const updateMetaField = (name: string, value: string) => {
-    setRegistration((prev) => ({
-      ...prev,
-      metadata: { ...prev.metadata, [name]: value },
-    }));
-  };
+  // ── Derived ──
 
-  const saveSpeaker = () => {
-    updateRegistrationMetadata(moduleId, registration.id, registration.metadata);
+  const { registration } = reg;
+  const label = (() => {
+    const name = registration.metadata.speakerName || "";
+    const place = registration.metadata.speakerPlace || "";
+    if (name && place) return `${name} — ${place}`;
+    if (name) return name;
+    return "";
+  })();
+  const hasSpeakerName = !!registration.metadata.speakerName?.trim();
+  const maxSizeMB = audioConfig?.maxSizeMB || 50;
+
+  // ── Handlers ──
+
+  const handleSaveSpeaker = async () => {
+    await reg.saveMetadata(registration.metadata);
     setSpeakerSaved(true);
-    flash("Στοιχεία ομιλητή αποθηκεύτηκαν");
   };
 
-  // ── Phrases ────────────────────────────────────────────────
-
-  const persistPhrases = useCallback(
-    (updated: PhraseEntry[]) => {
-      setRegistration((prev) => ({ ...prev, phrases: updated }));
-      updateRegistrationPhrases(moduleId, registration.id, updated);
-    },
-    [moduleId, registration.id]
-  );
-
-  const addOrUpdatePhrase = () => {
+  const handleAddOrUpdatePhrase = async () => {
     if (!currentPhrase.vlach.trim()) return;
     if (editingPhraseId) {
-      persistPhrases(
-        registration.phrases.map((p) =>
-          p.id === editingPhraseId ? { ...currentPhrase, id: editingPhraseId } : p
-        )
-      );
+      await reg.updatePhrase({ ...currentPhrase, id: editingPhraseId });
     } else {
-      persistPhrases([...registration.phrases, { ...currentPhrase, status: "draft" }]);
+      await reg.addPhrase({ ...currentPhrase, status: "draft" });
     }
-    setCurrentPhrase(createEmptyEntry());
+    setCurrentPhrase(reg.emptyPhrase());
     setEditingPhraseId(null);
     setShowPhraseForm(false);
-    flash("Φράση αποθηκεύτηκε");
   };
 
-  const removePhrase = (id: string) => {
-    persistPhrases(registration.phrases.filter((p) => p.id !== id));
-    if (editingPhraseId === id) {
-      setCurrentPhrase(createEmptyEntry());
-      setEditingPhraseId(null);
-    }
-  };
-
-  const startEditPhrase = (entry: PhraseEntry) => {
+  const handleEditPhrase = (entry: PhraseEntry) => {
     setCurrentPhrase(entry);
     setEditingPhraseId(entry.id);
     setShowPhraseForm(true);
   };
 
-  // ── Audio ──────────────────────────────────────────────────
+  const handleRemovePhrase = async (id: string) => {
+    await reg.removePhrase(id);
+    if (editingPhraseId === id) {
+      setCurrentPhrase(reg.emptyPhrase());
+      setEditingPhraseId(null);
+    }
+  };
 
-  const maxSizeMB = audioConfig?.maxSizeMB || 50;
-
-  const handleAudioUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleAudioUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const fileList = e.target.files;
     if (!fileList) return;
-    const newFiles: RegistrationAudioFile[] = [];
     for (const file of Array.from(fileList)) {
       if (file.size > maxSizeMB * 1024 * 1024) {
         alert(`Το αρχείο "${file.name}" υπερβαίνει το όριο ${maxSizeMB}MB.`);
         continue;
       }
-      newFiles.push({
-        id: crypto.randomUUID(),
-        name: file.name,
-        size: file.size,
-        type: file.type,
-        url: URL.createObjectURL(file),
-        addedAt: new Date().toISOString(),
-      });
-    }
-    if (newFiles.length > 0) {
-      const updated = [...registration.audioFiles, ...newFiles];
-      setRegistration((prev) => ({ ...prev, audioFiles: updated }));
-      updateRegistrationAudioFiles(moduleId, registration.id, updated);
-      flash("Αρχείο ηχογράφησης προστέθηκε");
+      await reg.uploadAudio(file);
     }
     if (audioInputRef.current) audioInputRef.current.value = "";
   };
 
-  const removeAudio = (id: string) => {
-    const updated = registration.audioFiles.filter((f) => f.id !== id);
-    setRegistration((prev) => ({ ...prev, audioFiles: updated }));
-    updateRegistrationAudioFiles(moduleId, registration.id, updated);
+  const handleSaveNotes = async () => {
+    await reg.saveNotes(registration.notes);
   };
 
-  // ── Notes ──────────────────────────────────────────────────
-
-  const saveNotes = () => {
-    updateRegistrationNotes(moduleId, registration.id, registration.notes);
-    flash("Σημειώσεις αποθηκεύτηκαν");
-  };
-
-  // ── Switch / new registration ──────────────────────────────
-
-  const allRegistrations = loadRegistrations(moduleId);
-
-  const switchTo = (id: string) => {
-    setActiveRegistrationId(moduleId, id);
+  const handleSwitchTo = async (id: string) => {
+    await reg.switchTo(id);
     setShowSwitcher(false);
-    reload();
+    // Re-evaluate on next render cycle
+    hasInitialized.current = false;
+    setSpeakerSaved(false);
   };
 
-  const startNew = () => {
-    createAndActivateRegistration(moduleId);
+  const handleStartNew = async () => {
+    await reg.createNew();
     setShowSwitcher(false);
-    reload();
+    hasInitialized.current = false;
     setSpeakerSaved(false);
     setShowPhraseForm(false);
-    setCurrentPhrase(createEmptyEntry());
+    setCurrentPhrase(reg.emptyPhrase());
     setEditingPhraseId(null);
   };
 
-  // ── Derived ────────────────────────────────────────────────
+  // ── Loading ──
 
-  const label = speakerLabel(registration);
-  const hasSpeakerName = !!registration.metadata.speakerName?.trim();
+  if (reg.loading) {
+    return (
+      <div className="flex items-center justify-center py-16">
+        <div className="text-warm-400 text-sm animate-pulse">Φόρτωση...</div>
+      </div>
+    );
+  }
 
-  // ═══════════════════════════════════════════════════════════
+  // ═══════════════════════════════════════════════════════
   // RENDER
-  // ═══════════════════════════════════════════════════════════
+  // ═══════════════════════════════════════════════════════
 
   return (
     <div className="space-y-8">
-      {/* ── Saved flash ── */}
-      {savedFlash && (
+      {/* ── Flash ── */}
+      {reg.flash && (
         <div className="fixed top-4 right-4 z-50 rounded-lg bg-olive-600 px-4 py-2.5 text-sm font-medium text-white shadow-lg animate-pulse">
-          {savedFlash}
+          {reg.flash}
         </div>
       )}
 
-      {/* ── Top bar: current speaker + actions ── */}
+      {/* ── Top bar ── */}
       <div className="surface-card rounded-xl p-4 flex flex-wrap items-center justify-between gap-3">
         <div>
           <p className="text-xs uppercase tracking-wide text-warm-400">
@@ -248,7 +165,8 @@ export default function SpeakerRegistrationWorkflow({
             {label || "Νέος ομιλητής (χωρίς όνομα)"}
           </p>
           <p className="text-xs text-warm-400 mt-0.5">
-            {registration.phrases.length} φράσεις · {registration.audioFiles.length} ηχογραφήσεις
+            {registration.phrases.length} φράσεις ·{" "}
+            {registration.audioFiles.length} ηχογραφήσεις
           </p>
         </div>
         <div className="flex gap-2">
@@ -261,41 +179,43 @@ export default function SpeakerRegistrationWorkflow({
           </button>
           <button
             type="button"
-            onClick={startNew}
-            className="rounded-lg bg-olive-600 px-3 py-2 text-xs font-medium text-white hover:bg-olive-700 transition-colors"
+            onClick={handleStartNew}
+            disabled={reg.saving}
+            className="rounded-lg bg-olive-600 px-3 py-2 text-xs font-medium text-white hover:bg-olive-700 transition-colors disabled:opacity-50"
           >
             + Νέα καταγραφή
           </button>
         </div>
       </div>
 
-      {/* ── Switcher dropdown ── */}
-      {showSwitcher && allRegistrations.length > 1 && (
+      {/* ── Switcher ── */}
+      {showSwitcher && reg.allRegistrations.length > 1 && (
         <div className="surface-card rounded-xl overflow-hidden border border-warm-200">
           <p className="px-4 py-2 bg-warm-50 text-xs font-medium text-warm-500 uppercase tracking-wide">
             Υπάρχουσες καταγραφές
           </p>
           <div className="divide-y divide-warm-100">
-            {allRegistrations
+            {reg.allRegistrations
               .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt))
-              .map((reg) => {
-                const isActive = reg.id === registration.id;
-                const regLabel = speakerLabel(reg) || "Χωρίς όνομα";
+              .map((r) => {
+                const isActive = r.id === registration.id;
+                const rLabel =
+                  r.metadata.speakerName || r.metadata.name || "Χωρίς όνομα";
                 return (
                   <button
-                    key={reg.id}
+                    key={r.id}
                     type="button"
                     disabled={isActive}
-                    onClick={() => switchTo(reg.id)}
+                    onClick={() => handleSwitchTo(r.id)}
                     className={`w-full px-4 py-3 text-left text-sm transition-colors ${
                       isActive
                         ? "bg-olive-50 text-olive-700 font-medium cursor-default"
                         : "hover:bg-warm-50 text-warm-700"
                     }`}
                   >
-                    <span>{regLabel}</span>
+                    <span>{rLabel}</span>
                     <span className="ml-2 text-xs text-warm-400">
-                      {reg.phrases.length} φράσεις
+                      {r.phrases.length} φράσεις
                       {isActive && " · ενεργή"}
                     </span>
                   </button>
@@ -305,13 +225,13 @@ export default function SpeakerRegistrationWorkflow({
         </div>
       )}
 
-      {/* ═══════════════════════════════════════════════════════ */}
-      {/* STEP 1: Speaker details                                */}
-      {/* ═══════════════════════════════════════════════════════ */}
+      {/* ═══ STEP 1: Speaker details ═══ */}
       <section>
         <button
           type="button"
-          onClick={() => setSpeakerSaved(!speakerSaved || !hasSpeakerName ? false : !speakerSaved)}
+          onClick={() =>
+            setSpeakerSaved(!speakerSaved || !hasSpeakerName ? false : !speakerSaved)
+          }
           className="w-full flex items-center justify-between gap-3 mb-3"
         >
           <h3 className="text-base font-semibold text-warm-800 flex items-center gap-2">
@@ -351,8 +271,13 @@ export default function SpeakerRegistrationWorkflow({
                   <input
                     type={field.type || "text"}
                     value={registration.metadata[field.name] || ""}
-                    onChange={(e) => updateMetaField(field.name, e.target.value)}
-                    className="w-full px-3 py-2.5 rounded-lg border border-warm-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-olive-300 focus:border-olive-300"
+                    onChange={(e) =>
+                      reg.setLocalMetadata((prev) => ({
+                        ...prev,
+                        [field.name]: e.target.value,
+                      }))
+                    }
+                    className="w-full px-3 py-2.5 rounded-lg border border-warm-300 bg-warm-50 text-sm text-warm-900 focus:outline-none focus:ring-2 focus:ring-olive-400 focus:border-olive-400 focus:bg-white placeholder:text-warm-400"
                     placeholder={field.label}
                   />
                 </div>
@@ -360,11 +285,11 @@ export default function SpeakerRegistrationWorkflow({
             )}
             <button
               type="button"
-              onClick={saveSpeaker}
-              disabled={!registration.metadata.speakerName?.trim()}
+              onClick={handleSaveSpeaker}
+              disabled={!registration.metadata.speakerName?.trim() || reg.saving}
               className="px-5 py-2.5 bg-olive-600 text-white rounded-lg text-sm font-medium hover:bg-olive-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
             >
-              Αποθήκευση στοιχείων
+              {reg.saving ? "Αποθήκευση..." : "Αποθήκευση στοιχείων"}
             </button>
             {!registration.metadata.speakerName?.trim() && (
               <p className="text-xs text-warm-400 italic">
@@ -375,9 +300,7 @@ export default function SpeakerRegistrationWorkflow({
         )}
       </section>
 
-      {/* ═══════════════════════════════════════════════════════ */}
-      {/* STEP 2+: Content (only if speaker has a name)          */}
-      {/* ═══════════════════════════════════════════════════════ */}
+      {/* ═══ STEPS 2-4: Only if speaker is identified ═══ */}
       {hasSpeakerName && (
         <>
           {/* ── 2. Phrases ── */}
@@ -392,26 +315,27 @@ export default function SpeakerRegistrationWorkflow({
               </span>
             </h3>
 
-            {/* Suggested prompts */}
-            {suggestedPrompts && suggestedPrompts.length > 0 && registration.phrases.length === 0 && (
-              <div className="mb-4">
-                <p className="text-xs text-warm-500 mb-2">
-                  Ιδέες — τι να ρωτήσεις τον ομιλητή:
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {suggestedPrompts.map((prompt: string, i: number) => (
-                    <span
-                      key={i}
-                      className="inline-block rounded-full bg-warm-50 px-3 py-1.5 text-xs text-warm-600 italic"
-                    >
-                      &ldquo;{prompt}&rdquo;
-                    </span>
-                  ))}
+            {/* Suggested prompts (only when no phrases yet) */}
+            {suggestedPrompts?.length > 0 &&
+              registration.phrases.length === 0 && (
+                <div className="mb-4">
+                  <p className="text-xs text-warm-500 mb-2">
+                    Ιδέες — τι να ρωτήσεις τον ομιλητή:
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {suggestedPrompts.map((prompt: string, i: number) => (
+                      <span
+                        key={i}
+                        className="inline-block rounded-full bg-warm-50 px-3 py-1.5 text-xs text-warm-600 italic"
+                      >
+                        &ldquo;{prompt}&rdquo;
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
 
-            {/* Phrase list */}
+            {/* Phrase table */}
             {registration.phrases.length > 0 && (
               <div className="surface-card rounded-xl overflow-hidden mb-4">
                 <div className="overflow-x-auto">
@@ -432,7 +356,9 @@ export default function SpeakerRegistrationWorkflow({
                           key={entry.id}
                           className="hover:bg-warm-50/60 transition-colors"
                         >
-                          <td className="px-4 py-2.5 vlach-text">{entry.vlach}</td>
+                          <td className="px-4 py-2.5 vlach-text">
+                            {entry.vlach}
+                          </td>
                           <td className="px-4 py-2.5 text-warm-700">
                             {entry.greek || "—"}
                           </td>
@@ -443,14 +369,14 @@ export default function SpeakerRegistrationWorkflow({
                             <div className="flex items-center gap-2">
                               <button
                                 type="button"
-                                onClick={() => startEditPhrase(entry)}
+                                onClick={() => handleEditPhrase(entry)}
                                 className="text-sky-600 hover:text-sky-800 text-xs font-medium"
                               >
                                 Επεξ.
                               </button>
                               <button
                                 type="button"
-                                onClick={() => removePhrase(entry.id)}
+                                onClick={() => handleRemovePhrase(entry.id)}
                                 className="text-rose-500 hover:text-rose-700 text-xs font-medium"
                               >
                                 Διαγ.
@@ -476,7 +402,7 @@ export default function SpeakerRegistrationWorkflow({
                     type="button"
                     onClick={() => {
                       setShowPhraseForm(false);
-                      setCurrentPhrase(createEmptyEntry());
+                      setCurrentPhrase(reg.emptyPhrase());
                       setEditingPhraseId(null);
                     }}
                     className="text-xs text-warm-400 hover:text-warm-600"
@@ -500,9 +426,9 @@ export default function SpeakerRegistrationWorkflow({
                       <input
                         type="text"
                         value={
-                          (currentPhrase as unknown as Record<string, string>)[
-                            field.name
-                          ] || ""
+                          (
+                            currentPhrase as unknown as Record<string, string>
+                          )[field.name] || ""
                         }
                         onChange={(e) =>
                           setCurrentPhrase((prev) => ({
@@ -510,7 +436,7 @@ export default function SpeakerRegistrationWorkflow({
                             [field.name]: e.target.value,
                           }))
                         }
-                        className="w-full px-3 py-2 rounded-lg border border-warm-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-olive-300"
+                        className="w-full px-3 py-2 rounded-lg border border-warm-300 bg-warm-50 text-sm text-warm-900 focus:outline-none focus:ring-2 focus:ring-olive-400 focus:bg-white placeholder:text-warm-400"
                         placeholder={field.label}
                       />
                     </div>
@@ -518,8 +444,8 @@ export default function SpeakerRegistrationWorkflow({
                 )}
                 <button
                   type="button"
-                  onClick={addOrUpdatePhrase}
-                  disabled={!currentPhrase.vlach.trim()}
+                  onClick={handleAddOrUpdatePhrase}
+                  disabled={!currentPhrase.vlach.trim() || reg.saving}
                   className="px-4 py-2 bg-olive-600 text-white rounded-lg text-sm font-medium hover:bg-olive-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
                 >
                   {editingPhraseId ? "Αποθήκευση αλλαγών" : "Προσθήκη"}
@@ -529,7 +455,7 @@ export default function SpeakerRegistrationWorkflow({
               <button
                 type="button"
                 onClick={() => {
-                  setCurrentPhrase(createEmptyEntry());
+                  setCurrentPhrase(reg.emptyPhrase());
                   setEditingPhraseId(null);
                   setShowPhraseForm(true);
                 }}
@@ -576,7 +502,9 @@ export default function SpeakerRegistrationWorkflow({
                       <p className="text-sm font-medium text-warm-800 truncate">
                         {file.name}
                       </p>
-                      <p className="text-xs text-warm-400">{formatSize(file.size)}</p>
+                      <p className="text-xs text-warm-400">
+                        {formatSize(file.size)}
+                      </p>
                     </div>
                     {file.url && (
                       <audio controls className="h-8 max-w-[200px]">
@@ -585,7 +513,7 @@ export default function SpeakerRegistrationWorkflow({
                     )}
                     <button
                       type="button"
-                      onClick={() => removeAudio(file.id)}
+                      onClick={() => reg.removeAudio(file.id)}
                       className="text-warm-300 hover:text-rose-500 transition-colors flex-shrink-0"
                     >
                       <svg
@@ -652,33 +580,33 @@ export default function SpeakerRegistrationWorkflow({
             <textarea
               rows={4}
               value={registration.notes}
-              onChange={(e) =>
-                setRegistration((prev) => ({ ...prev, notes: e.target.value }))
-              }
+              onChange={(e) => reg.setLocalNotes(e.target.value)}
               placeholder="Παρατηρήσεις, ιδιαιτερότητες ντοπιολαλιάς, πλαίσιο συνέντευξης..."
-              className="w-full px-4 py-3 rounded-xl border border-warm-200 bg-white text-sm leading-7 focus:outline-none focus:ring-2 focus:ring-warm-300 resize-y"
+              className="w-full px-4 py-3 rounded-xl border border-warm-300 bg-warm-50 text-sm text-warm-900 leading-7 focus:outline-none focus:ring-2 focus:ring-warm-400 focus:bg-white placeholder:text-warm-400 resize-y"
             />
             <button
               type="button"
-              onClick={saveNotes}
-              className="mt-2 px-4 py-2 bg-warm-700 text-white rounded-lg text-xs font-medium hover:bg-warm-800 transition-colors"
+              onClick={handleSaveNotes}
+              disabled={reg.saving}
+              className="mt-2 px-4 py-2 bg-warm-700 text-white rounded-lg text-xs font-medium hover:bg-warm-800 transition-colors disabled:opacity-50"
             >
-              Αποθήκευση σημειώσεων
+              {reg.saving ? "Αποθήκευση..." : "Αποθήκευση σημειώσεων"}
             </button>
           </section>
 
-          {/* ── Finish / new ── */}
+          {/* ── Finish ── */}
           <div className="border-t border-warm-200 pt-6 flex flex-wrap gap-3">
             <button
               type="button"
-              onClick={startNew}
-              className="rounded-lg bg-olive-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-olive-700 transition-colors"
+              onClick={handleStartNew}
+              disabled={reg.saving}
+              className="rounded-lg bg-olive-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-olive-700 transition-colors disabled:opacity-50"
             >
               Ολοκλήρωση & νέα καταγραφή
             </button>
             <p className="text-xs text-warm-400 self-center">
-              Η τρέχουσα καταγραφή αποθηκεύεται αυτόματα. Πατώντας εδώ δημιουργείς
-              νέα κενή καταγραφή για νέο ομιλητή.
+              Η τρέχουσα καταγραφή αποθηκεύεται αυτόματα. Πατώντας εδώ
+              δημιουργείς νέα κενή καταγραφή για νέο ομιλητή.
             </p>
           </div>
         </>

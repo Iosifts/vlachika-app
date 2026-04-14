@@ -1,12 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect } from "react";
 import type { ModuleSection, SpeakerRegistration } from "@/lib/types";
-import {
-  deleteRegistration,
-  loadRegistrations,
-  setActiveRegistrationId,
-} from "@/lib/registrations";
+import { useRegistrationArchive } from "@/hooks/useRegistrationArchive";
 import { useAdmin } from "../AdminContext";
 
 interface Props {
@@ -20,15 +16,6 @@ function speakerLabel(reg: SpeakerRegistration) {
   return place ? `${name} — ${place}` : name;
 }
 
-function hasContent(reg: SpeakerRegistration): boolean {
-  return (
-    !!reg.metadata.speakerName ||
-    reg.phrases.length > 0 ||
-    reg.audioFiles.length > 0 ||
-    !!reg.notes
-  );
-}
-
 function formatSize(bytes: number) {
   if (bytes < 1024) return `${bytes} B`;
   if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
@@ -37,32 +24,22 @@ function formatSize(bytes: number) {
 
 export default function RegistrationArchiveSection({ moduleId }: Props) {
   const { isAdmin } = useAdmin();
-  const [registrations, setRegistrations] = useState<SpeakerRegistration[]>(
-    () => loadRegistrations(moduleId).filter(hasContent)
-  );
-  const [selectedId, setSelectedId] = useState<string | null>(
-    registrations[0]?.id || null
-  );
+  const archive = useRegistrationArchive(moduleId);
 
-  const selected =
-    registrations.find((r) => r.id === selectedId) || null;
+  useEffect(() => {
+    archive.init();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
-  const handleDelete = (id: string) => {
-    if (!confirm("Σίγουρα θέλεις να διαγράψεις αυτή την καταγραφή;")) return;
-    const next = deleteRegistration(moduleId, id);
-    const filtered = next.filter(hasContent);
-    setRegistrations(filtered);
-    setSelectedId(filtered[0]?.id || null);
-  };
-
-  const handleActivate = (id: string) => {
-    setActiveRegistrationId(moduleId, id);
-    alert(
-      "Η καταγραφή ενεργοποιήθηκε. Πήγαινε στην καρτέλα «Καταγραφή ομιλητή» για επεξεργασία."
+  if (archive.loading) {
+    return (
+      <div className="flex items-center justify-center py-16">
+        <div className="text-warm-400 text-sm animate-pulse">Φόρτωση...</div>
+      </div>
     );
-  };
+  }
 
-  if (registrations.length === 0) {
+  if (archive.registrations.length === 0) {
     return (
       <div className="surface-card rounded-xl p-8 text-center">
         <svg
@@ -88,6 +65,18 @@ export default function RegistrationArchiveSection({ moduleId }: Props) {
     );
   }
 
+  const handleDelete = async (id: string) => {
+    if (!confirm("Σίγουρα θέλεις να διαγράψεις αυτή την καταγραφή;")) return;
+    await archive.remove(id);
+  };
+
+  const handleActivate = (id: string) => {
+    archive.activate(id);
+    alert(
+      "Η καταγραφή ενεργοποιήθηκε. Πήγαινε στην καρτέλα «Καταγραφή ομιλητή» για επεξεργασία."
+    );
+  };
+
   return (
     <div className="space-y-6">
       <div>
@@ -104,17 +93,19 @@ export default function RegistrationArchiveSection({ moduleId }: Props) {
         {/* ── List ── */}
         <div className="surface-card rounded-xl overflow-hidden">
           <div className="divide-y divide-warm-100">
-            {registrations
+            {archive.registrations
               .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt))
               .map((reg) => {
-                const isSel = reg.id === selected?.id;
+                const isSel = reg.id === archive.selected?.id;
                 return (
                   <button
                     key={reg.id}
                     type="button"
-                    onClick={() => setSelectedId(reg.id)}
+                    onClick={() => archive.select(reg.id)}
                     className={`w-full px-4 py-4 text-left transition-colors ${
-                      isSel ? "bg-sky-50" : "bg-transparent hover:bg-warm-50"
+                      isSel
+                        ? "bg-sky-50"
+                        : "bg-transparent hover:bg-warm-50"
                     }`}
                   >
                     <p className="font-medium text-warm-800">
@@ -133,23 +124,27 @@ export default function RegistrationArchiveSection({ moduleId }: Props) {
 
         {/* ── Detail ── */}
         <div className="surface-card rounded-xl p-6">
-          {selected ? (
+          {archive.selected ? (
             <div className="space-y-6">
               {/* Header */}
               <div className="flex items-start justify-between gap-3">
                 <div>
                   <h4 className="text-lg font-semibold text-warm-800">
-                    {speakerLabel(selected)}
+                    {speakerLabel(archive.selected)}
                   </h4>
                   <p className="text-xs text-warm-400 mt-0.5">
                     Δημιουργία:{" "}
-                    {new Date(selected.createdAt).toLocaleDateString("el-GR", {
+                    {new Date(
+                      archive.selected.createdAt
+                    ).toLocaleDateString("el-GR", {
                       day: "numeric",
                       month: "short",
                       year: "numeric",
                     })}{" "}
                     · Τελ. ενημέρωση:{" "}
-                    {new Date(selected.updatedAt).toLocaleDateString("el-GR", {
+                    {new Date(
+                      archive.selected.updatedAt
+                    ).toLocaleDateString("el-GR", {
                       day: "numeric",
                       month: "short",
                       year: "numeric",
@@ -160,14 +155,14 @@ export default function RegistrationArchiveSection({ moduleId }: Props) {
                   <div className="flex gap-2">
                     <button
                       type="button"
-                      onClick={() => handleActivate(selected.id)}
+                      onClick={() => handleActivate(archive.selected!.id)}
                       className="rounded-lg border border-warm-200 px-3 py-1.5 text-xs font-medium text-warm-600 hover:bg-warm-50 transition-colors"
                     >
                       Επεξεργασία
                     </button>
                     <button
                       type="button"
-                      onClick={() => handleDelete(selected.id)}
+                      onClick={() => handleDelete(archive.selected!.id)}
                       className="rounded-lg border border-rose-200 px-3 py-1.5 text-xs font-medium text-rose-500 hover:bg-rose-50 transition-colors"
                     >
                       Διαγραφή
@@ -177,13 +172,13 @@ export default function RegistrationArchiveSection({ moduleId }: Props) {
               </div>
 
               {/* Metadata grid */}
-              {Object.keys(selected.metadata).length > 0 && (
+              {Object.keys(archive.selected.metadata).length > 0 && (
                 <div>
                   <h5 className="text-sm font-semibold text-warm-700 mb-2">
                     Στοιχεία ομιλητή
                   </h5>
                   <div className="grid gap-2 sm:grid-cols-2">
-                    {Object.entries(selected.metadata)
+                    {Object.entries(archive.selected.metadata)
                       .filter(([, v]) => !!v)
                       .map(([key, value]) => (
                         <div
@@ -201,11 +196,11 @@ export default function RegistrationArchiveSection({ moduleId }: Props) {
               {/* Phrases */}
               <div>
                 <h5 className="text-sm font-semibold text-warm-700 mb-2">
-                  Φράσεις ({selected.phrases.length})
+                  Φράσεις ({archive.selected.phrases.length})
                 </h5>
-                {selected.phrases.length > 0 ? (
+                {archive.selected.phrases.length > 0 ? (
                   <div className="space-y-2">
-                    {selected.phrases.map((phrase) => (
+                    {archive.selected.phrases.map((phrase) => (
                       <div
                         key={phrase.id}
                         className="rounded-lg border border-warm-200 bg-white p-3"
@@ -218,7 +213,9 @@ export default function RegistrationArchiveSection({ moduleId }: Props) {
                         )}
                         {(phrase.context || phrase.notes) && (
                           <div className="mt-1.5 space-y-0.5 text-xs text-warm-400">
-                            {phrase.context && <p>Πλαίσιο: {phrase.context}</p>}
+                            {phrase.context && (
+                              <p>Πλαίσιο: {phrase.context}</p>
+                            )}
                             {phrase.notes && (
                               <p>Σημειώσεις: {phrase.notes}</p>
                             )}
@@ -235,11 +232,11 @@ export default function RegistrationArchiveSection({ moduleId }: Props) {
               {/* Audio files */}
               <div>
                 <h5 className="text-sm font-semibold text-warm-700 mb-2">
-                  Ηχογραφήσεις ({selected.audioFiles.length})
+                  Ηχογραφήσεις ({archive.selected.audioFiles.length})
                 </h5>
-                {selected.audioFiles.length > 0 ? (
+                {archive.selected.audioFiles.length > 0 ? (
                   <div className="space-y-2">
-                    {selected.audioFiles.map((file) => (
+                    {archive.selected.audioFiles.map((file) => (
                       <div
                         key={file.id}
                         className="flex items-center justify-between rounded-lg border border-warm-200 bg-white px-3 py-2"
@@ -272,13 +269,13 @@ export default function RegistrationArchiveSection({ moduleId }: Props) {
               </div>
 
               {/* Notes */}
-              {selected.notes && (
+              {archive.selected.notes && (
                 <div>
                   <h5 className="text-sm font-semibold text-warm-700 mb-2">
                     Σημειώσεις
                   </h5>
                   <div className="rounded-lg border border-warm-200 bg-white p-4 text-sm leading-7 text-warm-700 whitespace-pre-wrap">
-                    {selected.notes}
+                    {archive.selected.notes}
                   </div>
                 </div>
               )}
