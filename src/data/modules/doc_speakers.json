@@ -1,0 +1,76 @@
+{
+  "id": "doc-speakers-2026",
+  "type": "documentation_project",
+  "status": "published",
+  "title": "Καταγραφή φυσικών ομιλητών",
+  "subtitle": "Documentarea a grâitoriloru",
+  "description": "Βρες και κατέγραψε φυσικούς ομιλητές βλάχικης. Μάζεψε λέξεις, φράσεις, ηχογραφήσεις και στοιχεία για κάθε ομιλητή.",
+  "audience": "contributor",
+  "tags": ["τεκμηρίωση", "ομιλητές", "ηχογράφηση", "διατήρηση"],
+  "order": 100,
+  "lastUpdated": "2026-04-03",
+  "accentColor": "olive",
+  "sections": [
+    {
+      "id": "instructions-speakers",
+      "type": "instructions",
+      "title": "Οδηγίες",
+      "order": 0,
+      "data": {
+        "heading": "Πώς να καταγράψεις ομιλητές",
+        "steps": [
+          "Βρες έναν φυσικό ομιλητή βλάχικης στην περιοχή σου ή στο οικογενειακό σου περιβάλλον.",
+          "Ζήτα του/της να πει μερικές λέξεις ή φράσεις στα βλάχικα.",
+          "Κατέγραψε τις φράσεις γραπτά — ακολούθησε ακριβώς τη γραφή που μάθαμε στα μαθήματα.",
+          "Αν μπορείς, ηχογράφησε τον ομιλητή (ακόμα κι από κινητό).",
+          "Συμπλήρωσε τα στοιχεία του ομιλητή: όνομα (ή ψευδώνυμο), ηλικία, τόπος καταγωγής.",
+          "Πρόσθεσε σημειώσεις αν χρειάζεται (ντοπιολαλιά, ιδιαίτερες εκφράσεις, κ.λπ.)."
+        ],
+        "note": "Η καταγραφή φυσικών ομιλητών είναι κρίσιμη για τη διατήρηση της γλώσσας. Κάθε συνεισφορά μετράει."
+      }
+    },
+    {
+      "id": "speaker-registration-workflow",
+      "type": "speaker_registration",
+      "title": "Καταγραφή ομιλητή",
+      "description": "Κατέγραψε έναν ομιλητή: πρώτα τα στοιχεία του, μετά φράσεις, ηχογραφήσεις και σημειώσεις.",
+      "order": 1,
+      "data": {
+        "metadataFields": [
+          { "name": "speakerName", "label": "Όνομα ομιλητή (ή ψευδώνυμο)", "type": "text", "required": true },
+          { "name": "speakerAge", "label": "Ηλικία (κατά προσέγγιση)", "type": "text", "required": false },
+          { "name": "speakerPlace", "label": "Τόπος καταγωγής", "type": "text", "required": true },
+          { "name": "speakerRegion", "label": "Περιοχή / επαρχία", "type": "text", "required": false },
+          { "name": "dialect", "label": "Ντοπιολαλιά / διάλεκτος", "type": "text", "required": false },
+          { "name": "dateRecorded", "label": "Ημερομηνία καταγραφής", "type": "date", "required": false },
+          { "name": "relationship", "label": "Σχέση σου με τον ομιλητή", "type": "text", "required": false }
+        ],
+        "phraseFields": [
+          { "name": "vlach", "label": "Φράση στα βλάχικα", "required": true },
+          { "name": "greek", "label": "Μετάφραση στα ελληνικά", "required": false },
+          { "name": "context", "label": "Πλαίσιο χρήσης", "required": false },
+          { "name": "notes", "label": "Σημειώσεις", "required": false }
+        ],
+        "suggestedPrompts": [
+          "Πώς λέμε «καλημέρα» στο χωριό σου;",
+          "Πώς λέγεται αυτό το ζώο/φυτό/εργαλείο;",
+          "Πες μου μια παροιμία ή ρητό στα βλάχικα.",
+          "Πώς τραγουδούσαν στον γάμο;",
+          "Θυμάσαι κάποια ιστορία στα βλάχικα;"
+        ],
+        "audioConfig": {
+          "acceptedFormats": ["audio/mp3", "audio/wav", "audio/ogg", "audio/m4a", "audio/webm"],
+          "maxSizeMB": 50
+        }
+      }
+    },
+    {
+      "id": "registration-archive-speakers",
+      "type": "registration_archive",
+      "title": "Αρχείο καταγραφών",
+      "description": "Δες όλες τις αποθηκευμένες καταγραφές ομιλητών με πλήρη στοιχεία.",
+      "order": 2,
+      "data": {}
+    }
+  ]
+}

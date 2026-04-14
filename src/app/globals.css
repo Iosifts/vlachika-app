@@ -1,73 +1,114 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Base neutrals — calmer and less creamy */
-  --color-warm-50: #f7f8fb;
-  --color-warm-100: #eef1f5;
-  --color-warm-200: #dde3ea;
-  --color-warm-300: #c8d0da;
-  --color-warm-400: #9aa7b6;
-  --color-warm-500: #6f7d8f;
-  --color-warm-600: #556274;
-  --color-warm-700: #3f4b5c;
-  --color-warm-800: #263241;
-  --color-warm-900: #17212b;
+  /* Warm neutral scale — darker in the middle so text-warm-500/600 stays readable */
+  --color-warm-50: oklch(0.988 0.003 95);
+  --color-warm-100: oklch(0.978 0.004 95);
+  --color-warm-200: oklch(0.958 0.006 95);
+  --color-warm-300: oklch(0.925 0.008 95);
+  --color-warm-400: oklch(0.815 0.010 92);
+  --color-warm-500: oklch(0.655 0.012 90);
+  --color-warm-600: oklch(0.545 0.013 88);
+  --color-warm-700: oklch(0.445 0.013 86);
+  --color-warm-800: oklch(0.325 0.014 84);
+  --color-warm-900: oklch(0.245 0.013 82);
 
-  /* Soft moss */
-  --color-olive-50: #f2f7f3;
-  --color-olive-100: #ddebe0;
-  --color-olive-200: #bdd7c2;
-  --color-olive-300: #97bd9f;
-  --color-olive-400: #709d7a;
-  --color-olive-500: #557f5f;
-  --color-olive-600: #43664c;
-  --color-olive-700: #35503b;
-  --color-olive-800: #2b4130;
-  --color-olive-900: #223426;
+  /* Sage */
+  --color-olive-50: oklch(0.985 0.007 145);
+  --color-olive-100: oklch(0.968 0.011 145);
+  --color-olive-200: oklch(0.936 0.018 145);
+  --color-olive-300: oklch(0.888 0.030 145);
+  --color-olive-400: oklch(0.805 0.045 145);
+  --color-olive-500: oklch(0.695 0.056 145);
+  --color-olive-600: oklch(0.585 0.052 145);
+  --color-olive-700: oklch(0.485 0.044 145);
+  --color-olive-800: oklch(0.395 0.034 145);
+  --color-olive-900: oklch(0.315 0.026 145);
 
-  /* Dusty rose — softer, not loud */
-  --color-rose-50: #fbf4f5;
-  --color-rose-100: #f4e5e7;
-  --color-rose-200: #e8cdd3;
-  --color-rose-300: #d6a8b2;
-  --color-rose-400: #bd7f8d;
-  --color-rose-500: #9d6272;
-  --color-rose-600: #7f4d5b;
-  --color-rose-700: #663f4b;
-  --color-rose-800: #53343e;
-  --color-rose-900: #442c34;
+  /* Plum */
+  --color-rose-50: oklch(0.986 0.008 350);
+  --color-rose-100: oklch(0.968 0.014 350);
+  --color-rose-200: oklch(0.936 0.026 350);
+  --color-rose-300: oklch(0.887 0.043 350);
+  --color-rose-400: oklch(0.805 0.060 350);
+  --color-rose-500: oklch(0.702 0.072 350);
+  --color-rose-600: oklch(0.595 0.068 350);
+  --color-rose-700: oklch(0.495 0.058 350);
+  --color-rose-800: oklch(0.405 0.046 350);
+  --color-rose-900: oklch(0.325 0.036 350);
 
-  /* Elegant blue */
-  --color-sky-50: #f2f7fb;
-  --color-sky-100: #e1edf7;
-  --color-sky-200: #c4dbef;
-  --color-sky-300: #9fc1e0;
-  --color-sky-400: #739dca;
-  --color-sky-500: #4f7da9;
-  --color-sky-600: #3d6389;
-  --color-sky-700: #324f6d;
-  --color-sky-800: #2a425a;
-  --color-sky-900: #223648;
+  /* Teal-blue */
+  --color-sky-50: oklch(0.986 0.008 210);
+  --color-sky-100: oklch(0.970 0.015 210);
+  --color-sky-200: oklch(0.940 0.025 210);
+  --color-sky-300: oklch(0.892 0.041 210);
+  --color-sky-400: oklch(0.810 0.058 210);
+  --color-sky-500: oklch(0.704 0.073 210);
+  --color-sky-600: oklch(0.590 0.072 210);
+  --color-sky-700: oklch(0.478 0.060 210);
+  --color-sky-800: oklch(0.390 0.048 210);
+  --color-sky-900: oklch(0.310 0.038 210);
 
-  /* Bronze accent — replace the aggressive red CTA feeling */
-  --color-terra-50: #faf6f1;
-  --color-terra-100: #efe5d8;
-  --color-terra-200: #dec9ae;
-  --color-terra-300: #cda883;
-  --color-terra-400: #b9875e;
-  --color-terra-500: #9a6d49;
-  --color-terra-600: #7d573a;
-  --color-terra-700: #644631;
-  --color-terra-800: #50382a;
-  --color-terra-900: #3f2d22;
+  /* Clay accent */
+  --color-terra-50: oklch(0.986 0.008 45);
+  --color-terra-100: oklch(0.970 0.016 45);
+  --color-terra-200: oklch(0.940 0.030 45);
+  --color-terra-300: oklch(0.894 0.046 45);
+  --color-terra-400: oklch(0.818 0.064 45);
+  --color-terra-500: oklch(0.720 0.076 45);
+  --color-terra-600: oklch(0.610 0.072 45);
+  --color-terra-700: oklch(0.512 0.061 45);
+  --color-terra-800: oklch(0.422 0.050 45);
+  --color-terra-900: oklch(0.340 0.040 45);
 }
 
 :root {
-  --page-bg: #f7f8fb;
-  --card-bg: rgba(255, 255, 255, 0.82);
-  --card-border: rgba(38, 50, 65, 0.08);
-  --shadow-soft: 0 10px 30px rgba(23, 33, 43, 0.06);
-  --shadow-hover: 0 16px 40px rgba(23, 33, 43, 0.10);
+  color-scheme: light;
+
+  /* Stable page surfaces */
+  --page-bg: oklch(0.965 0.004 95);
+  --page-bg-top: oklch(0.982 0.004 95);
+  --surface-1: oklch(0.992 0.002 95);
+  --surface-2: oklch(0.987 0.003 95);
+  --surface-3: oklch(0.978 0.004 95);
+
+  /* Text */
+  --text-strong: var(--color-warm-900);
+  --text-body: var(--color-warm-800);
+  --text-muted: var(--color-warm-700);
+  --text-soft: var(--color-warm-600);
+
+  /* Borders */
+  --border-subtle: oklch(0.845 0.006 240);
+  --border-default: oklch(0.780 0.008 240);
+  --border-strong: oklch(0.690 0.016 210);
+
+  /* Shadows */
+  --shadow-soft:
+    0 8px 24px rgba(15, 23, 42, 0.04),
+    0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-hover:
+    0 14px 32px rgba(15, 23, 42, 0.07),
+    0 4px 12px rgba(15, 23, 42, 0.05);
+
+  /* Focus */
+  --focus-ring: oklch(0.610 0.070 210 / 0.28);
+  --selection-bg: oklch(0.900 0.035 210 / 0.35);
+
+  /* Semantic UI tokens */
+  --pill-bg: var(--color-rose-200);
+  --pill-text: var(--text-strong);
+
+  --tab-bg-active: var(--color-rose-300);
+  --tab-text-active: var(--text-strong);
+  --tab-text: var(--text-muted);
+
+  --btn-primary-bg: var(--color-sky-700);
+  --btn-primary-bg-hover: var(--color-sky-800);
+  --btn-primary-text: #ffffff;
+
+  --btn-soft-bg: var(--surface-3);
+  --btn-soft-text: var(--text-body);
 }
 
 html {
@@ -75,51 +116,225 @@ html {
 }
 
 body {
-  background:
-    radial-gradient(circle at top, rgba(79, 125, 169, 0.08), transparent 28%),
-    radial-gradient(circle at 20% 20%, rgba(85, 127, 95, 0.05), transparent 20%),
-    var(--page-bg);
-  color: var(--color-warm-800);
+  min-height: 100%;
+  background-color: var(--page-bg);
+  background-image: linear-gradient(
+    180deg,
+    var(--page-bg-top) 0%,
+    var(--page-bg) 18%,
+    var(--page-bg) 100%
+  );
+  color: var(--text-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-/* Vlach text styling — always preserve exact characters */
+/* One subtle global tint, not many overlapping patches */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(
+      1000px 360px at 50% -120px,
+      oklch(0.915 0.020 210 / 0.10),
+      transparent 72%
+    ),
+    radial-gradient(
+      720px 260px at 92% 0%,
+      oklch(0.930 0.018 350 / 0.06),
+      transparent 70%
+    );
+}
+
+::selection {
+  background: var(--selection-bg);
+  color: var(--text-strong);
+}
+
+:where(a, button, input, textarea, select, [role="button"], [role="tab"]) {
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+:where(a, button, input, textarea, select, [role="button"], [role="tab"]):focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--focus-ring);
+}
+
+/* Typography helpers */
 .vlach-text {
   font-style: italic;
   color: var(--color-rose-700);
-  font-weight: 500;
+  font-weight: 540;
+  letter-spacing: 0.01em;
 }
 
 .greek-text {
-  color: var(--color-warm-600);
+  color: var(--text-muted);
 }
 
-/* Reusable surface helpers */
+.text-soft {
+  color: var(--text-soft);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-strong {
+  color: var(--text-strong);
+}
+
+/* Reusable surface helpers — now opaque, no glass effect */
 .surface-card {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
+  background: var(--surface-1);
+  border: 1px solid var(--border-subtle);
   box-shadow: var(--shadow-soft);
-  backdrop-filter: blur(8px);
+  transition:
+    box-shadow 220ms ease,
+    border-color 220ms ease,
+    transform 220ms ease,
+    background-color 220ms ease;
 }
 
 .surface-card:hover {
   box-shadow: var(--shadow-hover);
+  border-color: var(--border-default);
+  transform: translateY(-2px);
+}
+
+.surface-panel {
+  background: var(--surface-2);
+  border: 1px solid var(--border-subtle);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+/* Accessible pills / badges */
+.ui-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  border-radius: 999px;
+  background: var(--pill-bg);
+  color: var(--pill-text);
+  border: 1px solid color-mix(in oklab, var(--pill-bg) 78%, var(--border-default));
+}
+
+.ui-pill-neutral {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  border-radius: 999px;
+  background: var(--surface-3);
+  color: var(--text-body);
+  border: 1px solid var(--border-subtle);
+}
+
+/* Accessible tabs */
+.ui-tab {
+  color: var(--tab-text);
+  border-radius: 1rem 1rem 0 0;
+  border: 1px solid transparent;
+}
+
+.ui-tab:hover {
+  color: var(--text-body);
+  background: color-mix(in oklab, var(--surface-2) 88%, white);
+}
+
+.ui-tab-active {
+  background: var(--tab-bg-active);
+  color: var(--tab-text-active);
+  border-color: var(--border-default);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+/* Buttons */
+.ui-btn-primary {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border: 1px solid transparent;
+  box-shadow: 0 8px 18px rgba(38, 64, 74, 0.14);
+}
+
+.ui-btn-primary:hover {
+  background: var(--btn-primary-bg-hover);
+}
+
+.ui-btn-soft {
+  background: var(--btn-soft-bg);
+  color: var(--btn-soft-text);
+  border: 1px solid var(--border-subtle);
+}
+
+.ui-btn-soft:hover {
+  background: var(--surface-2);
+  border-color: var(--border-default);
+}
+
+/* Tables */
+table {
+  color: var(--text-body);
+}
+
+thead th {
+  color: var(--text-strong);
+  background: var(--surface-3);
+}
+
+tbody td {
+  color: var(--text-body);
+}
+
+tbody tr {
+  border-color: var(--border-subtle);
 }
 
 /* Flashcard flip animation */
 .flip-card {
   perspective: 1000px;
 }
+
 .flip-card-inner {
-  transition: transform 0.5s;
+  transition: transform 0.5s ease;
   transform-style: preserve-3d;
 }
+
 .flip-card-inner.flipped {
   transform: rotateY(180deg);
 }
+
 .flip-card-front,
 .flip-card-back {
   backface-visibility: hidden;
 }
+
 .flip-card-back {
   transform: rotateY(180deg);
+}
+
+/* Admin indicator */
+.admin-active {
+  box-shadow: 0 0 0 2px var(--focus-ring);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

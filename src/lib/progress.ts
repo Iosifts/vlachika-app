@@ -1,8 +1,8 @@
-import type { AppProgress, LessonProgress } from "./types";
+import type { AppProgress, ModuleProgress } from "./types";
 
-const STORAGE_KEY = "vlachika-progress";
+const STORAGE_KEY = "vlachika-progress-v2";
 
-function defaultProgress(): LessonProgress {
+function defaultProgress(): ModuleProgress {
   return {
     viewedSections: [],
     flashcardsPracticed: 0,
@@ -26,43 +26,34 @@ export function saveProgress(progress: AppProgress): void {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
 }
 
-export function getLessonProgress(lessonNumber: number): LessonProgress {
+export function getModuleProgress(moduleId: string): ModuleProgress {
   const all = loadProgress();
-  return all[lessonNumber] || defaultProgress();
+  return all[moduleId] || defaultProgress();
 }
 
-export function markSectionViewed(
-  lessonNumber: number,
-  section: string
-): void {
+export function markSectionViewed(moduleId: string, sectionId: string): void {
   const all = loadProgress();
-  const lp = all[lessonNumber] || defaultProgress();
-  if (!lp.viewedSections.includes(section)) {
-    lp.viewedSections.push(section);
+  const mp = all[moduleId] || defaultProgress();
+  if (!mp.viewedSections.includes(sectionId)) {
+    mp.viewedSections.push(sectionId);
   }
-  all[lessonNumber] = lp;
+  all[moduleId] = mp;
   saveProgress(all);
 }
 
-export function updateFlashcardCount(
-  lessonNumber: number,
-  count: number
-): void {
+export function updateFlashcardCount(moduleId: string, count: number): void {
   const all = loadProgress();
-  const lp = all[lessonNumber] || defaultProgress();
-  lp.flashcardsPracticed = count;
-  all[lessonNumber] = lp;
+  const mp = all[moduleId] || defaultProgress();
+  mp.flashcardsPracticed = count;
+  all[moduleId] = mp;
   saveProgress(all);
 }
 
-export function updateQuizScore(
-  lessonNumber: number,
-  score: number
-): void {
+export function updateQuizScore(moduleId: string, score: number): void {
   const all = loadProgress();
-  const lp = all[lessonNumber] || defaultProgress();
-  lp.quizScore = score;
-  lp.completed = true;
-  all[lessonNumber] = lp;
+  const mp = all[moduleId] || defaultProgress();
+  mp.quizScore = score;
+  mp.completed = true;
+  all[moduleId] = mp;
   saveProgress(all);
 }

@@ -1,0 +1,1744 @@
+{
+  "id": "lesson-3",
+  "type": "lesson",
+  "status": "published",
+  "title": "Ενότητα 3",
+  "subtitle": "Το οριστικό άρθρο — Soea amea / Το δικό μου σόι",
+  "description": "Οριστικό άρθρο, οικογένεια και σόι, τραγούδι «Bate cucŭlu», βασικά ρήματα και ασκήσεις εφαρμογής.",
+  "audience": "learner",
+  "tags": [
+    "οριστικό άρθρο",
+    "οικογένεια",
+    "τραγούδι",
+    "ρήματα",
+    "κύρια ονόματα"
+  ],
+  "order": 3,
+  "accentColor": "sky",
+  "lastUpdated": "2026-04-02",
+  "meta": {
+    "source": [
+      "Ενότητα 3 - Το οριστικό άρθρο_.docx",
+      "Λεξιλόγιο 3_.docx",
+      "Ασκήσεις 3_.docx",
+      "Απαντήσεις 3_.docx",
+      "3b. Άρθρο και κύρια ονόματα.pdf"
+    ],
+    "replacesLegacyUnitNumber": 3
+  },
+  "sections": [
+    {
+      "id": "theory-3",
+      "type": "theory",
+      "title": "Θεωρία",
+      "order": 0,
+      "data": {
+        "content": {
+          "intro": "Η ενότητα 3 παρουσιάζει το οριστικό άρθρο στα βλάχικα μέσα από λεξιλόγιο συγγένειας, βασικούς κανόνες κλίσης, τραγούδι και εφαρμογή σε προτάσεις.",
+          "blocks": [
+            {
+              "type": "heading",
+              "title": "3. Soea amea — Το δικό μου σόι"
+            },
+            {
+              "type": "paragraph",
+              "text": "Το βασικό θέμα της ενότητας είναι το οριστικό άρθρο. Η παρουσίαση ξεκινά με ουσιαστικά που ανήκουν στο πεδίο της οικογένειας και του σπιτιού, ώστε ο μαθητής να βλέπει πώς αλλάζει η μορφή του ουσιαστικού από τον άναρθρο στον έναρθρο τύπο, τόσο στον ενικό όσο και στον πληθυντικό."
+            },
+            {
+              "type": "table",
+              "title": "Παραδείγματα κλίσης ουσιαστικών",
+              "columns": [
+                "Άναρθρο ενικού",
+                "Έναρθρο ενικού",
+                "Άναρθρο πληθυντικού",
+                "Έναρθρο πληθυντικού"
+              ],
+              "rows": [
+                {
+                  "Άναρθρο ενικού": "bârbatu = άντρας",
+                  "Έναρθρο ενικού": "bârbatŭlu",
+                  "Άναρθρο πληθυντικού": "bârbatsĭ",
+                  "Έναρθρο πληθυντικού": "bârbatsĭlji"
+                },
+                {
+                  "Άναρθρο ενικού": "fĭtshoru = αγόρι",
+                  "Έναρθρο ενικού": "fĭtshorŭlu",
+                  "Άναρθρο πληθυντικού": "fĭtshori",
+                  "Έναρθρο πληθυντικού": "fĭtshiorĭlji"
+                },
+                {
+                  "Άναρθρο ενικού": "hilju = γιός",
+                  "Έναρθρο ενικού": "hiljŭlu",
+                  "Άναρθρο πληθυντικού": "hilji",
+                  "Έναρθρο πληθυντικού": "hiljĭlji"
+                },
+                {
+                  "Άναρθρο ενικού": "aushu = γέρος",
+                  "Έναρθρο ενικού": "aushŭlu",
+                  "Άναρθρο πληθυντικού": "aushĭ",
+                  "Έναρθρο πληθυντικού": "aushĭlji"
+                },
+                {
+                  "Άναρθρο ενικού": "papu = παππούς",
+                  "Έναρθρο ενικού": "papŭlu",
+                  "Άναρθρο πληθυντικού": "pâpânji / papeanji",
+                  "Έναρθρο πληθυντικού": "pâpânjĭlji / papeanjĭlji"
+                },
+                {
+                  "Άναρθρο ενικού": "afendu = πατέρας",
+                  "Έναρθρο ενικού": "afendŭlu",
+                  "Άναρθρο πληθυντικού": "afendzĭ",
+                  "Έναρθρο πληθυντικού": "afendzĭlji"
+                },
+                {
+                  "Άναρθρο ενικού": "tatâ = πατέρας",
+                  "Έναρθρο ενικού": "tatâlu / tata",
+                  "Άναρθρο πληθυντικού": "tâtânji",
+                  "Έναρθρο πληθυντικού": "tâtânjĭlji"
+                },
+                {
+                  "Άναρθρο ενικού": "mumâ = μάνα",
+                  "Έναρθρο ενικού": "muma",
+                  "Άναρθρο πληθυντικού": "mumânji",
+                  "Έναρθρο πληθυντικού": "mumânjĭli"
+                },
+                {
+                  "Άναρθρο ενικού": "dadâ = μάνα",
+                  "Έναρθρο ενικού": "dada",
+                  "Άναρθρο πληθυντικού": "dadi",
+                  "Έναρθρο πληθυντικού": "dadili"
+                },
+                {
+                  "Άναρθρο ενικού": "featâ = κορίτσι",
+                  "Έναρθρο ενικού": "feata",
+                  "Άναρθρο πληθυντικού": "feati",
+                  "Έναρθρο πληθυντικού": "featili"
+                },
+                {
+                  "Άναρθρο ενικού": "sorâ = αδερφή",
+                  "Έναρθρο ενικού": "sora",
+                  "Άναρθρο πληθυντικού": "surâri",
+                  "Έναρθρο πληθυντικού": "surârĭli"
+                },
+                {
+                  "Άναρθρο ενικού": "moashâ = γριά",
+                  "Έναρθρο ενικού": "moasha",
+                  "Άναρθρο πληθυντικού": "moashi",
+                  "Έναρθρο πληθυντικού": "moashili"
+                },
+                {
+                  "Άναρθρο ενικού": "norâ = νύφη",
+                  "Έναρθρο ενικού": "nora",
+                  "Άναρθρο πληθυντικού": "nurâri",
+                  "Έναρθρο πληθυντικού": "nurârili"
+                },
+                {
+                  "Άναρθρο ενικού": "mae = γιαγιά",
+                  "Έναρθρο ενικού": "maea",
+                  "Άναρθρο πληθυντικού": "mâi",
+                  "Έναρθρο πληθυντικού": "mâili"
+                },
+                {
+                  "Άναρθρο ενικού": "hilje = κόρη",
+                  "Έναρθρο ενικού": "hiljea",
+                  "Άναρθρο πληθυντικού": "hilji",
+                  "Έναρθρο πληθυντικού": "hiljili"
+                },
+                {
+                  "Άναρθρο ενικού": "mŭljeare = γυναίκα",
+                  "Έναρθρο ενικού": "mŭljearea",
+                  "Άναρθρο πληθυντικού": "mŭljeri",
+                  "Έναρθρο πληθυντικού": "mŭljerĭli"
+                },
+                {
+                  "Άναρθρο ενικού": "pârinte = γονιός",
+                  "Έναρθρο ενικού": "pârintĭle",
+                  "Άναρθρο πληθυντικού": "pârintsĭ",
+                  "Έναρθρο πληθυντικού": "pârintsĭlji"
+                },
+                {
+                  "Άναρθρο ενικού": "frate = αδερφός",
+                  "Έναρθρο ενικού": "fratĭle",
+                  "Άναρθρο πληθυντικού": "fratsĭ",
+                  "Έναρθρο πληθυντικού": "fratsĭlji"
+                },
+                {
+                  "Άναρθρο ενικού": "fumealje = οικογένεια",
+                  "Έναρθρο ενικού": "fumealjea",
+                  "Άναρθρο πληθυντικού": "fumelji",
+                  "Έναρθρο πληθυντικού": "fumeljĭli"
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "title": "3.1 Το οριστικό άρθρο"
+            },
+            {
+              "type": "paragraph",
+              "text": "Στον ενικό αριθμό το αρσενικό και το ουδέτερο ακολουθούν κυρίως την κατάληξη -u → -lu, ενώ στα αρσενικά σε -e η έναρθρη μορφή παίρνει -le. Στα θηλυκά η βασική εικόνα είναι -â → -a και -e → -ea. Στον πληθυντικό, τα αρσενικά παίρνουν συνήθως -lji, ενώ τα θηλυκά και τα ουδέτερα -li."
+            },
+            {
+              "type": "table",
+              "title": "Βασικά μοτίβα στον ενικό",
+              "columns": [
+                "Γένος",
+                "Μετατροπή",
+                "Παράδειγμα"
+              ],
+              "rows": [
+                {
+                  "Γένος": "Αρσενικό",
+                  "Μετατροπή": "-u → -lu",
+                  "Παράδειγμα": "lupu → lupŭlu"
+                },
+                {
+                  "Γένος": "Αρσενικό",
+                  "Μετατροπή": "-e → -le",
+                  "Παράδειγμα": "frate → fratĭle"
+                },
+                {
+                  "Γένος": "Αρσενικό",
+                  "Μετατροπή": "-â → -lu",
+                  "Παράδειγμα": "tatâ → tatâlu"
+                },
+                {
+                  "Γένος": "Θηλυκό",
+                  "Μετατροπή": "-â → -a",
+                  "Παράδειγμα": "caprâ → capra"
+                },
+                {
+                  "Γένος": "Θηλυκό",
+                  "Μετατροπή": "-e → -ea",
+                  "Παράδειγμα": "mŭljeare → mŭljearea"
+                },
+                {
+                  "Γένος": "Ουδέτερο",
+                  "Μετατροπή": "-u → -lu",
+                  "Παράδειγμα": "lemnu → lemnulu"
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "title": "Βασικά μοτίβα στον πληθυντικό",
+              "columns": [
+                "Γένος",
+                "Μετατροπή",
+                "Παράδειγμα"
+              ],
+              "rows": [
+                {
+                  "Γένος": "Αρσενικό",
+                  "Μετατροπή": "-lji",
+                  "Παράδειγμα": "fratsĭ → fratsĭlji"
+                },
+                {
+                  "Γένος": "Θηλυκό",
+                  "Μετατροπή": "-li",
+                  "Παράδειγμα": "mŭljeri → mŭljerĭli"
+                },
+                {
+                  "Γένος": "Ουδέτερο",
+                  "Μετατροπή": "-li",
+                  "Παράδειγμα": "leamni → leamnili"
+                }
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "title": "Παρατηρήσεις",
+              "items": [
+                "Όταν το αρσενικό ουσιαστικό τελειώνει σε -e, με το άρθρο εμφανίζεται -i στη βάση του τύπου.",
+                "Στα θηλυκά η προφορά ακολουθεί ήδη το μοτίβο -ea.",
+                "Το τελευταίο φωνήεν της αρσενικής κατάληξης προφέρεται «χαμηλά» με την προσθήκη του άρθρου.",
+                "Τα ουδέτερα στον ενικό έχουν συνήθως κατάληξη -u όπως και τα αρσενικά.",
+                "Ουσιαστικά που λήγουν σε -e μπορεί να είναι αρσενικά ή θηλυκά.",
+                "Ουσιαστικά σε -ie είναι θηλυκά, όπως hâryie, znjie, arâchie, pâvrie, tinjie, tshâtie, cupie· το άρθρο ακολουθεί τον θηλυκό σχηματισμό.",
+                "Ουσιαστικά σε -au είναι θηλυκά, όπως hârau, scândeau, dunjeau.",
+                "Ιδιαίτερη προσοχή χρειάζονται οι μορφές munte: muntile / muntea, dinte: dintile / dintea, oaspe / oaspitu.",
+                "Οι λέξεις dhascalu, angelu και Martsĭ δεν παίρνουν άρθρο."
+              ]
+            },
+            {
+              "type": "heading",
+              "title": "3.2 Bate cucŭlu"
+            },
+            {
+              "type": "paragraph",
+              "text": "Στην υποενότητα 3.2 το τραγούδι «Bate cucŭlu» χρησιμοποιείται ως γλωσσικό υλικό για ανάγνωση, κατανόηση και μετάφραση. Η άσκηση ζητά να γραφτεί η μετάφραση των στίχων."
+            },
+            {
+              "type": "youtube",
+              "title": "Bate cucŭlu",
+              "url": "https://www.youtube.com/watch?v=pNWeClZyxp8",
+              "caption": "Τραγούδι της ενότητας 3"
+            },
+            {
+              "type": "quote",
+              "text": "Bate cucŭlu sh’ puljilji tutsĭ / Fugu Armânjilji tutsĭ tu muntsĭ / Unu sh’pri unu ti lja hâraua / Lji zilipsescu elji dunjeaua"
+            },
+            {
+              "type": "heading",
+              "title": "Τα ρήματα amu / esu / fugu"
+            },
+            {
+              "type": "table",
+              "title": "Κλίση βασικών ρημάτων",
+              "columns": [
+                "Πρόσωπο",
+                "amu = έχω",
+                "esu = βγαίνω",
+                "fugu = φεύγω"
+              ],
+              "rows": [
+                {
+                  "Πρόσωπο": "1ο ενικού",
+                  "amu = έχω": "amu",
+                  "esu = βγαίνω": "esu",
+                  "fugu = φεύγω": "fugu"
+                },
+                {
+                  "Πρόσωπο": "2ο ενικού",
+                  "amu = έχω": "ai",
+                  "esu = βγαίνω": "eshĭ",
+                  "fugu = φεύγω": "fugi"
+                },
+                {
+                  "Πρόσωπο": "3ο ενικού",
+                  "amu = έχω": "are",
+                  "esu = βγαίνω": "ease",
+                  "fugu = φεύγω": "fuge"
+                },
+                {
+                  "Πρόσωπο": "1ο πληθυντικού",
+                  "amu = έχω": "avemu",
+                  "esu = βγαίνω": "ishîmu",
+                  "fugu = φεύγω": "fugimu"
+                },
+                {
+                  "Πρόσωπο": "2ο πληθυντικού",
+                  "amu = έχω": "avecĭ",
+                  "esu = βγαίνω": "ishîcĭ",
+                  "fugu = φεύγω": "fugicĭ"
+                },
+                {
+                  "Πρόσωπο": "3ο πληθυντικού",
+                  "amu = έχω": "au",
+                  "esu = βγαίνω": "esu",
+                  "fugu = φεύγω": "fugu"
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "title": "3.3 Προφορικά"
+            },
+            {
+              "type": "paragraph",
+              "text": "Η ενότητα κλείνει με την προφορική άσκηση «Ci vedu sh’ ci nu vedu...», ώστε ο μαθητής να περιγράφει τι βλέπει και τι δεν βλέπει χρησιμοποιώντας λεξιλόγιο από τον χώρο, τα πρόσωπα και τα αντικείμενα."
+            },
+            {
+              "type": "heading",
+              "title": "Άρθρο και κύρια ονόματα"
+            },
+            {
+              "type": "paragraph",
+              "text": "Το συμπληρωματικό υλικό για το άρθρο και τα κύρια ονόματα δείχνει πώς κλίνονται τα κύρια ονόματα με άρθρο, τόσο στα αρσενικά όσο και στα θηλυκά."
+            },
+            {
+              "type": "bullet_list",
+              "title": "Αρσενικά κύρια ονόματα",
+              "items": [
+                "Αρσενικά κύρια ονόματα που λήγουν σε -o παίρνουν οριστικό άρθρο.",
+                "Με τη χρήση του άρθρου, η κατάληξη -o γίνεται -u: Teyŭlu, Mitrŭlu, Mihŭlu, Steryiulu, Cotshŭlu, Nicŭlu.",
+                "Με τη χρήση του alu η κατάληξη -o γίνεται επίσης -u.",
+                "Στα αρσενικά κύρια ονόματα δεν χρησιμοποιείται τελικό -ς.",
+                "Η κλητική αποδίδεται με την απλή μορφή του ονόματος και προαιρετικά με την προσφώνηση o!: o Miho!, o Mitro!, o Nico!."
+              ]
+            },
+            {
+              "type": "table",
+              "title": "Κλίση αρσενικών κυρίων ονομάτων",
+              "columns": [
+                "Πτώση",
+                "Miho",
+                "Yachi",
+                "Cola"
+              ],
+              "rows": [
+                {
+                  "Πτώση": "Ονομαστική",
+                  "Miho": "Mihŭlu",
+                  "Yachi": "Yachi",
+                  "Cola": "Cola"
+                },
+                {
+                  "Πτώση": "Γενική",
+                  "Miho": "Alu Mihu",
+                  "Yachi": "Alu Yachi",
+                  "Cola": "Alu Cola"
+                },
+                {
+                  "Πτώση": "Δοτική",
+                  "Miho": "Alu Mihu / la Mihŭlu",
+                  "Yachi": "Alu Yachi",
+                  "Cola": "Alu Cola / la Cola"
+                },
+                {
+                  "Πτώση": "Αιτιατική",
+                  "Miho": "Mihŭlu",
+                  "Yachi": "Yachi",
+                  "Cola": "Cola"
+                },
+                {
+                  "Πτώση": "Κλητική",
+                  "Miho": "O Miho!",
+                  "Yachi": "O Yachi!",
+                  "Cola": "O Cola!"
+                }
+              ]
+            },
+            {
+              "type": "example_pair",
+              "title": "Παράδειγμα",
+              "vlach": "Mihŭlu sapâ gârdina.",
+              "greek": "Ο Μιχάλης σκάβει τον κήπο."
+            },
+            {
+              "type": "example_pair",
+              "title": "Παράδειγμα",
+              "vlach": "Casa aestâ ci vedzĭ easte alu Yachi.",
+              "greek": "Το σπίτι αυτό που βλέπεις είναι του Γιώργου."
+            },
+            {
+              "type": "example_pair",
+              "title": "Παράδειγμα",
+              "vlach": "Dau nâscântsĭ pâradzĭ alu Cola / la Cola.",
+              "greek": "Δίνω μερικά χρήματα στο Νίκο."
+            },
+            {
+              "type": "example_pair",
+              "title": "Παράδειγμα",
+              "vlach": "Vedu Steryiulu ci fugi.",
+              "greek": "Βλέπω τον Στέργιο που φεύγει."
+            },
+            {
+              "type": "bullet_list",
+              "title": "Θηλυκά κύρια ονόματα",
+              "items": [
+                "Θηλυκά ονόματα που λήγουν σε -â και -o, στην ονομαστική και στην αιτιατική παίρνουν -a.",
+                "Η γενική και η δοτική σχηματίζονται με το ali.",
+                "Στη γενική και στη δοτική η κατάληξη γίνεται -e.",
+                "Πολλά θηλυκά ονόματα έχουν διπλή κατάληξη σε -a και -o, όπως Vushio / Vushiâ, Yitso / Yitsâ, Yulo / Yulâ, Nulo / Nulâ, Ditso / Ditsâ."
+              ]
+            },
+            {
+              "type": "table",
+              "title": "Κλίση θηλυκών κυρίων ονομάτων",
+              "columns": [
+                "Πτώση",
+                "Mariâ",
+                "Vushio",
+                "Yitsâ"
+              ],
+              "rows": [
+                {
+                  "Πτώση": "Ονομαστική",
+                  "Mariâ": "Maria",
+                  "Vushio": "Vushia",
+                  "Yitsâ": "Yitsa"
+                },
+                {
+                  "Πτώση": "Γενική",
+                  "Mariâ": "Ali Marie",
+                  "Vushio": "Ali Vushie",
+                  "Yitsâ": "Ali Yitse"
+                },
+                {
+                  "Πτώση": "Δοτική",
+                  "Mariâ": "Ali Marie / la Maria",
+                  "Vushio": "Ali Vushie",
+                  "Yitsâ": "Ali Yitse / la Yitsa"
+                },
+                {
+                  "Πτώση": "Αιτιατική",
+                  "Mariâ": "Maria",
+                  "Vushio": "Vushia",
+                  "Yitsâ": "Yitsa"
+                },
+                {
+                  "Πτώση": "Κλητική",
+                  "Mariâ": "O Maria!",
+                  "Vushio": "O Vushio!",
+                  "Yitsâ": "O Yitso!"
+                }
+              ]
+            },
+            {
+              "type": "example_pair",
+              "title": "Παράδειγμα",
+              "vlach": "Maria sapâ gârdina.",
+              "greek": "Η Μαρία σκάβει τον κήπο."
+            },
+            {
+              "type": "example_pair",
+              "title": "Παράδειγμα",
+              "vlach": "Casa aestâ ci vedzĭ easte ali Vushie.",
+              "greek": "Το σπίτι αυτό που βλέπεις είναι της Παρασκευής."
+            },
+            {
+              "type": "example_pair",
+              "title": "Παράδειγμα",
+              "vlach": "Dau nâscântsĭ pâradzĭ ali Yitse / la Yitsa.",
+              "greek": "Δίνω μερικά χρήματα στην Γεωργία."
+            },
+            {
+              "type": "example_pair",
+              "title": "Παράδειγμα",
+              "vlach": "Vedu Vushia ci fuge.",
+              "greek": "Βλέπω την Παρασκευή που φεύγει."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "vocabulary-3",
+      "type": "vocabulary",
+      "title": "Λεξιλόγιο",
+      "order": 1,
+      "data": {
+        "sections": [
+          {
+            "title": "Βασικό λεξιλόγιο",
+            "items": [
+              {
+                "vlach": "lupu",
+                "greek": "λύκος"
+              },
+              {
+                "vlach": "caprâ",
+                "greek": "γίδα"
+              },
+              {
+                "vlach": "lemnu",
+                "greek": "ξύλο"
+              },
+              {
+                "vlach": "iva",
+                "greek": "κάπου, πουθενά"
+              },
+              {
+                "vlach": "hâryie",
+                "greek": "ξημέρωμα"
+              },
+              {
+                "vlach": "znjie",
+                "greek": "ζημιά"
+              },
+              {
+                "vlach": "arâchie",
+                "greek": "τσίπουρο"
+              },
+              {
+                "vlach": "pâvrie",
+                "greek": "φόβος"
+              },
+              {
+                "vlach": "tinjie",
+                "greek": "τιμή"
+              },
+              {
+                "vlach": "tshâtie",
+                "greek": "στέγη, σκεπή"
+              },
+              {
+                "vlach": "cupie",
+                "greek": "κοπάδι"
+              },
+              {
+                "vlach": "scândeau",
+                "greek": "σπίθα"
+              },
+              {
+                "vlach": "dunjeau",
+                "greek": "κόσμος, ντουνιάς"
+              },
+              {
+                "vlach": "munte",
+                "greek": "βουνό"
+              },
+              {
+                "vlach": "dinte",
+                "greek": "δόντι"
+              },
+              {
+                "vlach": "oaspe / oaspitu",
+                "greek": "καλεσμένος"
+              }
+            ]
+          },
+          {
+            "title": "Λεξιλόγιο τραγουδιού — Bate cucŭlu",
+            "items": [
+              {
+                "vlach": "bate",
+                "greek": "κελαηδάει, χτυπάει"
+              },
+              {
+                "vlach": "cucu",
+                "greek": "κούκος"
+              },
+              {
+                "vlach": "pulji",
+                "greek": "πουλιά"
+              },
+              {
+                "vlach": "fugu",
+                "greek": "φεύγουν"
+              },
+              {
+                "vlach": "tutsĭ",
+                "greek": "όλοι"
+              },
+              {
+                "vlach": "tu muntsĭ",
+                "greek": "στα βουνά"
+              },
+              {
+                "vlach": "lja",
+                "greek": "παίρνει, παίρνουν"
+              },
+              {
+                "vlach": "harau",
+                "greek": "χαρά"
+              },
+              {
+                "vlach": "zilipsescu",
+                "greek": "ζηλεύουν"
+              },
+              {
+                "vlach": "earba",
+                "greek": "χορτάρι"
+              },
+              {
+                "vlach": "cu",
+                "greek": "με"
+              },
+              {
+                "vlach": "lilitshi",
+                "greek": "λουλούδια"
+              },
+              {
+                "vlach": "deade",
+                "greek": "άνθισε, έδωσε"
+              },
+              {
+                "vlach": "în susu",
+                "greek": "πάνω"
+              },
+              {
+                "vlach": "timtirlinâ",
+                "greek": "τριφύλλι"
+              },
+              {
+                "vlach": "esu",
+                "greek": "βγαίνω, βγαίνουν"
+              },
+              {
+                "vlach": "mŭshatsĭ",
+                "greek": "όμορφοι"
+              },
+              {
+                "vlach": "s’pascâ",
+                "greek": "να βόσκουν"
+              },
+              {
+                "vlach": "oi",
+                "greek": "πρόβατα"
+              }
+            ]
+          },
+          {
+            "title": "Λεξιλόγιο ασκήσεων",
+            "items": [
+              {
+                "vlach": "aproape",
+                "greek": "κοντά"
+              },
+              {
+                "vlach": "stâ",
+                "greek": "πάνω σε"
+              },
+              {
+                "vlach": "bangu",
+                "greek": "τραπέζι"
+              },
+              {
+                "vlach": "în focu",
+                "greek": "στη φωτιά"
+              },
+              {
+                "vlach": "uscati",
+                "greek": "στεγνά"
+              },
+              {
+                "vlach": "însâratâ",
+                "greek": "αλμυρή"
+              },
+              {
+                "vlach": "aroshâ",
+                "greek": "κόκκινη"
+              },
+              {
+                "vlach": "nascu",
+                "greek": "φυτρώνω, φυτρώνουν"
+              },
+              {
+                "vlach": "carne",
+                "greek": "κρέας"
+              },
+              {
+                "vlach": "floarâ",
+                "greek": "λουλούδι"
+              },
+              {
+                "vlach": "analtu",
+                "greek": "ψηλός"
+              },
+              {
+                "vlach": "lungu",
+                "greek": "μακρύς"
+              },
+              {
+                "vlach": "peru",
+                "greek": "τρίχα, τρίχωμα"
+              },
+              {
+                "vlach": "dhascalu",
+                "greek": "δάσκαλος"
+              },
+              {
+                "vlach": "carmeli",
+                "greek": "καραμέλες"
+              },
+              {
+                "vlach": "în Sârunâ",
+                "greek": "στη Θεσσαλονίκη"
+              },
+              {
+                "vlach": "noau",
+                "greek": "καινούρια"
+              },
+              {
+                "vlach": "aoace",
+                "greek": "εδώ"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "exercises-3",
+      "type": "exercises",
+      "title": "Ασκήσεις",
+      "order": 2,
+      "data": {
+        "unitNumber": 0,
+        "exercises": [
+          {
+            "id": "ex-3-song",
+            "type": "open_production",
+            "title": "Bate cucŭlu — Γράψε τη μετάφραση",
+            "content": {
+              "prompt": "Γράψε τη μετάφραση των παρακάτω στίχων:\n1. Bate cucŭlu sh’ puljilji tutsĭ\n2. Fugu Armânjilji tutsĭ tu muntsĭ (x2)\n3. Bate cucŭlu sh’ puljilji tutsĭ.\n4. Unu sh’pri unu ti lja hâraua\n5. Lji zilipsescu elji dunjeaua (x2)\n6. Unu sh’pri unu ti lja hâraua.\n7. Deade earbâ cu lilitshi\n8. Esu fumelji în susu Smixi (x2)\n9. Deade earbâ cu lilitshi.\n10. Deade earba sh’ timtirlina\n11. Esu fumeljili Samarina (x2)\n12. Deade earba sh’ timtirlina\n13. Mŭshatsĭ muntsĭ s’ pascâ oili\n14. Esu fumeljili Perivoli (x2)\n15. Mŭshatsĭ muntsĭ s’ pascâ oili\n16. Deade earbâ cu canelâ\n17. Esu fumeljili în susu Avdhela (x2)\n18. Deade earba cu canela."
+            }
+          },
+          {
+            "id": "ex-3-1",
+            "type": "add_definite_article",
+            "title": "Προσθέστε το άρθρο",
+            "instruction": "Συμπλήρωσε τον σωστό έναρθρο τύπο.",
+            "items": [
+              {
+                "number": 1,
+                "prompt": "(Featâ) ………………………. easte mŭshatâ.",
+                "official_answer": "Feata easte mŭshatâ."
+              },
+              {
+                "number": 2,
+                "prompt": "(lupu) ……………………………… easte aproape.",
+                "official_answer": "Lupŭlu easte aproape."
+              },
+              {
+                "number": 3,
+                "prompt": "(fĭtshori) ………………………….. suntu la scoala.",
+                "official_answer": "Fĭtshorĭlji suntu la scoala."
+              },
+              {
+                "number": 4,
+                "prompt": "(pâne) …………………………… easte stâ bangu.",
+                "official_answer": "Pânea easte stâ bangu."
+              },
+              {
+                "number": 5,
+                "prompt": "(mŭljeri) …………………………… suntu la gârdina.",
+                "official_answer": "Mŭljerĭli suntu la gârdina."
+              },
+              {
+                "number": 6,
+                "prompt": "(lemnu) ……………………………. easte în focu.",
+                "official_answer": "Lemnulu easte în focu."
+              },
+              {
+                "number": 7,
+                "prompt": "(leamni) ……………………………. suntu uscati.",
+                "official_answer": "Leamnili suntu uscati."
+              },
+              {
+                "number": 8,
+                "prompt": "(carne) …………………………….. easte însâratâ.",
+                "official_answer": "Carnea easte însâratâ."
+              },
+              {
+                "number": 9,
+                "prompt": "(floarâ) ……………………………. easte aroshâ.",
+                "official_answer": "Floara easte aroshâ."
+              },
+              {
+                "number": 10,
+                "prompt": "(flori) …………………………………. nascu.",
+                "official_answer": "Florili nascu."
+              }
+            ]
+          },
+          {
+            "id": "ex-3-2",
+            "type": "sentence_transformation",
+            "title": "Σχημάτισε ολοκληρωμένες προτάσεις",
+            "instruction": "Κάνε τις απαραίτητες αλλαγές προσθέτοντας άρθρα και τον σωστό τύπο των ρημάτων.",
+            "items": [
+              {
+                "number": 1,
+                "prompt": "Bârbatu / hiu / multu analtu.",
+                "official_answer": "Bârbatŭlu easte multu analtu."
+              },
+              {
+                "number": 2,
+                "prompt": "Mŭljeare / amu / lungi peri.",
+                "official_answer": "Mŭljearea are lungi peri."
+              },
+              {
+                "number": 3,
+                "prompt": "Tatâ / ameu / hiu / dhascalu.",
+                "official_answer": "Tatâlu ameu easte dhascalu."
+              },
+              {
+                "number": 4,
+                "prompt": "Aestâ nu / hiu / sorâ / ali Nie.",
+                "official_answer": "Aestâ nu easte sora ali Nie."
+              },
+              {
+                "number": 5,
+                "prompt": "Pârintsĭ / ali Marie / mi ducu / în Sârunâ.",
+                "official_answer": "Pârintsĭlji ali Marie s’ducu în Sârunâ."
+              },
+              {
+                "number": 6,
+                "prompt": "Iu / mi ducu / hilju / alu Vasili?",
+                "official_answer": "Ιu s’duce hiljŭlu alu Vasili?"
+              },
+              {
+                "number": 7,
+                "prompt": "Papu / amu / carmeli tî la / nipotsĭ.",
+                "official_answer": "Papŭlu are carmeli tî la nipotsĭlji."
+              },
+              {
+                "number": 8,
+                "prompt": "Featâ / sh’ / fĭtshioru / amu / unâ casâ noau.",
+                "official_answer": "Feata sh’ fĭtshorŭlu au unâ casâ noau."
+              },
+              {
+                "number": 9,
+                "prompt": "Aftuchinitu / hiu / nou sh’ mŭshatu.",
+                "official_answer": "Aftuchinitŭlu easte nou sh’ mŭshatu."
+              },
+              {
+                "number": 10,
+                "prompt": "Fratsĭ / ali Efi / fugu / cathe dzuâ di aoace.",
+                "official_answer": "Fratsĭlji ali Efi fugu cathe dzuâ di aoce."
+              }
+            ]
+          },
+          {
+            "id": "ex-3-3",
+            "type": "fill_from_word_bank",
+            "title": "Συμπλήρωσε τις προτάσεις με τη σωστή λέξη",
+            "instruction": "Χρησιμοποίησε τη σωστή λέξη από το word bank.",
+            "word_bank": [
+              "hârau",
+              "nascu",
+              "tshâtia",
+              "analtâ",
+              "iva",
+              "aproape",
+              "aroshĭ",
+              "hâryie",
+              "pâvrie",
+              "oili"
+            ],
+            "items": [
+              {
+                "number": 1,
+                "prompt": "Casa ali Nichi nu easte multu .................",
+                "official_answer": "aproape"
+              },
+              {
+                "number": 2,
+                "prompt": "Gârdina are earbâ ......................................",
+                "official_answer": "analtâ"
+              },
+              {
+                "number": 3,
+                "prompt": "Lilitshili suntu ..............................................",
+                "official_answer": "aroshĭ"
+              },
+              {
+                "number": 4,
+                "prompt": "................................................... easte aroshâ.",
+                "official_answer": "Tshâtia"
+              },
+              {
+                "number": 5,
+                "prompt": "Puljilji batu cathe …………………………….",
+                "official_answer": "hâryie"
+              },
+              {
+                "number": 6,
+                "prompt": "………………….. fugu în susu tu muntsĭ.",
+                "official_answer": "Oili"
+              },
+              {
+                "number": 7,
+                "prompt": "Capra nu easte ................................................",
+                "official_answer": "iva"
+              },
+              {
+                "number": 8,
+                "prompt": "Amu ..................................................... di focu!",
+                "official_answer": "pâvrie"
+              },
+              {
+                "number": 9,
+                "prompt": "Ci mare ................................ avemu ci hi oa!",
+                "official_answer": "hârau"
+              },
+              {
+                "number": 10,
+                "prompt": "........................................ aclo iu nu prinde!",
+                "official_answer": "Nascu"
+              }
+            ]
+          },
+          {
+            "id": "ex-3-4",
+            "type": "grammar_table",
+            "title": "Συμπλήρωσε τον έναρθρο τύπο σε ενικό και πληθυντικό",
+            "table_columns": [
+              "Άναρθρο ενικού",
+              "Έναρθρο ενικού",
+              "Άναρθρο πληθυντικού",
+              "Έναρθρο πληθυντικού"
+            ],
+            "rows": [
+              {
+                "Άναρθρο ενικού": "Adjunâ",
+                "Έναρθρο ενικού": "adjuna",
+                "Άναρθρο πληθυντικού": "Adjuni",
+                "Έναρθρο πληθυντικού": "adjunili"
+              },
+              {
+                "Άναρθρο ενικού": "Arâchie",
+                "Έναρθρο ενικού": "arâchia",
+                "Άναρθρο πληθυντικού": "Arâchii",
+                "Έναρθρο πληθυντικού": "arâchiili"
+              },
+              {
+                "Άναρθρο ενικού": "Cale",
+                "Έναρθρο ενικού": "calea",
+                "Άναρθρο πληθυντικού": "Câljiuri",
+                "Έναρθρο πληθυντικού": "câljiurĭli"
+              },
+              {
+                "Άναρθρο ενικού": "Câpestru",
+                "Έναρθρο ενικού": "câpestrŭlu",
+                "Άναρθρο πληθυντικού": "Câpeastri",
+                "Έναρθρο πληθυντικού": "câpeastrili"
+              },
+              {
+                "Άναρθρο ενικού": "Ceapâ",
+                "Έναρθρο ενικού": "ceapa",
+                "Άναρθρο πληθυντικού": "Ceapi",
+                "Έναρθρο πληθυντικού": "ceapili"
+              },
+              {
+                "Άναρθρο ενικού": "Ceru",
+                "Έναρθρο ενικού": "cerŭlu",
+                "Άναρθρο πληθυντικού": "Ceri",
+                "Έναρθρο πληθυντικού": "cerĭlji"
+              },
+              {
+                "Άναρθρο ενικού": "Cheaptine",
+                "Έναρθρο ενικού": "cheaptinile",
+                "Άναρθρο πληθυντικού": "Cheaptinji",
+                "Έναρθρο πληθυντικού": "cheaptinĭlji"
+              },
+              {
+                "Άναρθρο ενικού": "Hârau",
+                "Έναρθρο ενικού": "hâraua",
+                "Άναρθρο πληθυντικού": "Hârei",
+                "Έναρθρο πληθυντικού": "hâreili"
+              }
+            ]
+          },
+          {
+            "id": "ex-3-5",
+            "type": "open_production",
+            "title": "Προφορικά — Ci vedu sh’ ci nu vedu...",
+            "content": {
+              "prompt": "Ci vedu sh’ ci nu vedu..."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "flashcards-3",
+      "type": "flashcards",
+      "title": "Κάρτες",
+      "order": 3,
+      "data": {
+        "flashcards": [
+          {
+            "type": "vocabulary",
+            "front": "lupu",
+            "back": "λύκος"
+          },
+          {
+            "type": "vocabulary",
+            "front": "caprâ",
+            "back": "γίδα"
+          },
+          {
+            "type": "vocabulary",
+            "front": "lemnu",
+            "back": "ξύλο"
+          },
+          {
+            "type": "vocabulary",
+            "front": "iva",
+            "back": "κάπου, πουθενά"
+          },
+          {
+            "type": "vocabulary",
+            "front": "hâryie",
+            "back": "ξημέρωμα"
+          },
+          {
+            "type": "vocabulary",
+            "front": "znjie",
+            "back": "ζημιά"
+          },
+          {
+            "type": "vocabulary",
+            "front": "arâchie",
+            "back": "τσίπουρο"
+          },
+          {
+            "type": "vocabulary",
+            "front": "pâvrie",
+            "back": "φόβος"
+          },
+          {
+            "type": "vocabulary",
+            "front": "tinjie",
+            "back": "τιμή"
+          },
+          {
+            "type": "vocabulary",
+            "front": "tshâtie",
+            "back": "στέγη, σκεπή"
+          },
+          {
+            "type": "vocabulary",
+            "front": "cupie",
+            "back": "κοπάδι"
+          },
+          {
+            "type": "vocabulary",
+            "front": "scândeau",
+            "back": "σπίθα"
+          },
+          {
+            "type": "vocabulary",
+            "front": "dunjeau",
+            "back": "κόσμος, ντουνιάς"
+          },
+          {
+            "type": "vocabulary",
+            "front": "munte",
+            "back": "βουνό"
+          },
+          {
+            "type": "vocabulary",
+            "front": "dinte",
+            "back": "δόντι"
+          },
+          {
+            "type": "vocabulary",
+            "front": "oaspe / oaspitu",
+            "back": "καλεσμένος"
+          },
+          {
+            "type": "vocabulary",
+            "front": "bate",
+            "back": "κελαηδάει, χτυπάει"
+          },
+          {
+            "type": "vocabulary",
+            "front": "cucu",
+            "back": "κούκος"
+          },
+          {
+            "type": "vocabulary",
+            "front": "pulji",
+            "back": "πουλιά"
+          },
+          {
+            "type": "vocabulary",
+            "front": "fugu",
+            "back": "φεύγουν"
+          },
+          {
+            "type": "vocabulary",
+            "front": "tutsĭ",
+            "back": "όλοι"
+          },
+          {
+            "type": "vocabulary",
+            "front": "tu muntsĭ",
+            "back": "στα βουνά"
+          },
+          {
+            "type": "vocabulary",
+            "front": "lja",
+            "back": "παίρνει, παίρνουν"
+          },
+          {
+            "type": "vocabulary",
+            "front": "harau",
+            "back": "χαρά"
+          },
+          {
+            "type": "vocabulary",
+            "front": "zilipsescu",
+            "back": "ζηλεύουν"
+          },
+          {
+            "type": "vocabulary",
+            "front": "earba",
+            "back": "χορτάρι"
+          },
+          {
+            "type": "vocabulary",
+            "front": "cu",
+            "back": "με"
+          },
+          {
+            "type": "vocabulary",
+            "front": "lilitshi",
+            "back": "λουλούδια"
+          },
+          {
+            "type": "vocabulary",
+            "front": "deade",
+            "back": "άνθισε, έδωσε"
+          },
+          {
+            "type": "vocabulary",
+            "front": "în susu",
+            "back": "πάνω"
+          },
+          {
+            "type": "vocabulary",
+            "front": "timtirlinâ",
+            "back": "τριφύλλι"
+          },
+          {
+            "type": "vocabulary",
+            "front": "esu",
+            "back": "βγαίνω, βγαίνουν"
+          },
+          {
+            "type": "vocabulary",
+            "front": "mŭshatsĭ",
+            "back": "όμορφοι"
+          },
+          {
+            "type": "vocabulary",
+            "front": "s’pascâ",
+            "back": "να βόσκουν"
+          },
+          {
+            "type": "vocabulary",
+            "front": "oi",
+            "back": "πρόβατα"
+          },
+          {
+            "type": "vocabulary",
+            "front": "aproape",
+            "back": "κοντά"
+          },
+          {
+            "type": "vocabulary",
+            "front": "stâ",
+            "back": "πάνω σε"
+          },
+          {
+            "type": "vocabulary",
+            "front": "bangu",
+            "back": "τραπέζι"
+          },
+          {
+            "type": "vocabulary",
+            "front": "în focu",
+            "back": "στη φωτιά"
+          },
+          {
+            "type": "vocabulary",
+            "front": "uscati",
+            "back": "στεγνά"
+          },
+          {
+            "type": "vocabulary",
+            "front": "însâratâ",
+            "back": "αλμυρή"
+          },
+          {
+            "type": "vocabulary",
+            "front": "aroshâ",
+            "back": "κόκκινη"
+          },
+          {
+            "type": "vocabulary",
+            "front": "nascu",
+            "back": "φυτρώνω, φυτρώνουν"
+          },
+          {
+            "type": "vocabulary",
+            "front": "carne",
+            "back": "κρέας"
+          },
+          {
+            "type": "vocabulary",
+            "front": "floarâ",
+            "back": "λουλούδι"
+          },
+          {
+            "type": "vocabulary",
+            "front": "analtu",
+            "back": "ψηλός"
+          },
+          {
+            "type": "vocabulary",
+            "front": "lungu",
+            "back": "μακρύς"
+          },
+          {
+            "type": "vocabulary",
+            "front": "peru",
+            "back": "τρίχα, τρίχωμα"
+          },
+          {
+            "type": "vocabulary",
+            "front": "dhascalu",
+            "back": "δάσκαλος"
+          },
+          {
+            "type": "vocabulary",
+            "front": "carmeli",
+            "back": "καραμέλες"
+          },
+          {
+            "type": "vocabulary",
+            "front": "în Sârunâ",
+            "back": "στη Θεσσαλονίκη"
+          },
+          {
+            "type": "vocabulary",
+            "front": "noau",
+            "back": "καινούρια"
+          },
+          {
+            "type": "vocabulary",
+            "front": "aoace",
+            "back": "εδώ"
+          }
+        ]
+      }
+    },
+    {
+      "id": "quiz-3",
+      "type": "quiz",
+      "title": "Quiz",
+      "order": 4,
+      "data": {
+        "flashcards": [
+          {
+            "front": "lupu",
+            "back": "λύκος"
+          },
+          {
+            "front": "caprâ",
+            "back": "γίδα"
+          },
+          {
+            "front": "lemnu",
+            "back": "ξύλο"
+          },
+          {
+            "front": "iva",
+            "back": "κάπου, πουθενά"
+          },
+          {
+            "front": "hâryie",
+            "back": "ξημέρωμα"
+          },
+          {
+            "front": "znjie",
+            "back": "ζημιά"
+          },
+          {
+            "front": "arâchie",
+            "back": "τσίπουρο"
+          },
+          {
+            "front": "pâvrie",
+            "back": "φόβος"
+          },
+          {
+            "front": "tinjie",
+            "back": "τιμή"
+          },
+          {
+            "front": "tshâtie",
+            "back": "στέγη, σκεπή"
+          },
+          {
+            "front": "cupie",
+            "back": "κοπάδι"
+          },
+          {
+            "front": "scândeau",
+            "back": "σπίθα"
+          },
+          {
+            "front": "dunjeau",
+            "back": "κόσμος, ντουνιάς"
+          },
+          {
+            "front": "munte",
+            "back": "βουνό"
+          },
+          {
+            "front": "dinte",
+            "back": "δόντι"
+          },
+          {
+            "front": "oaspe / oaspitu",
+            "back": "καλεσμένος"
+          },
+          {
+            "front": "bate",
+            "back": "κελαηδάει, χτυπάει"
+          },
+          {
+            "front": "cucu",
+            "back": "κούκος"
+          },
+          {
+            "front": "pulji",
+            "back": "πουλιά"
+          },
+          {
+            "front": "fugu",
+            "back": "φεύγουν"
+          },
+          {
+            "front": "tutsĭ",
+            "back": "όλοι"
+          },
+          {
+            "front": "tu muntsĭ",
+            "back": "στα βουνά"
+          },
+          {
+            "front": "lja",
+            "back": "παίρνει, παίρνουν"
+          },
+          {
+            "front": "harau",
+            "back": "χαρά"
+          },
+          {
+            "front": "zilipsescu",
+            "back": "ζηλεύουν"
+          },
+          {
+            "front": "earba",
+            "back": "χορτάρι"
+          },
+          {
+            "front": "cu",
+            "back": "με"
+          },
+          {
+            "front": "lilitshi",
+            "back": "λουλούδια"
+          },
+          {
+            "front": "deade",
+            "back": "άνθισε, έδωσε"
+          },
+          {
+            "front": "în susu",
+            "back": "πάνω"
+          },
+          {
+            "front": "timtirlinâ",
+            "back": "τριφύλλι"
+          },
+          {
+            "front": "esu",
+            "back": "βγαίνω, βγαίνουν"
+          },
+          {
+            "front": "mŭshatsĭ",
+            "back": "όμορφοι"
+          },
+          {
+            "front": "s’pascâ",
+            "back": "να βόσκουν"
+          },
+          {
+            "front": "oi",
+            "back": "πρόβατα"
+          },
+          {
+            "front": "aproape",
+            "back": "κοντά"
+          },
+          {
+            "front": "stâ",
+            "back": "πάνω σε"
+          },
+          {
+            "front": "bangu",
+            "back": "τραπέζι"
+          },
+          {
+            "front": "în focu",
+            "back": "στη φωτιά"
+          },
+          {
+            "front": "uscati",
+            "back": "στεγνά"
+          },
+          {
+            "front": "însâratâ",
+            "back": "αλμυρή"
+          },
+          {
+            "front": "aroshâ",
+            "back": "κόκκινη"
+          },
+          {
+            "front": "nascu",
+            "back": "φυτρώνω, φυτρώνουν"
+          },
+          {
+            "front": "carne",
+            "back": "κρέας"
+          },
+          {
+            "front": "floarâ",
+            "back": "λουλούδι"
+          },
+          {
+            "front": "analtu",
+            "back": "ψηλός"
+          },
+          {
+            "front": "lungu",
+            "back": "μακρύς"
+          },
+          {
+            "front": "peru",
+            "back": "τρίχα, τρίχωμα"
+          },
+          {
+            "front": "dhascalu",
+            "back": "δάσκαλος"
+          },
+          {
+            "front": "carmeli",
+            "back": "καραμέλες"
+          },
+          {
+            "front": "în Sârunâ",
+            "back": "στη Θεσσαλονίκη"
+          },
+          {
+            "front": "noau",
+            "back": "καινούρια"
+          },
+          {
+            "front": "aoace",
+            "back": "εδώ"
+          }
+        ],
+        "vocabulary": [
+          {
+            "title": "Βασικό λεξιλόγιο",
+            "items": [
+              {
+                "vlach": "lupu",
+                "greek": "λύκος"
+              },
+              {
+                "vlach": "caprâ",
+                "greek": "γίδα"
+              },
+              {
+                "vlach": "lemnu",
+                "greek": "ξύλο"
+              },
+              {
+                "vlach": "iva",
+                "greek": "κάπου, πουθενά"
+              },
+              {
+                "vlach": "hâryie",
+                "greek": "ξημέρωμα"
+              },
+              {
+                "vlach": "znjie",
+                "greek": "ζημιά"
+              },
+              {
+                "vlach": "arâchie",
+                "greek": "τσίπουρο"
+              },
+              {
+                "vlach": "pâvrie",
+                "greek": "φόβος"
+              },
+              {
+                "vlach": "tinjie",
+                "greek": "τιμή"
+              },
+              {
+                "vlach": "tshâtie",
+                "greek": "στέγη, σκεπή"
+              },
+              {
+                "vlach": "cupie",
+                "greek": "κοπάδι"
+              },
+              {
+                "vlach": "scândeau",
+                "greek": "σπίθα"
+              },
+              {
+                "vlach": "dunjeau",
+                "greek": "κόσμος, ντουνιάς"
+              },
+              {
+                "vlach": "munte",
+                "greek": "βουνό"
+              },
+              {
+                "vlach": "dinte",
+                "greek": "δόντι"
+              },
+              {
+                "vlach": "oaspe / oaspitu",
+                "greek": "καλεσμένος"
+              }
+            ]
+          },
+          {
+            "title": "Λεξιλόγιο τραγουδιού — Bate cucŭlu",
+            "items": [
+              {
+                "vlach": "bate",
+                "greek": "κελαηδάει, χτυπάει"
+              },
+              {
+                "vlach": "cucu",
+                "greek": "κούκος"
+              },
+              {
+                "vlach": "pulji",
+                "greek": "πουλιά"
+              },
+              {
+                "vlach": "fugu",
+                "greek": "φεύγουν"
+              },
+              {
+                "vlach": "tutsĭ",
+                "greek": "όλοι"
+              },
+              {
+                "vlach": "tu muntsĭ",
+                "greek": "στα βουνά"
+              },
+              {
+                "vlach": "lja",
+                "greek": "παίρνει, παίρνουν"
+              },
+              {
+                "vlach": "harau",
+                "greek": "χαρά"
+              },
+              {
+                "vlach": "zilipsescu",
+                "greek": "ζηλεύουν"
+              },
+              {
+                "vlach": "earba",
+                "greek": "χορτάρι"
+              },
+              {
+                "vlach": "cu",
+                "greek": "με"
+              },
+              {
+                "vlach": "lilitshi",
+                "greek": "λουλούδια"
+              },
+              {
+                "vlach": "deade",
+                "greek": "άνθισε, έδωσε"
+              },
+              {
+                "vlach": "în susu",
+                "greek": "πάνω"
+              },
+              {
+                "vlach": "timtirlinâ",
+                "greek": "τριφύλλι"
+              },
+              {
+                "vlach": "esu",
+                "greek": "βγαίνω, βγαίνουν"
+              },
+              {
+                "vlach": "mŭshatsĭ",
+                "greek": "όμορφοι"
+              },
+              {
+                "vlach": "s’pascâ",
+                "greek": "να βόσκουν"
+              },
+              {
+                "vlach": "oi",
+                "greek": "πρόβατα"
+              }
+            ]
+          },
+          {
+            "title": "Λεξιλόγιο ασκήσεων",
+            "items": [
+              {
+                "vlach": "aproape",
+                "greek": "κοντά"
+              },
+              {
+                "vlach": "stâ",
+                "greek": "πάνω σε"
+              },
+              {
+                "vlach": "bangu",
+                "greek": "τραπέζι"
+              },
+              {
+                "vlach": "în focu",
+                "greek": "στη φωτιά"
+              },
+              {
+                "vlach": "uscati",
+                "greek": "στεγνά"
+              },
+              {
+                "vlach": "însâratâ",
+                "greek": "αλμυρή"
+              },
+              {
+                "vlach": "aroshâ",
+                "greek": "κόκκινη"
+              },
+              {
+                "vlach": "nascu",
+                "greek": "φυτρώνω, φυτρώνουν"
+              },
+              {
+                "vlach": "carne",
+                "greek": "κρέας"
+              },
+              {
+                "vlach": "floarâ",
+                "greek": "λουλούδι"
+              },
+              {
+                "vlach": "analtu",
+                "greek": "ψηλός"
+              },
+              {
+                "vlach": "lungu",
+                "greek": "μακρύς"
+              },
+              {
+                "vlach": "peru",
+                "greek": "τρίχα, τρίχωμα"
+              },
+              {
+                "vlach": "dhascalu",
+                "greek": "δάσκαλος"
+              },
+              {
+                "vlach": "carmeli",
+                "greek": "καραμέλες"
+              },
+              {
+                "vlach": "în Sârunâ",
+                "greek": "στη Θεσσαλονίκη"
+              },
+              {
+                "vlach": "noau",
+                "greek": "καινούρια"
+              },
+              {
+                "vlach": "aoace",
+                "greek": "εδώ"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1598 @@
+{
+  "id": "lesson-1",
+  "type": "lesson",
+  "status": "published",
+  "title": "Ενότητα 1",
+  "subtitle": "Το Αλφάβητο",
+  "description": "Γράμματα, προφορά, συνδυασμοί συμφώνων, φωνήεντα, βασικό λεξιλόγιο και άσκηση ακουστικής διάκρισης γραμμάτων.",
+  "audience": "learner",
+  "tags": [
+    "αλφάβητο",
+    "προφορά",
+    "φωνήεντα",
+    "σύμφωνα"
+  ],
+  "order": 1,
+  "accentColor": "warm",
+  "lastUpdated": "2026-04-02",
+  "meta": {
+    "replacesLegacyUnitNumber": 1,
+    "source": "Ενότητα 1 θεωρία, λεξιλόγιο και απαντήσεις"
+  },
+  "sections": [
+    {
+      "id": "theory-1",
+      "type": "theory",
+      "title": "Θεωρία",
+      "order": 0,
+      "data": {
+        "content": {
+          "intro": "Η πρώτη ενότητα εισάγει το προτεινόμενο σύστημα εγγραφισμού της βλάχικης γλώσσας. Παρουσιάζονται τα γράμματα, η βασική τους προφορά, οι βασικοί συνδυασμοί συμφώνων και τα κύρια φωνήεντα και δίφθογγα.",
+          "blocks": [
+            {
+              "type": "heading",
+              "title": "Το αλφάβητο και η βασική προφορά"
+            },
+            {
+              "type": "paragraph",
+              "text": "Κάθε γράμμα συνδέεται με ενδεικτική προφορά και με μία ή περισσότερες λέξεις-παραδείγματα. Ιδιαίτερη προσοχή χρειάζεται στα γράμματα που αλλάζουν ήχο ανάλογα με το φωνήεν που ακολουθεί, όπως το C και το G."
+            },
+            {
+              "type": "table",
+              "title": "Γράμματα, προφορά και παραδείγματα",
+              "columns": [
+                "Γράμμα",
+                "Προφορά",
+                "Παράδειγμα"
+              ],
+              "rows": [
+                {
+                  "Γράμμα": "A, a",
+                  "Προφορά": "α",
+                  "Παράδειγμα": "albu (άσπρος)"
+                },
+                {
+                  "Γράμμα": "Â, â",
+                  "Προφορά": "α: χαμηλό α & i",
+                  "Παράδειγμα": "pâne (ψωμί)"
+                },
+                {
+                  "Γράμμα": "B, b",
+                  "Προφορά": "μπ",
+                  "Παράδειγμα": "bou (βοδι)"
+                },
+                {
+                  "Γράμμα": "C, c + a, o, u",
+                  "Προφορά": "κα / κο / κου",
+                  "Παράδειγμα": "casâ (σπίτι)"
+                },
+                {
+                  "Γράμμα": "C, c + e, i",
+                  "Προφορά": "τσε / τσι",
+                  "Παράδειγμα": "cerbu (ελάφι), cicuarȃ (ακρίδα)"
+                },
+                {
+                  "Γράμμα": "D, d",
+                  "Προφορά": "ντ",
+                  "Παράδειγμα": "domnu (κύριος), doru (πόνος)"
+                },
+                {
+                  "Γράμμα": "E, e",
+                  "Προφορά": "ε",
+                  "Παράδειγμα": "esu (βγαίνω)"
+                },
+                {
+                  "Γράμμα": "F, f",
+                  "Προφορά": "φ",
+                  "Παράδειγμα": "facu (κάνω)"
+                },
+                {
+                  "Γράμμα": "G, g + a, o, u",
+                  "Προφορά": "γκα / γκο / γκου",
+                  "Παράδειγμα": "gardu (φράχτης), gulescu (αδειάζω)"
+                },
+                {
+                  "Γράμμα": "G, g + e, i",
+                  "Προφορά": "τζε / τζι",
+                  "Παράδειγμα": "geanâ (φρύδι), geaminu (δίδυμος)"
+                },
+                {
+                  "Γράμμα": "H, h",
+                  "Προφορά": "χ",
+                  "Παράδειγμα": "harau (χαρά)"
+                },
+                {
+                  "Γράμμα": "I, i",
+                  "Προφορά": "ι",
+                  "Παράδειγμα": "imnu (περπατώ)"
+                },
+                {
+                  "Γράμμα": "Î, î",
+                  "Προφορά": "ειδικός φωνηεντικός ήχος",
+                  "Παράδειγμα": "întrebu (ρωτάω), în casâ (στο σπίτι)"
+                },
+                {
+                  "Γράμμα": "J, j",
+                  "Προφορά": "ʓ / ζ παχύ",
+                  "Παράδειγμα": "jale (πένθος)"
+                },
+                {
+                  "Γράμμα": "K, k",
+                  "Προφορά": "κ",
+                  "Παράδειγμα": "kilo, kilometru"
+                },
+                {
+                  "Γράμμα": "L, l",
+                  "Προφορά": "λ",
+                  "Παράδειγμα": "lupu (λύκος)"
+                },
+                {
+                  "Γράμμα": "M, m",
+                  "Προφορά": "μ",
+                  "Παράδειγμα": "minte (μυαλό)"
+                },
+                {
+                  "Γράμμα": "N, n",
+                  "Προφορά": "ν",
+                  "Παράδειγμα": "noi (εμείς)"
+                },
+                {
+                  "Γράμμα": "O, o",
+                  "Προφορά": "ο",
+                  "Παράδειγμα": "orbu (τυφλός)"
+                },
+                {
+                  "Γράμμα": "P, p",
+                  "Προφορά": "π",
+                  "Παράδειγμα": "pade (πεδιάδα)"
+                },
+                {
+                  "Γράμμα": "R, r",
+                  "Προφορά": "ρ",
+                  "Παράδειγμα": "aroshu (κόκκινος)"
+                },
+                {
+                  "Γράμμα": "S, s",
+                  "Προφορά": "σ",
+                  "Παράδειγμα": "semnu (σημάδι)"
+                },
+                {
+                  "Γράμμα": "T, t",
+                  "Προφορά": "τ",
+                  "Παράδειγμα": "tahĭna (πρωί)"
+                },
+                {
+                  "Γράμμα": "U, u",
+                  "Προφορά": "ου",
+                  "Παράδειγμα": "umplu (γεμίζω)"
+                },
+                {
+                  "Γράμμα": "V, v",
+                  "Προφορά": "β",
+                  "Παράδειγμα": "vale (κοιλάδα)"
+                },
+                {
+                  "Γράμμα": "X, x",
+                  "Προφορά": "ξ",
+                  "Παράδειγμα": "xeane (ξένα)"
+                },
+                {
+                  "Γράμμα": "Y, y",
+                  "Προφορά": "γ",
+                  "Παράδειγμα": "yisu (όνειρο)"
+                },
+                {
+                  "Γράμμα": "Z, z",
+                  "Προφορά": "ζ",
+                  "Παράδειγμα": "zboru (λόγος, κουβέντα)"
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "title": "Συνδυασμοί συμφώνων"
+            },
+            {
+              "type": "paragraph",
+              "text": "Η ενότητα ξεχωρίζει τους βασικούς διγράμματους και τριγράμματους συνδυασμούς που δίνουν ήχους διαφορετικούς από τα απλά γράμματα."
+            },
+            {
+              "type": "table",
+              "title": "Συνδυασμοί και παραδείγματα",
+              "columns": [
+                "Συνδυασμός",
+                "Προφορά",
+                "Παράδειγμα"
+              ],
+              "rows": [
+                {
+                  "Συνδυασμός": "Ch, ch + e, i",
+                  "Προφορά": "κε / κι",
+                  "Παράδειγμα": "cheptu (στέρνο), chicu (στάζω)"
+                },
+                {
+                  "Συνδυασμός": "Dh, dh",
+                  "Προφορά": "δ",
+                  "Παράδειγμα": "dhemunu (δαίμονας)"
+                },
+                {
+                  "Συνδυασμός": "Dj, dj",
+                  "Προφορά": "τζ παχύ",
+                  "Παράδειγμα": "djone (λεβέντης)"
+                },
+                {
+                  "Συνδυασμός": "Dz, dz",
+                  "Προφορά": "τζ",
+                  "Παράδειγμα": "dzamȃ (ζουμί)"
+                },
+                {
+                  "Συνδυασμός": "Gh, gh + e, i",
+                  "Προφορά": "γκε / γκι",
+                  "Παράδειγμα": "ghine (καλά), ghelâ (κατσαρόλα)"
+                },
+                {
+                  "Συνδυασμός": "Lj, lj",
+                  "Προφορά": "παχύ λ",
+                  "Παράδειγμα": "ljirtare (συγχώρεση)"
+                },
+                {
+                  "Συνδυασμός": "Nj, nj",
+                  "Προφορά": "παχύ ν",
+                  "Παράδειγμα": "njare (μέλι)"
+                },
+                {
+                  "Συνδυασμός": "Sh, sh",
+                  "Προφορά": "σ παχύ",
+                  "Παράδειγμα": "shoputu (βρύση)"
+                },
+                {
+                  "Συνδυασμός": "Th, th",
+                  "Προφορά": "θ",
+                  "Παράδειγμα": "thamâ (θαύμα)"
+                },
+                {
+                  "Συνδυασμός": "Ts, ts + a, o, u",
+                  "Προφορά": "τσ",
+                  "Παράδειγμα": "tsapu (τράγος)"
+                },
+                {
+                  "Συνδυασμός": "tsh",
+                  "Προφορά": "τσ παχύ",
+                  "Παράδειγμα": "citshoru (πόδι)"
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "title": "Ομάδες εξάσκησης ανά ήχο"
+            },
+            {
+              "type": "bullet_list",
+              "title": "ga – go – gu",
+              "items": [
+                "gâljinâ",
+                "golu",
+                "gulescu",
+                "gutânju",
+                "gârnutsu",
+                "guvâ"
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "title": "ghi – ghe",
+              "items": [
+                "naghio",
+                "anghiu",
+                "gheladju",
+                "înghilitshu",
+                "anghelu",
+                "ghidere"
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "title": "gi – ge",
+              "items": [
+                "fagi",
+                "fugi",
+                "plânge",
+                "trage",
+                "frânge",
+                "marginâ"
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "title": "dza – dzo – dzu / dz",
+              "items": [
+                "astâdzâ",
+                "urdzâcâ",
+                "cadzĭ",
+                "pârpodzĭ",
+                "frândzâ",
+                "dzace"
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "title": "dj",
+              "items": [
+                "djocu",
+                "adjunâ",
+                "djuneapine",
+                "adjungu",
+                "djereme",
+                "djârdjâfe"
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "title": "ca – co – cu",
+              "items": [
+                "curcubetâ",
+                "cucubeu",
+                "cale",
+                "corbu",
+                "culjeastrandu",
+                "câpestru"
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "title": "chi – che",
+              "items": [
+                "cheaptine",
+                "chinu",
+                "arâchie",
+                "arachi",
+                "cherdu",
+                "achicâsescu"
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "title": "ci – ce",
+              "items": [
+                "încernu",
+                "ceru",
+                "ceapâ",
+                "civa",
+                "arace",
+                "acia"
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "title": "tsa – tso – tsu",
+              "items": [
+                "tsarâ",
+                "tsapâ",
+                "acatsu",
+                "antsâledzu",
+                "întsapu",
+                "cutsutu"
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "title": "tsh",
+              "items": [
+                "tshâflâ",
+                "tshurvâ",
+                "îngatshu",
+                "tshocu",
+                "citshoru",
+                "întshupu"
+              ]
+            },
+            {
+              "type": "heading",
+              "title": "Σύγκρινε προσεκτικά κοντινούς ήχους"
+            },
+            {
+              "type": "table",
+              "title": "Ζεύγη σύγκρισης",
+              "columns": [
+                "Μορφή Α",
+                "Μορφή Β"
+              ],
+              "rows": [
+                {
+                  "Μορφή Α": "Punte",
+                  "Μορφή Β": "punde"
+                },
+                {
+                  "Μορφή Α": "Munte",
+                  "Μορφή Β": "munde"
+                },
+                {
+                  "Μορφή Α": "Mângu",
+                  "Μορφή Β": "mâncu"
+                },
+                {
+                  "Μορφή Α": "plângu",
+                  "Μορφή Β": "plâncu"
+                },
+                {
+                  "Μορφή Α": "Împrostu",
+                  "Μορφή Β": "îmbrostu"
+                },
+                {
+                  "Μορφή Α": "S’ yinu",
+                  "Μορφή Β": "z’yinu"
+                },
+                {
+                  "Μορφή Α": "zgrumu",
+                  "Μορφή Β": "sgrumu"
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "title": "Τα φωνήεντα"
+            },
+            {
+              "type": "table",
+              "title": "Μονά φωνήεντα",
+              "columns": [
+                "Σύμβολο",
+                "Περιγραφή"
+              ],
+              "rows": [
+                {
+                  "Σύμβολο": "a",
+                  "Περιγραφή": "ανοιχτό α"
+                },
+                {
+                  "Σύμβολο": "â",
+                  "Περιγραφή": "ακούγεται μεταξύ a / i"
+                },
+                {
+                  "Σύμβολο": "i",
+                  "Περιγραφή": "καθαρό ι"
+                },
+                {
+                  "Σύμβολο": "ĭ",
+                  "Περιγραφή": "χαμηλό, σχεδόν δεν ακούγεται· κυρίως σε καταλήξεις"
+                },
+                {
+                  "Σύμβολο": "î",
+                  "Περιγραφή": "εμφανίζεται πριν από m, n και τονισμένο μετά από ts, dz, r"
+                },
+                {
+                  "Σύμβολο": "u",
+                  "Περιγραφή": "καθαρό ου"
+                },
+                {
+                  "Σύμβολο": "ŭ",
+                  "Περιγραφή": "χαμηλό, σχεδόν δεν ακούγεται· κυρίως σε καταλήξεις"
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "title": "Δίφθογγοι",
+              "columns": [
+                "Δίφθογγος",
+                "Προφορά",
+                "Παραδείγματα"
+              ],
+              "rows": [
+                {
+                  "Δίφθογγος": "oa",
+                  "Προφορά": "ua",
+                  "Παραδείγματα": "coadâ, shoaricu"
+                },
+                {
+                  "Δίφθογγος": "ea",
+                  "Προφορά": "ia",
+                  "Παραδείγματα": "ceapâ, cheaptine, aleage"
+                }
+              ]
+            },
+            {
+              "type": "callout",
+              "title": "Πρόσεξε",
+              "text": "Όταν μια λέξη τελειώνει σε e, τα περισσότερα ιδιώματα το προφέρουν ως i.",
+              "tone": "info"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "vocabulary-1",
+      "type": "vocabulary",
+      "title": "Λεξιλόγιο",
+      "order": 1,
+      "data": {
+        "sections": [
+          {
+            "title": "Βασικό λεξιλόγιο της ενότητας",
+            "items": [
+              {
+                "vlach": "acatsu",
+                "greek": "πιάνω"
+              },
+              {
+                "vlach": "acia",
+                "greek": "εκεί"
+              },
+              {
+                "vlach": "achicâsescu",
+                "greek": "καταλαβαίνω"
+              },
+              {
+                "vlach": "adjunâ",
+                "greek": "πεινασμένη"
+              },
+              {
+                "vlach": "adjungu",
+                "greek": "φτάνω"
+              },
+              {
+                "vlach": "anghelu",
+                "greek": "άγγελος"
+              },
+              {
+                "vlach": "anghiu",
+                "greek": "γρήγορα, νωρίς"
+              },
+              {
+                "vlach": "antsâledzu",
+                "greek": "αντιλαμβάνομαι"
+              },
+              {
+                "vlach": "arace",
+                "greek": "κρύο (επιθ.)"
+              },
+              {
+                "vlach": "arachi",
+                "greek": "αρπάζεις"
+              },
+              {
+                "vlach": "arâchie",
+                "greek": "τσίπουρο"
+              },
+              {
+                "vlach": "astâdzâ",
+                "greek": "σήμερα"
+              },
+              {
+                "vlach": "cadzĭ",
+                "greek": "πέφτεις"
+              },
+              {
+                "vlach": "cale",
+                "greek": "δρόμος"
+              },
+              {
+                "vlach": "câpestru",
+                "greek": "χαλινάρι"
+              },
+              {
+                "vlach": "ceapâ",
+                "greek": "κρεμμύδι"
+              },
+              {
+                "vlach": "ceru",
+                "greek": "ουρανός"
+              },
+              {
+                "vlach": "cheaptine",
+                "greek": "χτένα"
+              },
+              {
+                "vlach": "cherdu",
+                "greek": "χάνω"
+              },
+              {
+                "vlach": "chinu",
+                "greek": "πεύκο"
+              },
+              {
+                "vlach": "citshoru",
+                "greek": "πόδι"
+              },
+              {
+                "vlach": "civa",
+                "greek": "τίποτα"
+              },
+              {
+                "vlach": "corbu",
+                "greek": "κόρακας, καημένος"
+              },
+              {
+                "vlach": "cucubeu",
+                "greek": "ουράνιο τόξο"
+              },
+              {
+                "vlach": "culjeastrandu",
+                "greek": "πρίμουλα"
+              },
+              {
+                "vlach": "curcubetâ",
+                "greek": "κολοκύθα"
+              },
+              {
+                "vlach": "cutsutu",
+                "greek": "μαχαίρι"
+              },
+              {
+                "vlach": "djârdjâfe",
+                "greek": "είδος ντουλαπιού"
+              },
+              {
+                "vlach": "djereme",
+                "greek": "απατεώνας"
+              },
+              {
+                "vlach": "djocu",
+                "greek": "παιχνίδι"
+              },
+              {
+                "vlach": "djuneapine",
+                "greek": "κέδρος"
+              },
+              {
+                "vlach": "dzace",
+                "greek": "δέκα"
+              },
+              {
+                "vlach": "fagi",
+                "greek": "οξιές"
+              },
+              {
+                "vlach": "frândzâ",
+                "greek": "φύλλο"
+              },
+              {
+                "vlach": "frânge",
+                "greek": "σπάει"
+              },
+              {
+                "vlach": "fugi",
+                "greek": "φεύγεις"
+              },
+              {
+                "vlach": "gâljinâ",
+                "greek": "κότα"
+              },
+              {
+                "vlach": "gârnutsu",
+                "greek": "σπυρί"
+              },
+              {
+                "vlach": "gheladju",
+                "greek": "μάγειρας"
+              },
+              {
+                "vlach": "ghidere",
+                "greek": "μπελάς"
+              },
+              {
+                "vlach": "golu",
+                "greek": "άδειος"
+              },
+              {
+                "vlach": "gulescu",
+                "greek": "αδειάζω"
+              },
+              {
+                "vlach": "gutânju",
+                "greek": "κυδώνι"
+              },
+              {
+                "vlach": "guvâ",
+                "greek": "τρύπα"
+              },
+              {
+                "vlach": "înghilitshu",
+                "greek": "γυαλίζω"
+              },
+              {
+                "vlach": "încernu",
+                "greek": "κοσκινίζω"
+              },
+              {
+                "vlach": "îngâtshu",
+                "greek": "μαλώνω"
+              },
+              {
+                "vlach": "întsapu",
+                "greek": "τσιμπάω"
+              },
+              {
+                "vlach": "întshupu",
+                "greek": "γραπώνω"
+              },
+              {
+                "vlach": "marginâ",
+                "greek": "άκρη"
+              },
+              {
+                "vlach": "naghio",
+                "greek": "τουαλέτα"
+              },
+              {
+                "vlach": "pârpodzĭ",
+                "greek": "κάλτσες"
+              },
+              {
+                "vlach": "plânge",
+                "greek": "κλαίει"
+              },
+              {
+                "vlach": "trage",
+                "greek": "τραβάει"
+              },
+              {
+                "vlach": "tsapâ",
+                "greek": "τσαπί"
+              },
+              {
+                "vlach": "tsarâ",
+                "greek": "χώμα"
+              },
+              {
+                "vlach": "tshâflâ",
+                "greek": "τσόφλι, φλούδα"
+              },
+              {
+                "vlach": "tshocu",
+                "greek": "σφυρί"
+              },
+              {
+                "vlach": "tshurvâ",
+                "greek": "σούπα"
+              },
+              {
+                "vlach": "urdzâcâ",
+                "greek": "τσουκνίδα"
+              }
+            ]
+          },
+          {
+            "title": "Λεξιλόγιο εξάσκησης στα σύμφωνα",
+            "items": [
+              {
+                "vlach": "acelu",
+                "greek": "εκείνος"
+              },
+              {
+                "vlach": "acloce",
+                "greek": "εκεί"
+              },
+              {
+                "vlach": "agâdescu",
+                "greek": "χτυπώ"
+              },
+              {
+                "vlach": "aleage",
+                "greek": "διαλέγει"
+              },
+              {
+                "vlach": "alodzu",
+                "greek": "ζυμώνω"
+              },
+              {
+                "vlach": "andjacâ",
+                "greek": "ακριβώς"
+              },
+              {
+                "vlach": "anjia",
+                "greek": "εμένα"
+              },
+              {
+                "vlach": "ashĭ",
+                "greek": "έτσι"
+              },
+              {
+                "vlach": "bashu",
+                "greek": "φιλάω"
+              },
+              {
+                "vlach": "bilidjichi",
+                "greek": "μπιχλιμπίδια"
+              },
+              {
+                "vlach": "calu",
+                "greek": "άλογο"
+              },
+              {
+                "vlach": "cashu",
+                "greek": "τυρί"
+              },
+              {
+                "vlach": "cheale",
+                "greek": "δέρμα"
+              },
+              {
+                "vlach": "cherdu",
+                "greek": "χάνω"
+              },
+              {
+                "vlach": "coadâ",
+                "greek": "ουρά"
+              },
+              {
+                "vlach": "fugimu",
+                "greek": "φεύγουμε"
+              },
+              {
+                "vlach": "ghine",
+                "greek": "καλά"
+              },
+              {
+                "vlach": "ghivetshâ",
+                "greek": "μαγειρικό σκεύος"
+              },
+              {
+                "vlach": "gljetsu",
+                "greek": "πάγος"
+              },
+              {
+                "vlach": "gordzu",
+                "greek": "άγριο αχλάδι"
+              },
+              {
+                "vlach": "gushâ",
+                "greek": "αυχένας"
+              },
+              {
+                "vlach": "împrostu",
+                "greek": "όρθιος"
+              },
+              {
+                "vlach": "lishoru",
+                "greek": "ελαφρύς, εύκολος"
+              },
+              {
+                "vlach": "ljau",
+                "greek": "παίρνω"
+              },
+              {
+                "vlach": "ljepuru",
+                "greek": "λαγός"
+              },
+              {
+                "vlach": "lucredzu",
+                "greek": "δουλεύω"
+              },
+              {
+                "vlach": "mângu",
+                "greek": "τρώω"
+              },
+              {
+                "vlach": "munte",
+                "greek": "βουνό"
+              },
+              {
+                "vlach": "nare",
+                "greek": "μύτη"
+              },
+              {
+                "vlach": "nelu",
+                "greek": "δαχτυλίδι"
+              },
+              {
+                "vlach": "njare",
+                "greek": "μέλι"
+              },
+              {
+                "vlach": "njelu",
+                "greek": "αρνί"
+              },
+              {
+                "vlach": "pâlandzâ",
+                "greek": "ζυγαριά"
+              },
+              {
+                "vlach": "pâltescu",
+                "greek": "πληρώνω"
+              },
+              {
+                "vlach": "pândzâ",
+                "greek": "ύφασμα"
+              },
+              {
+                "vlach": "plângu",
+                "greek": "κλαίω"
+              },
+              {
+                "vlach": "punte",
+                "greek": "γέφυρα"
+              },
+              {
+                "vlach": "shoaricu",
+                "greek": "ποντίκι"
+              },
+              {
+                "vlach": "tsupatâ",
+                "greek": "τσεκούρι"
+              },
+              {
+                "vlach": "vanghelju",
+                "greek": "Ευαγγέλιο"
+              },
+              {
+                "vlach": "vasu",
+                "greek": "κουζινικό σκεύος"
+              },
+              {
+                "vlach": "yinu",
+                "greek": "έρχομαι"
+              },
+              {
+                "vlach": "zghicu",
+                "greek": "κραυγή"
+              },
+              {
+                "vlach": "zgrumu",
+                "greek": "πνίγω"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "exercises-1",
+      "type": "exercises",
+      "title": "Ασκήσεις",
+      "order": 2,
+      "data": {
+        "unitNumber": 1,
+        "exercises": [
+          {
+            "id": "ex-1-1",
+            "type": "fill_in_letters",
+            "title": "1.1 Ακούω και συμπληρώνω",
+            "instructions": "Συμπλήρωσε το σωστό γράμμα ή συνδυασμό γραμμάτων.",
+            "groups": [
+              {
+                "letter_choice": "L / lj",
+                "items": [
+                  {
+                    "number": 1,
+                    "text": "…….ishoru"
+                  },
+                  {
+                    "number": 2,
+                    "text": "……epuru"
+                  },
+                  {
+                    "number": 3,
+                    "text": "………….au"
+                  },
+                  {
+                    "number": 4,
+                    "text": "…….ucredzu"
+                  },
+                  {
+                    "number": 5,
+                    "text": "pâ…….tescu"
+                  }
+                ]
+              },
+              {
+                "letter_choice": "N / nj",
+                "items": [
+                  {
+                    "number": 1,
+                    "text": "……….are"
+                  },
+                  {
+                    "number": 2,
+                    "text": "………..are"
+                  },
+                  {
+                    "number": 3,
+                    "text": "…………..elu"
+                  },
+                  {
+                    "number": 4,
+                    "text": "…………elu"
+                  },
+                  {
+                    "number": 5,
+                    "text": "a……….ia"
+                  }
+                ]
+              },
+              {
+                "letter_choice": "S / sh",
+                "items": [
+                  {
+                    "number": 1,
+                    "text": "……oaricu"
+                  },
+                  {
+                    "number": 2,
+                    "text": "ca………u"
+                  },
+                  {
+                    "number": 3,
+                    "text": "a…….ĭ"
+                  },
+                  {
+                    "number": 4,
+                    "text": "ba……..u"
+                  },
+                  {
+                    "number": 5,
+                    "text": "va..........u"
+                  }
+                ]
+              },
+              {
+                "letter_choice": "C / ch",
+                "items": [
+                  {
+                    "number": 1,
+                    "text": "a……atsu"
+                  },
+                  {
+                    "number": 2,
+                    "text": "…….erdu"
+                  },
+                  {
+                    "number": 3,
+                    "text": "……….alu"
+                  },
+                  {
+                    "number": 4,
+                    "text": "……….eale"
+                  },
+                  {
+                    "number": 5,
+                    "text": "......oadâ"
+                  }
+                ]
+              },
+              {
+                "letter_choice": "c / ts",
+                "items": [
+                  {
+                    "number": 1,
+                    "text": "……iva"
+                  },
+                  {
+                    "number": 2,
+                    "text": "…..upatâ"
+                  },
+                  {
+                    "number": 3,
+                    "text": "a……elu"
+                  },
+                  {
+                    "number": 4,
+                    "text": "aclo…….e"
+                  },
+                  {
+                    "number": 5,
+                    "text": "glje.....u"
+                  }
+                ]
+              },
+              {
+                "letter_choice": "G / gh",
+                "items": [
+                  {
+                    "number": 1,
+                    "text": "……ine"
+                  },
+                  {
+                    "number": 2,
+                    "text": "……ushâ"
+                  },
+                  {
+                    "number": 3,
+                    "text": "z…….icu"
+                  },
+                  {
+                    "number": 4,
+                    "text": "……ivetshâ"
+                  },
+                  {
+                    "number": 5,
+                    "text": "Van…….elju"
+                  }
+                ]
+              },
+              {
+                "letter_choice": "G / dz",
+                "items": [
+                  {
+                    "number": 1,
+                    "text": "A.....âdescu"
+                  },
+                  {
+                    "number": 2,
+                    "text": "alo……u"
+                  },
+                  {
+                    "number": 3,
+                    "text": "fu…..imu"
+                  },
+                  {
+                    "number": 4,
+                    "text": "pân……â"
+                  },
+                  {
+                    "number": 5,
+                    "text": "alea……e"
+                  }
+                ]
+              },
+              {
+                "letter_choice": "dz / dj",
+                "items": [
+                  {
+                    "number": 1,
+                    "text": "gor....u"
+                  },
+                  {
+                    "number": 2,
+                    "text": "an.....acâ"
+                  },
+                  {
+                    "number": 3,
+                    "text": "pâlan.... â"
+                  },
+                  {
+                    "number": 4,
+                    "text": "bili…..iche"
+                  },
+                  {
+                    "number": 5,
+                    "text": "ca…..ĭ"
+                  }
+                ]
+              }
+            ],
+            "answers": [
+              {
+                "items": [
+                  {
+                    "number": 1,
+                    "text": "lishoru"
+                  },
+                  {
+                    "number": 2,
+                    "text": "Ljepuru"
+                  },
+                  {
+                    "number": 3,
+                    "text": "ljau"
+                  },
+                  {
+                    "number": 4,
+                    "text": "Lucredzu"
+                  },
+                  {
+                    "number": 5,
+                    "text": "pâltescu"
+                  }
+                ]
+              },
+              {
+                "items": [
+                  {
+                    "number": 1,
+                    "text": "nare"
+                  },
+                  {
+                    "number": 2,
+                    "text": "njare"
+                  },
+                  {
+                    "number": 3,
+                    "text": "njelu"
+                  },
+                  {
+                    "number": 4,
+                    "text": "nelu"
+                  },
+                  {
+                    "number": 5,
+                    "text": "anjia"
+                  }
+                ]
+              },
+              {
+                "items": [
+                  {
+                    "number": 1,
+                    "text": "shoaricu"
+                  },
+                  {
+                    "number": 2,
+                    "text": "cashu"
+                  },
+                  {
+                    "number": 3,
+                    "text": "ashĭ"
+                  },
+                  {
+                    "number": 4,
+                    "text": "bashu"
+                  },
+                  {
+                    "number": 5,
+                    "text": "vasu"
+                  }
+                ]
+              },
+              {
+                "items": [
+                  {
+                    "number": 1,
+                    "text": "acatsu"
+                  },
+                  {
+                    "number": 2,
+                    "text": "cherdu"
+                  },
+                  {
+                    "number": 3,
+                    "text": "calu"
+                  },
+                  {
+                    "number": 4,
+                    "text": "cheale"
+                  },
+                  {
+                    "number": 5,
+                    "text": "coadâ"
+                  }
+                ]
+              },
+              {
+                "items": [
+                  {
+                    "number": 1,
+                    "text": "civa"
+                  },
+                  {
+                    "number": 2,
+                    "text": "tsupatâ"
+                  },
+                  {
+                    "number": 3,
+                    "text": "acelu"
+                  },
+                  {
+                    "number": 4,
+                    "text": "acloce"
+                  },
+                  {
+                    "number": 5,
+                    "text": "gljetsu"
+                  }
+                ]
+              },
+              {
+                "items": [
+                  {
+                    "number": 1,
+                    "text": "ghine"
+                  },
+                  {
+                    "number": 2,
+                    "text": "gushâ"
+                  },
+                  {
+                    "number": 3,
+                    "text": "zghicu"
+                  },
+                  {
+                    "number": 4,
+                    "text": "ghivetshâ"
+                  },
+                  {
+                    "number": 5,
+                    "text": "Vanghelju"
+                  }
+                ]
+              },
+              {
+                "items": [
+                  {
+                    "number": 1,
+                    "text": "agâdescu"
+                  },
+                  {
+                    "number": 2,
+                    "text": "alodzu"
+                  },
+                  {
+                    "number": 3,
+                    "text": "fugimu"
+                  },
+                  {
+                    "number": 4,
+                    "text": "pândzâ"
+                  },
+                  {
+                    "number": 5,
+                    "text": "aleage"
+                  }
+                ]
+              },
+              {
+                "items": [
+                  {
+                    "number": 1,
+                    "text": "gordzu"
+                  },
+                  {
+                    "number": 2,
+                    "text": "andjacâ"
+                  },
+                  {
+                    "number": 3,
+                    "text": "pâlandzâ"
+                  },
+                  {
+                    "number": 4,
+                    "text": "bilidjiche"
+                  },
+                  {
+                    "number": 5,
+                    "text": "cadzĭ"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ex-1-2",
+            "type": "worked_examples_only",
+            "title": "Σύγκρινε κοντινούς ήχους",
+            "items": [
+              {
+                "number": 1,
+                "solved_text": "Punte vs punde"
+              },
+              {
+                "number": 2,
+                "solved_text": "Munte vs munde"
+              },
+              {
+                "number": 3,
+                "solved_text": "Mângu vs mâncu"
+              },
+              {
+                "number": 4,
+                "solved_text": "plângu vs plâncu"
+              },
+              {
+                "number": 5,
+                "solved_text": "Împrostu vs îmbrostu"
+              },
+              {
+                "number": 6,
+                "solved_text": "S’ yinu vs z’yinu"
+              },
+              {
+                "number": 7,
+                "solved_text": "zgrumu vs sgrumu"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "flashcards-1",
+      "type": "flashcards",
+      "title": "Κάρτες",
+      "order": 3,
+      "data": {
+        "flashcards": [
+          {
+            "type": "vocabulary",
+            "front": "acatsu",
+            "back": "πιάνω"
+          },
+          {
+            "type": "vocabulary",
+            "front": "ceapâ",
+            "back": "κρεμμύδι"
+          },
+          {
+            "type": "vocabulary",
+            "front": "ceru",
+            "back": "ουρανός"
+          },
+          {
+            "type": "vocabulary",
+            "front": "citshoru",
+            "back": "πόδι"
+          },
+          {
+            "type": "vocabulary",
+            "front": "cucubeu",
+            "back": "ουράνιο τόξο"
+          },
+          {
+            "type": "vocabulary",
+            "front": "gâljinâ",
+            "back": "κότα"
+          },
+          {
+            "type": "vocabulary",
+            "front": "ghine",
+            "back": "καλά"
+          },
+          {
+            "type": "vocabulary",
+            "front": "pârpodzĭ",
+            "back": "κάλτσες"
+          },
+          {
+            "type": "vocabulary",
+            "front": "tshocu",
+            "back": "σφυρί"
+          },
+          {
+            "type": "vocabulary",
+            "front": "tsarâ",
+            "back": "χώμα"
+          },
+          {
+            "type": "vocabulary",
+            "front": "ljepuru",
+            "back": "λαγός"
+          },
+          {
+            "type": "vocabulary",
+            "front": "njare",
+            "back": "μέλι"
+          },
+          {
+            "type": "vocabulary",
+            "front": "shoaricu",
+            "back": "ποντίκι"
+          },
+          {
+            "type": "vocabulary",
+            "front": "vasu",
+            "back": "κουζινικό σκεύος"
+          }
+        ]
+      }
+    },
+    {
+      "id": "quiz-1",
+      "type": "quiz",
+      "title": "Quiz",
+      "order": 4,
+      "data": {
+        "flashcards": [
+          {
+            "front": "acatsu",
+            "back": "πιάνω"
+          },
+          {
+            "front": "ceapâ",
+            "back": "κρεμμύδι"
+          },
+          {
+            "front": "ceru",
+            "back": "ουρανός"
+          },
+          {
+            "front": "citshoru",
+            "back": "πόδι"
+          },
+          {
+            "front": "cucubeu",
+            "back": "ουράνιο τόξο"
+          },
+          {
+            "front": "gâljinâ",
+            "back": "κότα"
+          },
+          {
+            "front": "ghine",
+            "back": "καλά"
+          },
+          {
+            "front": "pârpodzĭ",
+            "back": "κάλτσες"
+          },
+          {
+            "front": "tshocu",
+            "back": "σφυρί"
+          },
+          {
+            "front": "tsarâ",
+            "back": "χώμα"
+          },
+          {
+            "front": "ljepuru",
+            "back": "λαγός"
+          },
+          {
+            "front": "njare",
+            "back": "μέλι"
+          },
+          {
+            "front": "shoaricu",
+            "back": "ποντίκι"
+          },
+          {
+            "front": "vasu",
+            "back": "κουζινικό σκεύος"
+          }
+        ],
+        "vocabulary": [
+          {
+            "title": "Βασικό λεξιλόγιο",
+            "items": [
+              {
+                "vlach": "acatsu",
+                "greek": "πιάνω"
+              },
+              {
+                "vlach": "ceapâ",
+                "greek": "κρεμμύδι"
+              },
+              {
+                "vlach": "ceru",
+                "greek": "ουρανός"
+              },
+              {
+                "vlach": "citshoru",
+                "greek": "πόδι"
+              },
+              {
+                "vlach": "cucubeu",
+                "greek": "ουράνιο τόξο"
+              },
+              {
+                "vlach": "gâljinâ",
+                "greek": "κότα"
+              },
+              {
+                "vlach": "ghine",
+                "greek": "καλά"
+              },
+              {
+                "vlach": "pârpodzĭ",
+                "greek": "κάλτσες"
+              },
+              {
+                "vlach": "tshocu",
+                "greek": "σφυρί"
+              },
+              {
+                "vlach": "tsarâ",
+                "greek": "χώμα"
+              },
+              {
+                "vlach": "ljepuru",
+                "greek": "λαγός"
+              },
+              {
+                "vlach": "njare",
+                "greek": "μέλι"
+              },
+              {
+                "vlach": "shoaricu",
+                "greek": "ποντίκι"
+              },
+              {
+                "vlach": "vasu",
+                "greek": "κουζινικό σκεύος"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

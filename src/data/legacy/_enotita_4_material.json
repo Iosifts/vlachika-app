@@ -1,0 +1,1270 @@
+{
+  "unit": {
+    "number": 4,
+    "title_gr": "Αόριστο άρθρο, πληθυντικός αορίστου και προθέσεις",
+    "title_vlach": null,
+    "slug": "enotita-4-aoristo-arthro-protheseis-catse-ca",
+    "language": "Βλάχικα",
+    "script_policy": "Η γραφή ακολουθεί ακριβώς το διαθέσιμο υλικό των μαθημάτων και των ασκήσεων, χωρίς αντικατάσταση χαρακτήρων.",
+    "material_status": "μερικό",
+    "available_material": [
+      "κύριο θεωρητικό αρχείο Ενότητας 4",
+      "ξεχωριστό λεξιλόγιο Ενότητας 4",
+      "ξεχωριστό φύλλο ασκήσεων Ενότητας 4",
+      "αρχείο απαντήσεων",
+      "πίνακας ουσιαστικών με οριστικό και αόριστο άρθρο",
+      "τραγούδι με άσκηση συμπλήρωσης",
+      "μερικώς ορατή υποενότητα ανάγνωσης/κατανόησης 4.3"
+    ],
+    "missing_or_not_found": [
+      "πλήρες κείμενο και ερωτήσεις κατανόησης της υποενότητας 4.3 «Zburâscu: Ci potu s’ vedu sh’ ci nu potu s’vedu...»",
+      "επίσημο answer key για τα 10 κενά του τραγουδιού"
+    ]
+  },
+  "source_files": [
+    {
+      "role": "theory_primary_source",
+      "filename": "Ενότητα 4- Αόριστο Άρθρο (1).docx"
+    },
+    {
+      "role": "vocabulary_primary_source",
+      "filename": "Λεξιλόγιο 4. (3).docx"
+    },
+    {
+      "role": "exercises_primary_source",
+      "filename": "Ασκήσεις 4. (1).docx"
+    },
+    {
+      "role": "answers_primary_source",
+      "filename": "4 Απαντήσεις..docx"
+    }
+  ],
+  "homepage_card": {
+    "title": "Ενότητα 4 — Αόριστο άρθρο, πληθυντικός αορίστου και προθέσεις",
+    "description": "Unu / unâ, nâshĭtsĭ / nâshti, di / di la / la / τίποτα, câtse / câ, μαζί με τραγούδι, λεξιλόγιο, πίνακα ουσιαστικών και λυμένες ασκήσεις.",
+    "buttons": [
+      "Θεωρία",
+      "Λεξιλόγιο",
+      "Ασκήσεις",
+      "Κάρτες",
+      "Quiz"
+    ]
+  },
+  "pedagogical_outline": {
+    "learning_goals": [
+      "να ξεχωρίζω το αόριστο άρθρο στον ενικό: unu / unâ",
+      "να αναγνωρίζω τον πληθυντικό του αορίστου: nâshĭtsĭ / nâshti",
+      "να βλέπω ότι το ουδέτερο ακολουθεί το αρσενικό στον ενικό και το θηλυκό στον πληθυντικό",
+      "να συνδέω το ουσιαστικό με τον οριστικό και τον αόριστο τύπο του μέσα από πίνακα παραδειγμάτων",
+      "να χρησιμοποιώ di, di la, la ή τίποτα μέσα σε ολοκληρωμένες προτάσεις",
+      "να ξεχωρίζω τη χρήση των câtse / câ σε απλά συμφραζόμενα",
+      "να εξοικειώνομαι με λεξιλόγιο και ρήματα μέσα από το τραγούδι της ενότητας"
+    ],
+    "recommended_teaching_order": [
+      "1. Παρουσίαση του αόριστου άρθρου στον ενικό: unu / unâ",
+      "2. Παρουσίαση του αόριστου στον πληθυντικό: nâshĭtsĭ / nâshti και της σημασίας «nâshti = κάτι»",
+      "3. Μελέτη του πίνακα ουσιαστικό → οριστικό άρθρο → αόριστο άρθρο",
+      "4. Λυμένα παραδείγματα με di / di la / la / τίποτα",
+      "5. Ελεγχόμενες ασκήσεις μόνο με αόριστο άρθρο",
+      "6. Συνδυαστικές ασκήσεις με αόριστο άρθρο και προθέσεις",
+      "7. Μικρή στοχευμένη άσκηση για câtse / câ",
+      "8. Τραγούδι, λεξιλόγιο και συλλογή ρημάτων για επανάληψη"
+    ]
+  },
+  "theory": {
+    "source_basis": "κύριο θεωρητικό αρχείο, λεξιλόγιο, φύλλο ασκήσεων και αρχείο απαντήσεων της Ενότητας 4",
+    "sections": [
+      {
+        "id": "4.1",
+        "title": "Το αόριστο άρθρο",
+        "summary_gr": "Το αόριστο άρθρο δηλώνει το αόριστο και το γενικό. Στον ενικό η ενότητα διδάσκει τους τύπους unu για αρσενικό και ουδέτερο και unâ για θηλυκό: «Unu omu = κάποιος άνθρωπος», «unâ featâ = κάποια κοπέλα», «unu semnu = κάποιο σημάδι». Παρουσιάζονται επίσης οι βασικοί συνδυασμοί με προθέσεις: «di unu omu / di unâ featâ», «di la unu omu / di la unâ featâ», «la unu omu / la unâ featâ». Παραδείγματα της ενότητας είναι τα «Unu omu zburashte cu fratile atâu», «Aesti suntu zboarili di unâ featâ», «Dhorŭlu aestu easte di la unu sotsu», «Dau pâradzĭ la unu omu» και «Videmu unâ multu mŭshatâ feâtâ». Στον πληθυντικό δουλεύονται οι τύποι nâshĭtsĭ oaminji για αρσενικά/ανθρώπινα και nâshti feati, nâshti seamni για θηλυκά και ουδέτερα. Η λέξη nâshti διδάσκεται και με τη σημασία «κάτι», όπως στα «Voi nâshti», «Avdzĭ nâshti?» και «Nâshti avdu… Taci!». Δίνεται ακόμη η έκφραση «nâshti ahtâri» = κάτι τέτοιους / τέτοιες. Το ουδέτερο στον πληθυντικό ακολουθεί το θηλυκό. Παραδείγματα πληθυντικού: «Nâshĭtsĭ oaminji zburâscu cu fratile atâu», «Aesti suntu zboarili di nâshti feati», «Dhorŭlu aestu easte di la nâshĭtsĭ sotsĭ», «Dau pâradzĭ la nâshĭtsĭ oaminji», «Videmŭ nâshti multu mŭshati feati».",
+        "article_forms_seen": [
+          {
+            "form": "unâ",
+            "usage_note_gr": "θηλυκός ενικός αόριστου άρθρου· βασικά παραδείγματα: «unâ featâ», «unâ casâ», «unâ scoalâ», «unâ înveastâ», «unâ ursâ», «unâ pâdure», «unâ soatsâ», «unâ mathimâ», «unâ lingurâ», «unâ hâbare»"
+          },
+          {
+            "form": "unu",
+            "usage_note_gr": "αρσενικός και ουδέτερος ενικός αόριστου άρθρου· βασικά παραδείγματα: «unu omu», «unu semnu», «unu sotsu», «unu fĭtshoru», «unu picuraru», «unu lemnu», «unu heru», «unu tueagu», «unu cutsutu», «unu câne»"
+          },
+          {
+            "form": "nâshĭtsĭ",
+            "usage_note_gr": "αόριστος πληθυντικός για αρσενικά / ανθρώπινα: «nâshĭtsĭ oaminji», «di nâshĭtsĭ oaminji», «di la nâshĭtsĭ oaminji», «la nâshĭtsĭ oaminji», «di la nâshĭtsĭ sotsĭ», «di nâshĭtsĭ vicinji», «la nâshĭtsĭ cusurinji»"
+          },
+          {
+            "form": "nâshti",
+            "usage_note_gr": "αόριστος πληθυντικός για θηλυκά και ουδέτερα, αλλά και λέξη με σημασία «κάτι»: «nâshti feati», «nâshti seamni», «di nâshti feati», «di la nâshti feati», «la nâshti feati», «Voi nâshti», «Avdzĭ nâshti?», «nâshti ori», «nâshti pârpodzĭ», «nâshti tî mângare», «nâshti ahtâri»"
+          }
+        ]
+      },
+      {
+        "id": "4.2",
+        "title": "Πίνακας ουσιαστικών",
+        "table_columns": [
+          "Ουσιαστικό ενικού αριθμού",
+          "+ Οριστικό Άρθρο",
+          "+ Αόριστο Άρθρο"
+        ],
+        "rows": [
+          {
+            "noun_singular": "casâ",
+            "definite": "casa",
+            "indefinite": "unâ casâ"
+          },
+          {
+            "noun_singular": "scoalâ",
+            "definite": "scoala",
+            "indefinite": "unâ scoalâ"
+          },
+          {
+            "noun_singular": "înveastâ",
+            "definite": "înveasta",
+            "indefinite": "unâ înveastâ"
+          },
+          {
+            "noun_singular": "ursâ",
+            "definite": "ursa",
+            "indefinite": "unâ ursâ"
+          },
+          {
+            "noun_singular": "pâpushâ",
+            "definite": "pâpusha",
+            "indefinite": "unâ pâpushâ"
+          },
+          {
+            "noun_singular": "tshânushâ",
+            "definite": "tshânusha",
+            "indefinite": "unâ tshânushâ"
+          },
+          {
+            "noun_singular": "câtushâ",
+            "definite": "câtusha",
+            "indefinite": "unâ câtushâ"
+          },
+          {
+            "noun_singular": "lilitshâ",
+            "definite": "lilitsha",
+            "indefinite": "unâ lilitsâ"
+          },
+          {
+            "noun_singular": "fĭtshoru",
+            "definite": "fĭtshorŭlu",
+            "indefinite": "unu fĭtshoru"
+          },
+          {
+            "noun_singular": "picuraru",
+            "definite": "picurarŭlu",
+            "indefinite": "unu picuraru"
+          },
+          {
+            "noun_singular": "Lemnu",
+            "definite": "lemnulu",
+            "indefinite": "unu lemnu",
+            "note": "ουδ."
+          },
+          {
+            "noun_singular": "Heru",
+            "definite": "herŭlu",
+            "indefinite": "unu heru",
+            "note": "ουδ."
+          },
+          {
+            "noun_singular": "pâdure",
+            "definite": "pâdurea",
+            "indefinite": "unâ pâdure"
+          },
+          {
+            "noun_singular": "Câne",
+            "definite": "cânĭle",
+            "indefinite": "unu câne"
+          }
+        ]
+      },
+      {
+        "id": "4.3",
+        "title": "Προθέσεις μέσα στην πρόταση",
+        "summary_gr": "Οι προθέσεις δουλεύονται μέσα σε ολοκληρωμένες φράσεις και πάντα μαζί με το αόριστο άρθρο ή τον αόριστο πληθυντικό. Η μορφή di χρησιμοποιείται σε εκφράσεις όπως «Aesti suntu zboarili di unâ featâ», «Amu unâ hâbare di nishtĭ oaminji», «Easte di nâshĭtsĭ vicinji» και «Ashteptu unâ carte di nâshti sotsĭ». Η μορφή di la δείχνει πηγή ή αφετηρία, όπως στα «Dhorŭlu aestu easte di la unu sotsu», «Dhorŭlu aestu easte di la nâshĭtsĭ sotsĭ» και «Ljiau dulcenji di la nâshtĭ muljeri». Η μορφή la δείχνει προς ποιον κατευθύνεται η πράξη ή σε ποιον αναφέρεται: «Dau pâradzĭ la unu omu», «Negu la nâshĭtsĭ cusurinji», «Zburâscu la bârbatsĭ» και «Hiu la nâshtĭ soatsĭ». Υπάρχουν και φράσεις χωρίς πρόθεση, όταν το ουσιαστικό μπαίνει άμεσα στην πρόταση: «Sora amea adunâ nishtĭ prashĭ», «Sunu nâshtĭ mŭljeri», «Sunu nâshti ori», «Ai nâshti tî mângare?» και «Alagu tasi aflu nâshti pârpodzĭ». Έτσι η ενότητα εξασκεί όχι μεμονωμένες λέξεις, αλλά την επιλογή di / di la / la / τίποτα μέσα στη φυσική πρόταση.",
+        "forms_seen": [
+          {
+            "form": "di",
+            "usage_note_gr": "σχέση, αναφορά ή σύνδεση με κάποιον/κάτι: «di unâ featâ», «di nishtĭ oaminji», «di nâshĭtsĭ vicinji», «di nâshti sotsĭ»"
+          },
+          {
+            "form": "di la",
+            "usage_note_gr": "πηγή ή αφετηρία, δηλαδή «από»: «di la unu sotsu», «di la nâshĭtsĭ sotsĭ», «di la nâshtĭ muljeri»"
+          },
+          {
+            "form": "la",
+            "usage_note_gr": "αποδέκτης, κατεύθυνση ή πρόσωπο στο οποίο πηγαίνει η πράξη: «la unu omu», «la nâshĭtsĭ cusurinji», «la bârbatsĭ», «la nâshtĭ soatsĭ»"
+          },
+          {
+            "form": "τίποτα",
+            "usage_note_gr": "καμία πρόθεση όταν η πρόταση παίρνει άμεσα το ουσιαστικό: «nishtĭ prashĭ», «nâshtĭ mŭljeri», «nâshti ori», «nâshti pârpodzĭ», «nâshti tî mângare»"
+          }
+        ]
+      },
+      {
+        "id": "4.4",
+        "title": "Vrearea amea, vrearea ata",
+        "summary_gr": "Η ενότητα περιλαμβάνει το τραγούδι «Vrearea amea, vrearea ata» με άσκηση συμπλήρωσης 10 κενών. Σύνδεσμος ακρόασης: https://www.youtube.com/watch?v=LIsMx1ArL34. Οι στίχοι δίνονται ως εξής: «Oh, ci ….1…, djione, di la mine / Vrearea amea, vrearea amea / Nu shtiu ma civa pi tine / Vrearea amea, vrearea amea / Oh, ….2….. voi, lea, scumpâ, featâ / Vrearea ata, vrearea ata / Oh, amea ….3….. ashteaptâ / Vrearea ata, vrearea ata / Oh, multsĭ …4….. u caftâ iara / Vrearea amea, vrearea amea / Câ i ma dulce ca ….5…. / Vrearea amea, vrearea amea / Oh, va u caftu …6 …. la steali / Vrearea ata, vrearea ata / S'u aducu tu ….7 …. ameali / Vrearea ata, vrearea ata / Oh, plângu sh' nu ….8 …. iu s'u caftu / Vrearea amea, vrearea amea / easte la tine, easte la …9 …. / Vrearea amea, vrearea amea / Oh, nu ti plângi, featâ, tine / Vrearea ata, vrearea ata / …10 … amea inimâ i ma ghine / Vrearea ata, vrearea ata». Μετά τη συμπλήρωση των στίχων, η δραστηριότητα ζητά να εντοπιστούν και να γραφτούν τα ρήματα του τραγουδιού: vrei, shtiu, voi, ashteaptâ, caftâ, easte, caftu, aducu, plângu, ti plângi. Το σχετικό λεξιλόγιο της υποενότητας περιλαμβάνει λέξεις όπως vrearea, scumpâ, inimâ, ashteptu, caftu, iara, dulce, aducu, pânâ, steali και ti plângi."
+      },
+      {
+        "id": "4.5",
+        "title": "Zburâscu: Ci potu s’ vedu sh’ ci nu potu s’vedu...",
+        "summary_gr": "Η υποενότητα ανάγνωσης και κατανόησης έχει τίτλο «Zburâscu: Ci potu s’ vedu sh’ ci nu potu s’vedu...». Πριν από το κείμενο δίνεται λεξιλογική προετοιμασία με τις λέξεις «alghi, pulji, tu apâ, anoatâ, lâi, ceru, potu, vedu apâ/ amare». Η δραστηριότητα οργανώνεται ως ανάγνωση κειμένου με θέμα το τι μπορεί και τι δεν μπορεί να δει ο ομιλητής και στη συνέχεια ακολουθούν ερωτήσεις κατανόησης. Η ενότητα λειτουργεί έτσι ως πέρασμα από τη γραμματική και το τραγούδι σε πιο συνεχόμενο λόγο και κατανόηση κειμένου."
+      },
+      {
+        "id": "4.6",
+        "title": "Διάκριση câtse / câ",
+        "summary_gr": "Η ενότητα ξεχωρίζει τις μορφές câtse και câ. Στο λεξιλόγιο σημειώνεται καθαρά: «Câtse = γιατί, επειδή» και «Câ = επειδή». Στις ασκήσεις το câtse εμφανίζεται κυρίως ως ερωτηματικό «γιατί», όπως στα «Câtse vrei s’ fugi?», «Câtse nu ashteptsĭ niheamâ?» και «Câtse nu shâdzĭ? Ci stau împrostu?». Ως αιτιολογικός σύνδεσμος, η ενότητα δουλεύει το câ και σε ορισμένα συμφραζόμενα δέχεται και câtse / câ, όπως στα «Voi s’ fugu câtse/ câ hiu amânatu», «Prinde s’ mi ayiusescu câtse/ câ fuge trenŭlu» και «Nu acumpâru noau casâ câ/câtse nu amu pâradzĭ». Η ξεκάθαρη αιτιολογική χρήση του câ φαίνεται στο «Nu ti voi câ nu hi bunu fĭtsoru!». Άρα η πρακτική της ενότητας μαθαίνει πότε το câtse δουλεύει ως «γιατί» και πότε το câ ως απλό «επειδή»."
+      }
+    ]
+  },
+  "vocabulary": {
+    "title": "Λεξιλόγιο της Ενότητας 4 από θεωρία, ξεχωριστό λεξιλόγιο και ασκήσεις",
+    "sections": [
+      {
+        "title": "Βασικά ουσιαστικά από τον πίνακα άρθρων",
+        "items": [
+          {
+            "vlach": "casâ",
+            "definite": "casa",
+            "indefinite": "unâ casâ",
+            "greek": null
+          },
+          {
+            "vlach": "scoalâ",
+            "definite": "scoala",
+            "indefinite": "unâ scoalâ",
+            "greek": null
+          },
+          {
+            "vlach": "înveastâ",
+            "definite": "înveasta",
+            "indefinite": "unâ înveastâ",
+            "greek": null
+          },
+          {
+            "vlach": "ursâ",
+            "definite": "ursa",
+            "indefinite": "unâ ursâ",
+            "greek": "αρκούδα"
+          },
+          {
+            "vlach": "pâpushâ",
+            "definite": "pâpusha",
+            "indefinite": "unâ pâpushâ",
+            "greek": "κούκλα"
+          },
+          {
+            "vlach": "tshânushâ",
+            "definite": "tshânusha",
+            "indefinite": "unâ tshânushâ",
+            "greek": "στάχτη"
+          },
+          {
+            "vlach": "câtushâ",
+            "definite": "câtusha",
+            "indefinite": "unâ câtushâ",
+            "greek": "γάτα"
+          },
+          {
+            "vlach": "lilitshâ",
+            "definite": "lilitsha",
+            "indefinite": "unâ lilitsâ",
+            "greek": null
+          },
+          {
+            "vlach": "fĭtshoru",
+            "definite": "fĭtshorŭlu",
+            "indefinite": "unu fĭtshoru",
+            "greek": null
+          },
+          {
+            "vlach": "picuraru",
+            "definite": "picurarŭlu",
+            "indefinite": "unu picuraru",
+            "greek": "βοσκός"
+          },
+          {
+            "vlach": "Lemnu",
+            "definite": "lemnulu",
+            "indefinite": "unu lemnu",
+            "greek": "ξύλο"
+          },
+          {
+            "vlach": "Heru",
+            "definite": "herŭlu",
+            "indefinite": "unu heru",
+            "greek": "σίδερο"
+          },
+          {
+            "vlach": "pâdure",
+            "definite": "pâdurea",
+            "indefinite": "unâ pâdure",
+            "greek": "δάσος"
+          },
+          {
+            "vlach": "Câne",
+            "definite": "cânĭle",
+            "indefinite": "unu câne",
+            "greek": null
+          }
+        ]
+      },
+      {
+        "title": "Λέξεις και τύποι που εμφανίζονται στο διαθέσιμο υλικό",
+        "items": [
+          {
+            "vlach": "unu",
+            "greek": null,
+            "meaning_source": "present_in_theory_examples"
+          },
+          {
+            "vlach": "unâ",
+            "greek": "μια / κάποια",
+            "meaning_source": "present_in_theory_examples"
+          },
+          {
+            "vlach": "nâshĭtsĭ",
+            "greek": "κάποιοι",
+            "meaning_source": "present_in_theory_examples"
+          },
+          {
+            "vlach": "nâshti",
+            "greek": "κάποιες / κάποια / κάτι",
+            "meaning_source": "present_in_theory_examples"
+          },
+          {
+            "vlach": "semnu",
+            "greek": "σημάδι",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "zburashte",
+            "greek": "μιλάει",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "dhoru",
+            "greek": "δώρο",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "vrearea",
+            "greek": "η αγάπη",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "scumpâ",
+            "greek": "ακριβή, πολύτιμη",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "inimâ",
+            "greek": "καρδιά",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "ashteptu",
+            "greek": "περιμένω",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "caftu",
+            "greek": "ψάχνω, αναζητώ, δοκιμάζω",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "iara",
+            "greek": "ξανά",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "câ / câtse",
+            "greek": "επειδή / γιατί",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "primŭveara",
+            "greek": "άνοιξη",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "dulce",
+            "greek": "γλυκιά",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "aducu",
+            "greek": "φέρνω, μεταφέρω",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "pânâ",
+            "greek": "ως, μέχρι, ώσπου",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "steali",
+            "greek": "αστέρια",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "ti plângi",
+            "greek": "παραπονιέσαι",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "soatsâ",
+            "greek": "φίλη",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "limbâ",
+            "greek": "γλώσσα",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "mathitrie",
+            "greek": "μαθήτρια",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "mathimâ",
+            "greek": "μάθημα",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "tueagu",
+            "greek": "μπαστούνι, ραβδί",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "lingurâ",
+            "greek": "κουτάλι",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "sare",
+            "greek": "αλάτι",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "cutsutu",
+            "greek": "μαχαίρι",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "hâbare",
+            "greek": "νέο, είδηση",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "amarea",
+            "greek": "η θάλασσα",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "stranji",
+            "greek": "ρούχα",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "vicinji",
+            "greek": "γείτονες",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "alatrâ",
+            "greek": "γαβγίζει",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "dulcenji",
+            "greek": "γλυκά",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "aoa ma în ghiosu",
+            "greek": "εδώ πιο κάτω",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "ahtâri",
+            "greek": "τέτοιοι / τέτοιες",
+            "meaning_source": "vocabulary_file"
+          },
+          {
+            "vlach": "alghi",
+            "greek": null,
+            "meaning_source": "present_in_theory_subsection_4_3"
+          },
+          {
+            "vlach": "pulji",
+            "greek": null,
+            "meaning_source": "present_in_theory_subsection_4_3"
+          },
+          {
+            "vlach": "tu apâ",
+            "greek": null,
+            "meaning_source": "present_in_theory_subsection_4_3"
+          },
+          {
+            "vlach": "anoatâ",
+            "greek": null,
+            "meaning_source": "present_in_theory_subsection_4_3"
+          },
+          {
+            "vlach": "lâi",
+            "greek": null,
+            "meaning_source": "present_in_theory_subsection_4_3"
+          },
+          {
+            "vlach": "ceru",
+            "greek": null,
+            "meaning_source": "present_in_theory_subsection_4_3"
+          },
+          {
+            "vlach": "potu",
+            "greek": null,
+            "meaning_source": "present_in_theory_subsection_4_3"
+          },
+          {
+            "vlach": "vedu apâ / amare",
+            "greek": null,
+            "meaning_source": "present_in_theory_subsection_4_3"
+          }
+        ]
+      },
+      {
+        "title": "Ρήματα που καταγράφονται στο τέλος του αρχείου",
+        "items": [
+          {
+            "vlach": "vrei",
+            "greek": null,
+            "meaning_source": "song_verbs_list"
+          },
+          {
+            "vlach": "plângu",
+            "greek": "κλαίω",
+            "meaning_source": "song_verbs_list_and_previous_units"
+          },
+          {
+            "vlach": "shtiu",
+            "greek": null,
+            "meaning_source": "song_verbs_list"
+          },
+          {
+            "vlach": "easte",
+            "greek": "είναι / υπάρχει",
+            "meaning_source": "song_verbs_list_and_previous_units"
+          },
+          {
+            "vlach": "voi",
+            "greek": null,
+            "meaning_source": "song_verbs_list"
+          },
+          {
+            "vlach": "ti plângi",
+            "greek": "παραπονιέσαι",
+            "meaning_source": "song_verbs_list_and_vocabulary_file"
+          },
+          {
+            "vlach": "ashteaptâ",
+            "greek": null,
+            "meaning_source": "song_verbs_list"
+          },
+          {
+            "vlach": "câftâ",
+            "greek": null,
+            "meaning_source": "song_verbs_list"
+          },
+          {
+            "vlach": "aducu",
+            "greek": "φέρνω, μεταφέρω",
+            "meaning_source": "song_verbs_list_and_vocabulary_file"
+          }
+        ]
+      }
+    ]
+  },
+  "flashcards": [
+    {
+      "front": "casâ",
+      "back": "casa / unâ casâ",
+      "type": "noun_articles"
+    },
+    {
+      "front": "fĭtshoru",
+      "back": "fĭtshorŭlu / unu fĭtshoru",
+      "type": "noun_articles"
+    },
+    {
+      "front": "pâdure",
+      "back": "pâdurea / unâ pâdure",
+      "type": "noun_articles"
+    },
+    {
+      "front": "câne",
+      "back": "cânĭle / unu câne",
+      "type": "noun_articles"
+    },
+    {
+      "front": "nâshĭtsĭ",
+      "back": "κάποιοι / με αρσενικά-ανθρώπινα παραδείγματα",
+      "type": "grammar"
+    },
+    {
+      "front": "nâshti",
+      "back": "κάποιες / κάποια / κάτι",
+      "type": "grammar"
+    },
+    {
+      "front": "di",
+      "back": "σχέση / προέλευση / αναφορά: di unâ featâ, di nishtĭ oaminji",
+      "type": "grammar"
+    },
+    {
+      "front": "di la",
+      "back": "πηγή / αφετηρία: di la unu sotsu, di la nâshtĭ muljeri",
+      "type": "grammar"
+    },
+    {
+      "front": "la",
+      "back": "κατεύθυνση / αποδέκτης: la unu omu, la bârbatsĭ",
+      "type": "grammar"
+    },
+    {
+      "front": "τίποτα",
+      "back": "χωρίς πρόθεση: nishtĭ prashĭ, nâshti pârpodzĭ",
+      "type": "grammar"
+    },
+    {
+      "front": "câtse",
+      "back": "γιατί / επειδή· συχνά σε ερωτήσεις",
+      "type": "grammar"
+    },
+    {
+      "front": "câ",
+      "back": "επειδή",
+      "type": "grammar"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "4.1",
+      "title": "Συμπλήρωσε τα κενά με το Αόριστο Άρθρο και τις προθέσεις όπου χρειάζεται",
+      "type": "fill_in_article_and_preposition",
+      "note_gr": "Υπάρχει πλέον και το φύλλο άσκησης με κενά και το αρχείο απαντήσεων, οπότε δίνεται τόσο το prompt όσο και η λυμένη μορφή.",
+      "items": [
+        {
+          "number": 1,
+          "prompt": "Cathe dzuâ (a)cumpâru ………… culurâchi  ci nji arâsescu multu.",
+          "answers": [
+            "nâshtĭ"
+          ],
+          "solved_text": "Cathe dzuâ cumpâru nâshtĭ culurâchi ci nji arâsescu multu."
+        },
+        {
+          "number": 2,
+          "prompt": "Face s’ mângu ………………? Hiu adjunâ.",
+          "answers": [
+            "nâshtĭ"
+          ],
+          "solved_text": "Face s’ mângu nâshtĭ? Hiu adjunâ!"
+        },
+        {
+          "number": 3,
+          "prompt": "Featili tuti au noau stranji ma .................featâ stranjili suntu veclji.",
+          "answers": [
+            "di unâ"
+          ],
+          "solved_text": "Featili tuti au noau stranji ma di unâ featâ stranjili suntu veclji."
+        },
+        {
+          "number": 4,
+          "prompt": "Prinde s’dai cartea aestâ ...................omu ci s’cljeamâ Tea.",
+          "answers": [
+            "la unu"
+          ],
+          "solved_text": "Prinde s’dai cartea aestâ la unu omu ci s’cljeamâ Tea."
+        },
+        {
+          "number": 5,
+          "prompt": "Cumu s’face si zburâshti cu ...................omu ci nu cunoshti?",
+          "answers": [
+            "cu unu"
+          ],
+          "solved_text": "Cumu s’face si zburâshti cu unu omu ci nu cunoshti?"
+        },
+        {
+          "number": 6,
+          "prompt": "................ soatsâ amea are ..............casâ ninga amarea.",
+          "answers": [
+            "Unâ",
+            "unâ"
+          ],
+          "solved_text": "Unâ soatsâ amea are unâ casâ ninga amarea."
+        },
+        {
+          "number": 7,
+          "prompt": "A cui easte aestu câne ci alatrâ ashĭ? Easte ..................vicinji.",
+          "answers": [
+            "di nâshĭtsĭ"
+          ],
+          "solved_text": "A cui easte aestu câne ci alatrâ ashĭ? Easte di nâshĭtsĭ vicinji."
+        },
+        {
+          "number": 8,
+          "prompt": "Ljiau dulcenji.....................muljeri ci lucreadzâ aoa ma în ghiosu.",
+          "answers": [
+            "di la nâshtĭ"
+          ],
+          "solved_text": "Ljau dulcenji di la nâshtĭ muljeri ci lucreadzâ aoa ma în ghiosu."
+        },
+        {
+          "number": 9,
+          "prompt": "Avde aoace/ în coa! ........................ ahtâri oaminji si ti hârneshti!",
+          "answers": [
+            "Di nâshĭtsĭ / nâshtĭ"
+          ],
+          "solved_text": "Avde aoace! Di nâshĭtsĭ/ nâshtĭ ahtâri oaminji si ti hârneshti!"
+        },
+        {
+          "number": 10,
+          "prompt": "-Iu hi? – Hiu ................... soatsĭ. Yinu ayonjia/ anghiu!",
+          "answers": [
+            "la nâshtĭ"
+          ],
+          "solved_text": "-Iu hi? – Hiu la nâshtĭ soatsĭ. Yinu ayonjia/ anghiu!"
+        }
+      ]
+    },
+    {
+      "id": "4.2",
+      "title": "Συμπλήρωσε τον πίνακα",
+      "type": "grammar_table",
+      "table_columns": [
+        "Ουσιαστικό ενικού αριθμού",
+        "+ Οριστικό Άρθρο",
+        "+ Αόριστο Άρθρο"
+      ],
+      "rows": [
+        {
+          "noun_singular": "casâ",
+          "definite": "casa",
+          "indefinite": "unâ casâ"
+        },
+        {
+          "noun_singular": "scoalâ",
+          "definite": "scoala",
+          "indefinite": "unâ scoalâ"
+        },
+        {
+          "noun_singular": "înveastâ",
+          "definite": "înveasta",
+          "indefinite": "unâ înveastâ"
+        },
+        {
+          "noun_singular": "ursâ",
+          "definite": "ursa",
+          "indefinite": "unâ ursâ"
+        },
+        {
+          "noun_singular": "pâpushâ",
+          "definite": "pâpusha",
+          "indefinite": "unâ pâpushâ"
+        },
+        {
+          "noun_singular": "tshânushâ",
+          "definite": "tshânusha",
+          "indefinite": "unâ tshânushâ"
+        },
+        {
+          "noun_singular": "câtushâ",
+          "definite": "câtusha",
+          "indefinite": "unâ câtushâ"
+        },
+        {
+          "noun_singular": "lilitshâ",
+          "definite": "lilitsha",
+          "indefinite": "unâ lilitsâ"
+        },
+        {
+          "noun_singular": "fĭtshoru",
+          "definite": "fĭtshorŭlu",
+          "indefinite": "unu fĭtshoru"
+        },
+        {
+          "noun_singular": "picuraru",
+          "definite": "picurarŭlu",
+          "indefinite": "unu picuraru"
+        },
+        {
+          "noun_singular": "Lemnu",
+          "definite": "lemnulu",
+          "indefinite": "unu lemnu",
+          "note": "ουδ."
+        },
+        {
+          "noun_singular": "Heru",
+          "definite": "herŭlu",
+          "indefinite": "unu heru",
+          "note": "ουδ."
+        },
+        {
+          "noun_singular": "pâdure",
+          "definite": "pâdurea",
+          "indefinite": "unâ pâdure"
+        },
+        {
+          "noun_singular": "Câne",
+          "definite": "cânĭle",
+          "indefinite": "unu câne"
+        }
+      ]
+    },
+    {
+      "id": "4.3",
+      "title": "Συμπλήρωσε με το Αόριστο Άρθρο",
+      "type": "fill_in_article",
+      "items": [
+        {
+          "number": 1,
+          "prompt": "Aestâ easte ……………….. soatsâ ali Alexandre.",
+          "answer": "unâ",
+          "solved_text": "Aestâ easte unâ soatsâ ali Alexandre."
+        },
+        {
+          "number": 2,
+          "prompt": "Nicola easte ……………….. fĭtshoru di Grecia.",
+          "answer": "unu",
+          "solved_text": "Nicola easte unu fĭtshoru di Grecia."
+        },
+        {
+          "number": 3,
+          "prompt": "Mini escu ……………….. mathitrie di limba Armâneasca.",
+          "answer": "unâ",
+          "solved_text": "Mini escu unâ mathitrie di limba Armâneasca."
+        },
+        {
+          "number": 4,
+          "prompt": "Limba Armâneasca nu easte ……………….. limbâ lishoarâ.",
+          "answer": "unâ",
+          "solved_text": "Limba Armâneasca nu easte unâ limbâ lishoarâ."
+        },
+        {
+          "number": 5,
+          "prompt": "……………….. cafe fârâ zahare vâ si vreamu!",
+          "answer": "Unu",
+          "solved_text": "Unu cafe fârâ zahare vâ si vreamu!"
+        },
+        {
+          "number": 6,
+          "prompt": "Papŭlu ameu are ……………….. tueagu.",
+          "answer": "unu",
+          "solved_text": "Papŭlu ameu are unu tueagu."
+        },
+        {
+          "number": 7,
+          "prompt": "Dupu dzîli avemu ……………….. mathimâ la scoala.",
+          "answer": "unâ",
+          "solved_text": "Dupu dzîli avemu unâ mathimâ la scoala."
+        },
+        {
+          "number": 8,
+          "prompt": "Bagu ……………….. lingurâ di sare tu fâie.",
+          "answer": "unâ",
+          "solved_text": "Bagu unâ lingurâ di sare tu fâie."
+        },
+        {
+          "number": 9,
+          "prompt": "Voi ……………….. cutsutu câtse voi si taljiu pânea.",
+          "answer": "unu",
+          "solved_text": "Voi unu cutsutu câtse voi si taljiu pânea."
+        },
+        {
+          "number": 10,
+          "prompt": "Amu pâvrie di ……………….. câne câ mi avinâ!",
+          "answer": "unu",
+          "solved_text": "Amu pâvrie di unu câne câ mi avinâ!"
+        }
+      ]
+    },
+    {
+      "id": "4.4",
+      "title": "Συμπλήρωσε με το Αόριστο Άρθρο + di, di la, la ή τίποτα",
+      "type": "fill_in_article_and_preposition",
+      "items": [
+        {
+          "number": 1,
+          "prompt": "Amu ……………….. hâbare ……………….. oaminji.",
+          "answers": [
+            "unâ",
+            "di nishtĭ"
+          ],
+          "solved_text": "Amu unâ hâbare di nishtĭ oaminji."
+        },
+        {
+          "number": 2,
+          "prompt": "Negu ……………….. cusurinji alu tatâ.",
+          "answers": [
+            "la",
+            "nâshĭtsĭ"
+          ],
+          "solved_text": "Negu la nâshĭtsĭ cusurinji alu tatâ."
+        },
+        {
+          "number": 3,
+          "prompt": "Fratĭle ameu lucreadzâ ……………….. bunji oaminji.",
+          "answers": [
+            "la nâshĭtsĭ"
+          ],
+          "solved_text": "Fratĭle ameu lucreadzâ la nâshĭtsĭ bunji oaminji."
+        },
+        {
+          "number": 4,
+          "prompt": "Sora amea adunâ ……………….. prashĭ tasi adarâ pitâ.",
+          "answers": [
+            "nishtĭ"
+          ],
+          "solved_text": "Sora amea adunâ nishtĭ prashĭ tasi adarâ pitâ."
+        },
+        {
+          "number": 5,
+          "prompt": "Sunu ……………….. mŭljeri iu lucredzu, multu buni!",
+          "answers": [
+            "nâshtĭ"
+          ],
+          "solved_text": "Sunu nâshtĭ mŭljeri iu lucredzu, multu buni!"
+        },
+        {
+          "number": 6,
+          "prompt": "Zburâscu ……………….. bârbatsĭ ci nu cunoscu.",
+          "answers": [
+            "la"
+          ],
+          "solved_text": "Zburâscu la bârbatsĭ ci nu cunoscu."
+        },
+        {
+          "number": 7,
+          "prompt": "Sunu ……………….. ori ci escu multu apustusitu.",
+          "answers": [
+            "nâshti"
+          ],
+          "solved_text": "Sunu nâshti ori ci escu multu apustusitu."
+        },
+        {
+          "number": 8,
+          "prompt": "Oh, mumâ! Ai ……………….. tî mângare?",
+          "answers": [
+            "nâshti"
+          ],
+          "solved_text": "Oh, mumâ! Ai nâshti tî mângare?"
+        },
+        {
+          "number": 9,
+          "prompt": "Alagu tasi aflu ……………….. pârpodzĭ.",
+          "answers": [
+            "nâshti"
+          ],
+          "solved_text": "Alagu tasi aflu nâshti pârpodzĭ."
+        },
+        {
+          "number": 10,
+          "prompt": "Ashteptu unâ carte ……………….. sotsĭ.",
+          "answers": [
+            "di nâshti"
+          ],
+          "solved_text": "Ashteptu unâ carte di nâshti sotsĭ."
+        }
+      ]
+    },
+    {
+      "id": "4.5",
+      "title": "Συμπλήρωσε με câtse ή câ",
+      "type": "fill_in_connector",
+      "items": [
+        {
+          "number": 1,
+          "prompt": "……………….. vrei s’ fugi?",
+          "answer": "Câtse",
+          "solved_text": "Câtse vrei s’ fugi?"
+        },
+        {
+          "number": 2,
+          "prompt": "Voi s’ fugu ……………….. hiu amânatu.",
+          "answer": "câtse/ câ",
+          "solved_text": "Voi s’ fugu câtse/ câ hiu amânatu."
+        },
+        {
+          "number": 3,
+          "prompt": "……………….. nu ashteptsĭ niheamâ?",
+          "answer": "Câtse",
+          "solved_text": "Câtse nu ashteptsĭ niheamâ?"
+        },
+        {
+          "number": 4,
+          "prompt": "Prinde s’ mi ayiusescu ……………….. fuge trenŭlu.",
+          "answer": "câtse/ câ",
+          "solved_text": "Prinde s’ mi ayiusescu câtse/ câ fuge trenŭlu."
+        },
+        {
+          "number": 5,
+          "prompt": "Nu mi vrei ……………….. nu hiu bunu fĭtshoru?",
+          "answer": "câtse",
+          "solved_text": "Nu mi vrei câtse nu hiu bunu fĭtshoru?"
+        },
+        {
+          "number": 6,
+          "prompt": "Nu ti voi ……………….. nu hi bunu fĭtsoru!",
+          "answer": "câ",
+          "solved_text": "Nu ti voi câ nu hi bunu fĭtsoru!"
+        },
+        {
+          "number": 7,
+          "prompt": "Nu acumpâru noau casâ ……………….. nu amu pâradzĭ.",
+          "answer": "câ/câtse",
+          "solved_text": "Nu acumpâru noau casâ câ/câtse nu amu pâradzĭ."
+        },
+        {
+          "number": 8,
+          "prompt": "……………….. nu shâdzĭ? Ci stau împrostu?",
+          "answer": "Câtse",
+          "solved_text": "Câtse nu shâdzĭ? Ci stau împrostu?"
+        }
+      ]
+    },
+    {
+      "id": "4.6",
+      "title": "Τραγούδι — συμπλήρωσε τα κενά",
+      "type": "song_fill_in",
+      "note_gr": "Το θεωρητικό αρχείο δίνει τους στίχους με 10 κενά και σύνδεσμο YouTube, αλλά στα παρόντα uploads δεν δίνεται ξεχωριστό επίσημο answer key για τα 10 σημεία.",
+      "items": [
+        {
+          "number": 1,
+          "prompt": "Oh, ci ….1…, djione, di la mine",
+          "answer": null,
+          "solved_text": null
+        },
+        {
+          "number": 2,
+          "prompt": "Oh, ….2….. voi, lea, scumpâ, featâ",
+          "answer": null,
+          "solved_text": null
+        },
+        {
+          "number": 3,
+          "prompt": "Oh, amea ….3….. ashteaptâ",
+          "answer": null,
+          "solved_text": null
+        },
+        {
+          "number": 4,
+          "prompt": "Oh, multsĭ …4….. u caftâ iara",
+          "answer": null,
+          "solved_text": null
+        },
+        {
+          "number": 5,
+          "prompt": "Câ i ma dulce ca ….5….",
+          "answer": null,
+          "solved_text": null
+        },
+        {
+          "number": 6,
+          "prompt": "Oh, va u caftu …6 …. la steali",
+          "answer": null,
+          "solved_text": null
+        },
+        {
+          "number": 7,
+          "prompt": "S'u aducu tu ….7 …. ameali",
+          "answer": null,
+          "solved_text": null
+        },
+        {
+          "number": 8,
+          "prompt": "Oh, plângu sh' nu ….8 …. iu s'u caftu",
+          "answer": null,
+          "solved_text": null
+        },
+        {
+          "number": 9,
+          "prompt": "easte la tine, easte la …9 ….",
+          "answer": null,
+          "solved_text": null
+        },
+        {
+          "number": 10,
+          "prompt": "…10 … amea inimâ i ma ghine",
+          "answer": null,
+          "solved_text": null
+        }
+      ]
+    },
+    {
+      "id": "4.7",
+      "title": "Υποενότητα ανάγνωσης — Zburâscu: Ci potu s’ vedu sh’ ci nu potu s’vedu...",
+      "type": "reading_placeholder",
+      "note_gr": "Σώζεται μόνο η λεξιλογική υποστήριξη και οι ενδείξεις «Κείμενο» και «Ερωτήσεις κατανόησης». Το πλήρες κείμενο δεν είναι διαθέσιμο σε αναγνώσιμη μορφή μέσα στο τρέχον αρχείο.",
+      "items": [
+        {
+          "number": 1,
+          "solved_text": "alghi"
+        },
+        {
+          "number": 2,
+          "solved_text": "pulji"
+        },
+        {
+          "number": 3,
+          "solved_text": "tu apâ"
+        },
+        {
+          "number": 4,
+          "solved_text": "anoatâ"
+        },
+        {
+          "number": 5,
+          "solved_text": "lâi"
+        },
+        {
+          "number": 6,
+          "solved_text": "ceru"
+        },
+        {
+          "number": 7,
+          "solved_text": "potu"
+        },
+        {
+          "number": 8,
+          "solved_text": "vedu apâ/ amare"
+        }
+      ]
+    },
+    {
+      "id": "4.song_verbs",
+      "title": "Γράψε τα ρήματα που εντόπισες στο τραγούδι",
+      "type": "verb_collection",
+      "items": [
+        {
+          "number": 1,
+          "verb": "vrei"
+        },
+        {
+          "number": 2,
+          "verb": "plângu"
+        },
+        {
+          "number": 3,
+          "verb": "shtiu"
+        },
+        {
+          "number": 4,
+          "verb": "easte"
+        },
+        {
+          "number": 5,
+          "verb": "voi"
+        },
+        {
+          "number": 6,
+          "verb": "ti plângi"
+        },
+        {
+          "number": 7,
+          "verb": "ashteaptâ"
+        },
+        {
+          "number": 8,
+          "verb": "câftâ"
+        },
+        {
+          "number": 9,
+          "verb": "aducu"
+        }
+      ]
+    },
+    {
+      "id": "4.song_cloze",
+      "title": "Τραγούδι: συμπλήρωσε τα 10 κενά",
+      "type": "song_fill_in_blanks_partial_key",
+      "note_gr": "Το θεωρητικό αρχείο δίνει τους στίχους με 10 κενά, αλλά στα παρόντα αρχεία δεν βρέθηκε επίσημο answer key για τις λέξεις.",
+      "items": [
+        {
+          "number": 1,
+          "prompt": "Oh, ci ….1…, djione, di la mine"
+        },
+        {
+          "number": 2,
+          "prompt": "Oh, ….2….. voi, lea, scumpâ, featâ"
+        },
+        {
+          "number": 3,
+          "prompt": "Oh, amea ….3….. ashteaptâ"
+        },
+        {
+          "number": 4,
+          "prompt": "Oh, multsĭ …4….. u caftâ iara"
+        },
+        {
+          "number": 5,
+          "prompt": "Câ i ma dulce ca ….5…."
+        },
+        {
+          "number": 6,
+          "prompt": "Oh, va u caftu …6 …. la steali"
+        },
+        {
+          "number": 7,
+          "prompt": "S'u aducu tu ….7 …. ameali"
+        },
+        {
+          "number": 8,
+          "prompt": "Oh, plângu sh' nu ….8 …. iu s'u caftu"
+        },
+        {
+          "number": 9,
+          "prompt": "easte la tine, easte la …9 …."
+        },
+        {
+          "number": 10,
+          "prompt": "…10 … amea inimâ i ma ghine"
+        }
+      ]
+    }
+  ],
+  "source_notes": [
+    "Η Ενότητα 4 συγκεντρώνει θεωρία για το αόριστο άρθρο στον ενικό και στον πληθυντικό, πίνακα ουσιαστικών με οριστικό και αόριστο άρθρο, προτάσεις με di / di la / la / τίποτα, τραγούδι με συμπλήρωση κενών, λεξιλόγιο και λυμένες ασκήσεις.",
+    "Η γραφή διατηρείται όπως ακριβώς εμφανίζεται στα αρχεία της ενότητας.",
+    "Στις ασκήσεις με câtse / câ και σε μία φράση με nâshĭtsĭ / nâshtĭ διατηρούνται οι διπλές αποδεκτές λύσεις όπως δίνονται στο answer key.",
+    "Η υποενότητα «Zburâscu: Ci potu s’ vedu sh’ ci nu potu s’vedu...» καταγράφεται ως ανάγνωση/κατανόηση με τον τίτλο και το βοηθητικό λεξιλόγιό της."
+  ],
+  "ui_suggestions": {
+    "theory_blocks": [
+      "grammar cards για unu / unâ / nâshĭtsĭ / nâshti",
+      "πίνακας ουσιαστικών με τρεις στήλες",
+      "grammar cards για di / di la / la / τίποτα",
+      "ξεχωριστό block για το τραγούδι της ενότητας",
+      "ξεχωριστό card για câtse / câ",
+      "placeholder / partial block για την υποενότητα 4.3 ανάγνωσης"
+    ],
+    "interactive_practice": [
+      "flashcards base noun -> definite / indefinite",
+      "drag-and-drop για unu / unâ / nâshĭtsĭ / nâshti",
+      "multiple choice για di / di la / la / τίποτα",
+      "συμπλήρωση κενών πάνω στους στίχους του τραγουδιού",
+      "δύο-επιλογών quiz για câtse / câ"
+    ],
+    "quiz_candidates": [
+      "συμπλήρωση αόριστου άρθρου στον ενικό",
+      "αναγνώριση αόριστου πληθυντικού",
+      "αντιστοίχιση ουσιαστικού με οριστικό/αόριστο τύπο",
+      "συμπλήρωση πρόθεσης",
+      "αναγνώριση λεξιλογίου από το τραγούδι",
+      "επιλογή câtse ή câ"
+    ]
+  }
+}

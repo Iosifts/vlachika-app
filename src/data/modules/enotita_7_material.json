@@ -1,0 +1,1013 @@
+{
+  "id": "lesson-7",
+  "type": "lesson",
+  "status": "published",
+  "title": "Ενότητα 7",
+  "subtitle": "Fumealjea amea · Κτητικές αντωνυμίες",
+  "description": "Κείμενο για την οικογένεια, κτητικές αντωνυμίες, όταν/όποτε με cându και anda, τα ρήματα dau / aducu / yinu, λεξιλόγιο και ασκήσεις.",
+  "audience": "learner",
+  "tags": [
+    "οικογένεια",
+    "κτητικές αντωνυμίες",
+    "ρήματα",
+    "λεξιλόγιο"
+  ],
+  "order": 7,
+  "accentColor": "olive",
+  "lastUpdated": "2026-04-10",
+  "meta": {
+    "source": "Converted from Unit 7 DOCX materials",
+    "replacesLegacyUnitNumber": 7
+  },
+  "sections": [
+    {
+      "id": "instructions-7",
+      "type": "instructions",
+      "title": "Πώς να δουλέψεις την ενότητα",
+      "order": 0,
+      "data": {
+        "heading": "Προτεινόμενη πορεία μελέτης",
+        "steps": [
+          "Διάβασε πρώτα το κείμενο «Fumealjea amea» και εντόπισε τα πρόσωπα της οικογένειας.",
+          "Μάθε τους βασικούς τύπους των κτητικών αντωνυμιών και πρόσεξε πώς αλλάζουν με το γένος και τον αριθμό.",
+          "Μελέτησε τα ρήματα dau, aducu και yinu μαζί με τις βασικές εκφράσεις τους.",
+          "Κάνε τις ασκήσεις και στο τέλος γράψε τη μικρή έκθεση για τη δική σου οικογένεια."
+        ],
+        "note": "Η γραφή ακολουθεί το σύστημα εγγραφισμού της βλάχικης γλώσσας όπως δίνεται στο μάθημα."
+      }
+    },
+    {
+      "id": "theory-7",
+      "type": "theory",
+      "title": "Θεωρία",
+      "order": 1,
+      "data": {
+        "content": {
+          "intro": "Σε αυτή την ενότητα μιλάμε για την οικογένεια, μαθαίνουμε να δηλώνουμε κτήση με κτητικές αντωνυμίες και δουλεύουμε τρία πολύ χρήσιμα ρήματα: dau, aducu, yinu.",
+          "blocks": [
+            {
+              "type": "heading",
+              "title": "7.1 Fumealjea amea"
+            },
+            {
+              "type": "paragraph",
+              "text": "Διαβάζουμε το κείμενο και προσέχουμε λέξεις συγγένειας, θέσεις στον χώρο και κτητικούς τύπους όπως ameu, amea, amei."
+            },
+            {
+              "type": "quote",
+              "text": "Tu aestâ icoanâ easte fumealjea amea. Noi himu fumealjea alu Ghecâ. Io himu Yiani alu Ghecâ sh’ himu împrostu tu antreaptâ, dupu nora amea sh’ nipoata amea. Mŭljearea amea easte tu anâstângâ. S’ cljeamâ Tana. Di nâinte di Tana suntu Cola, hiljiulu ameu sh’ Yiani nipotŭlu ameu. Mŭljearea alu Cola s’cljeamâ Dina. Dina are în bratsâ unâ fiticâ. Aestâ featâ i Nora, hiljea alu Cola sh’ ali Dine. Yiani shĭ Nora suntu nipotsĭlji amei. Dzîlili ameali suntu cama mŭshati anda himu tutsĭ di adunu!"
+            },
+            {
+              "type": "callout",
+              "title": "Προσέχουμε",
+              "text": "Στο κείμενο εμφανίζονται μαζί οικογενειακές σχέσεις, χωρικές λέξεις και κτητικοί τύποι. Αυτή η σύνδεση είναι βασική για να μπορούμε να περιγράφουμε πρόσωπα μέσα σε μια φωτογραφία ή μια οικογενειακή σκηνή.",
+              "tone": "info"
+            },
+            {
+              "type": "example_pair",
+              "title": "Θέση στον χώρο",
+              "vlach": "Io himu împrostu tu antreaptâ.",
+              "greek": "Εγώ είμαι όρθιος στα δεξιά."
+            },
+            {
+              "type": "example_pair",
+              "title": "Σχέση συγγένειας",
+              "vlach": "Yiani shĭ Nora suntu nipotsĭlji amei.",
+              "greek": "Ο Γιάννης και η Νόρα είναι τα εγγόνια μου."
+            },
+            {
+              "type": "example_pair",
+              "title": "Περιγραφή προσώπου",
+              "vlach": "Dina are în bratsâ unâ fiticâ.",
+              "greek": "Η Ντίνα έχει στην αγκαλιά ένα κοριτσάκι."
+            },
+            {
+              "type": "heading",
+              "title": "Κτητικές αντωνυμίες"
+            },
+            {
+              "type": "paragraph",
+              "text": "Οι κτητικές αντωνυμίες δείχνουν σε ποιον ανήκει κάτι. Συμφωνούν με το ουσιαστικό ως προς το γένος και τον αριθμό και μπορούν είτε να συνοδεύουν το ουσιαστικό είτε να στέκονται μόνες τους."
+            },
+            {
+              "type": "bullet_list",
+              "title": "Τι θυμόμαστε",
+              "items": [
+                "Με ουσιαστικό: sotsŭlu ameu = ο δικός μου φίλος",
+                "Με ουσιαστικό: tshanta amea = η δική μου τσάντα",
+                "Με ουσιαστικό: câsili ameali = τα δικά μου σπίτια",
+                "Μόνες τους: Câtshula i amea = το καπέλο είναι δικό μου",
+                "Μόνες τους: Aestu easte atâu = αυτό είναι δικό σου"
+              ]
+            },
+            {
+              "type": "table",
+              "title": "Βασικοί τύποι κτητικών αντωνυμιών",
+              "columns": [
+                "Πρόσωπο κτήτορα",
+                "Αρσενικό ενικός",
+                "Αρσενικό πληθυντικός",
+                "Θηλυκό ενικός",
+                "Θηλυκό πληθυντικός"
+              ],
+              "rows": [
+                {
+                  "Πρόσωπο κτήτορα": "mine",
+                  "Αρσενικό ενικός": "ameu / amelu",
+                  "Αρσενικό πληθυντικός": "amei / amelji",
+                  "Θηλυκό ενικός": "amea",
+                  "Θηλυκό πληθυντικός": "ameali"
+                },
+                {
+                  "Πρόσωπο κτήτορα": "tine",
+                  "Αρσενικό ενικός": "atâu / atâlu",
+                  "Αρσενικό πληθυντικός": "atâi / atâlji",
+                  "Θηλυκό ενικός": "atae / ata",
+                  "Θηλυκό πληθυντικός": "atali"
+                },
+                {
+                  "Πρόσωπο κτήτορα": "elu",
+                  "Αρσενικό ενικός": "alui",
+                  "Αρσενικό πληθυντικός": "alui",
+                  "Θηλυκό ενικός": "alui",
+                  "Θηλυκό πληθυντικός": "alui"
+                },
+                {
+                  "Πρόσωπο κτήτορα": "ea",
+                  "Αρσενικό ενικός": "aljei",
+                  "Αρσενικό πληθυντικός": "aljei",
+                  "Θηλυκό ενικός": "aljei",
+                  "Θηλυκό πληθυντικός": "aljei"
+                },
+                {
+                  "Πρόσωπο κτήτορα": "noi",
+                  "Αρσενικό ενικός": "anostru",
+                  "Αρσενικό πληθυντικός": "anoshĭtsrĭ",
+                  "Θηλυκό ενικός": "anoastrâ",
+                  "Θηλυκό πληθυντικός": "anoastri"
+                },
+                {
+                  "Πρόσωπο κτήτορα": "voi",
+                  "Αρσενικό ενικός": "avostru",
+                  "Αρσενικό πληθυντικός": "avoshĭtsrĭ",
+                  "Θηλυκό ενικός": "avoastrâ",
+                  "Θηλυκό πληθυντικός": "avoastri"
+                },
+                {
+                  "Πρόσωπο κτήτορα": "elji & eali",
+                  "Αρσενικό ενικός": "aloru",
+                  "Αρσενικό πληθυντικός": "aloru",
+                  "Θηλυκό ενικός": "aloru",
+                  "Θηλυκό πληθυντικός": "aloru"
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "title": "Δύο τρόποι σύνταξης"
+            },
+            {
+              "type": "paragraph",
+              "text": "Οι κτητικές αντωνυμίες συντάσσονται με δύο βασικούς τρόπους: είτε μετά από ουσιαστικό με άρθρο είτε πριν από το ουσιαστικό."
+            },
+            {
+              "type": "example_pair",
+              "title": "Ουσιαστικό + άρθρο + κτητική αντωνυμία",
+              "vlach": "Hiljiulu aloru easte multu djione!",
+              "greek": "Ο δικός τους γιος είναι πολύ λεβέντης!"
+            },
+            {
+              "type": "example_pair",
+              "title": "Κτητική αντωνυμία + ουσιαστικό",
+              "vlach": "Aloru hiljiu easte multu djione!",
+              "greek": "Ο δικός τους γιος είναι πολύ λεβέντης!"
+            },
+            {
+              "type": "example_pair",
+              "title": "Δεύτερο παράδειγμα",
+              "vlach": "Hoara avoastrâ easte largu. / Avoastrâ hoarâ easte largu.",
+              "greek": "Το δικό σας χωριό είναι μακριά."
+            },
+            {
+              "type": "heading",
+              "title": "Ιδιαιτερότητες με βαθμούς συγγένειας"
+            },
+            {
+              "type": "paragraph",
+              "text": "Με συγγενικούς όρους, όταν και ο κτήτορας και η κτήση είναι στον ενικό, εμφανίζονται ειδικοί σύντομοι τύποι. Οι μορφές αυτές είναι πολύ συχνές στον οικογενειακό λόγο."
+            },
+            {
+              "type": "table",
+              "title": "Συγγενικοί όροι: μου / σου / του-της",
+              "columns": [
+                "Λέξη",
+                "μου",
+                "σου",
+                "του/της"
+              ],
+              "rows": [
+                {
+                  "Λέξη": "Mumâ",
+                  "μου": "Mumâ’mea",
+                  "σου": "mâ’ta",
+                  "του/της": "mâ’sa"
+                },
+                {
+                  "Λέξη": "Dadâ",
+                  "μου": "Dadâ’mea",
+                  "σου": "dadâ’ta",
+                  "του/της": "dadâ’sa"
+                },
+                {
+                  "Λέξη": "Mae",
+                  "μου": "Mae’mea",
+                  "σου": "mae’ta",
+                  "του/της": "mae’sa"
+                },
+                {
+                  "Λέξη": "Mŭljeare",
+                  "μου": "Mŭljear’mea",
+                  "σου": "mŭljear’ta",
+                  "του/της": "mŭljear’sa"
+                },
+                {
+                  "Λέξη": "norâ",
+                  "μου": "Norâ’mea",
+                  "σου": "nor’ta",
+                  "του/της": "nor’sa"
+                },
+                {
+                  "Λέξη": "Tetâ",
+                  "μου": "Tetâ’mea",
+                  "σου": "tetâ’ta",
+                  "του/της": "tetâ’sa"
+                },
+                {
+                  "Λέξη": "Cumnatâ",
+                  "μου": "Cumnatâ’mea",
+                  "σου": "cumnatâ’ta",
+                  "του/της": "cumnatâ’sa"
+                },
+                {
+                  "Λέξη": "Soacrâ",
+                  "μου": "Soacrâ’mea",
+                  "σου": "soacrâ’ta",
+                  "του/της": "soacrâ’sa"
+                },
+                {
+                  "Λέξη": "Sorâ",
+                  "μου": "Sorâ’mea",
+                  "σου": "sorâ’ta",
+                  "του/της": "sorâ’sa"
+                },
+                {
+                  "Λέξη": "Nipoatâ",
+                  "μου": "Nipoatâ’mea",
+                  "σου": "nipoatâ’ta",
+                  "του/της": "nipoatâ’sa"
+                },
+                {
+                  "Λέξη": "Hiljie",
+                  "μου": "Hilj’mea",
+                  "σου": "hilj’ta",
+                  "του/της": "hilj’sa"
+                },
+                {
+                  "Λέξη": "Hiljiu",
+                  "μου": "hilj’ njiu",
+                  "σου": "hilj’tu",
+                  "του/της": "hilj’su"
+                },
+                {
+                  "Λέξη": "Tatâ",
+                  "μου": "tatâ njiu",
+                  "σου": "tatâ’tu",
+                  "του/της": "tatâ’su"
+                },
+                {
+                  "Λέξη": "Bârbatu",
+                  "μου": "bârbatŭ njiu",
+                  "σου": "bârbatu’tu",
+                  "του/της": "bârbatu’su"
+                },
+                {
+                  "Λέξη": "Frate",
+                  "μου": "frate njiu",
+                  "σου": "frate’tu",
+                  "του/της": "frate’su"
+                },
+                {
+                  "Λέξη": "Papu",
+                  "μου": "papu njiu",
+                  "σου": "papu’tu",
+                  "του/της": "papu’su"
+                },
+                {
+                  "Λέξη": "Socru",
+                  "μου": "socru njiu",
+                  "σου": "socru’tu",
+                  "του/της": "socru’su"
+                },
+                {
+                  "Λέξη": "Nipotu",
+                  "μου": "nipotu njiu",
+                  "σου": "nipotu’tu",
+                  "του/της": "nipotu’su"
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "title": "Cându και anda"
+            },
+            {
+              "type": "paragraph",
+              "text": "Το cându χρησιμοποιείται ως ερωτηματικό «πότε», αλλά και με σημασία «όταν». Το anda δίνει επίσης την έννοια «όταν / όποτε»."
+            },
+            {
+              "type": "example_pair",
+              "title": "Ερώτηση",
+              "vlach": "Cându ti duci la pârintsĭlji atâi?",
+              "greek": "Πότε πηγαίνεις στους γονείς σου;"
+            },
+            {
+              "type": "example_pair",
+              "title": "Όταν",
+              "vlach": "Mi ducu cându nu amu lucru.",
+              "greek": "Πηγαίνω όταν δεν έχω δουλειά."
+            },
+            {
+              "type": "example_pair",
+              "title": "Όποτε",
+              "vlach": "Mi ducu anda nu amu lucru.",
+              "greek": "Πηγαίνω όποτε δεν έχω δουλειά."
+            },
+            {
+              "type": "heading",
+              "title": "7.2 Τα ρήματα dau, aducu, yinu"
+            },
+            {
+              "type": "table",
+              "title": "Κλίση ρημάτων",
+              "columns": [
+                "δίνω",
+                "φέρνω",
+                "έρχομαι"
+              ],
+              "rows": [
+                {
+                  "δίνω": "dau",
+                  "φέρνω": "aducu",
+                  "έρχομαι": "yinu"
+                },
+                {
+                  "δίνω": "dai",
+                  "φέρνω": "aduci",
+                  "έρχομαι": "yini"
+                },
+                {
+                  "δίνω": "da",
+                  "φέρνω": "aduce",
+                  "έρχομαι": "yine"
+                },
+                {
+                  "δίνω": "dâmu / dâdemu",
+                  "φέρνω": "a(du)cemu",
+                  "έρχομαι": "yinimu"
+                },
+                {
+                  "δίνω": "dacĭ / dâdecĭ",
+                  "φέρνω": "a(du)cecĭ",
+                  "έρχομαι": "yinicĭ"
+                },
+                {
+                  "δίνω": "da",
+                  "φέρνω": "aducu",
+                  "έρχομαι": "yinu"
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "title": "Χρήσιμες εκφράσεις"
+            },
+            {
+              "type": "bullet_list",
+              "title": "Με το dau",
+              "items": [
+                "dau di + ουσιαστικό = ακουμπάω, αγγίζω, συναντώ τυχαία",
+                "dau si + ρήμα = προσπαθώ να...",
+                "dau stî = χτυπάω, δέρνω",
+                "dau cale = διώχνω",
+                "da chicuti / ploae / neau / cheamete = ψιχαλίζει / βρέχει / χιονίζει / γίνεται κατακλυσμός",
+                "dau buyiau = βάφω",
+                "dau zboru = υπόσχομαι, λογοδίνομαι",
+                "da soarĭle = ανατέλλει ο ήλιος",
+                "dau = βρωμάω",
+                "dau = ανθίζω",
+                "mi dau di (în) pade = χτυπιέμαι κάτω, επιμένω"
+              ]
+            },
+            {
+              "type": "bullet_list",
+              "title": "Με το aducu και το yinu",
+              "items": [
+                "aducu di a minte / tu minte = θυμάμαι",
+                "nji si da tu minte = θυμάμαι, μου έρχεται στο νου",
+                "yine aloatŭlu = φουσκώνει το προζύμι",
+                "nji yine si + ρήμα = μου έρχεται να...",
+                "nji yine + somnu / foame / frigu / soare = μου έρχεται ύπνος / πείνα / κρύο / ζέστη"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "vocabulary-7",
+      "type": "vocabulary",
+      "title": "Λεξιλόγιο",
+      "order": 2,
+      "data": {
+        "sections": [
+          {
+            "title": "Οικογένεια και θέση στον χώρο",
+            "items": [
+              {
+                "vlach": "fumealjea",
+                "greek": "οικογένεια"
+              },
+              {
+                "vlach": "împrostu",
+                "greek": "όρθιος"
+              },
+              {
+                "vlach": "antreaptâ",
+                "greek": "δεξιά"
+              },
+              {
+                "vlach": "anâstângâ",
+                "greek": "αριστερά"
+              },
+              {
+                "vlach": "dupu",
+                "greek": "μετά, πίσω από"
+              },
+              {
+                "vlach": "nâinte",
+                "greek": "μπροστά"
+              },
+              {
+                "vlach": "în bratsâ",
+                "greek": "στην αγκαλιά"
+              },
+              {
+                "vlach": "fiticâ",
+                "greek": "κοριτσάκι"
+              },
+              {
+                "vlach": "nora",
+                "greek": "νύφη"
+              },
+              {
+                "vlach": "nipoata",
+                "greek": "εγγονή"
+              },
+              {
+                "vlach": "mŭljeare",
+                "greek": "γυναίκα"
+              },
+              {
+                "vlach": "hiljiu",
+                "greek": "γιος"
+              },
+              {
+                "vlach": "hiljie",
+                "greek": "κόρη"
+              },
+              {
+                "vlach": "nipotu",
+                "greek": "εγγονός"
+              },
+              {
+                "vlach": "nipotsĭlji",
+                "greek": "εγγόνια"
+              }
+            ]
+          },
+          {
+            "title": "Καθημερινές λέξεις",
+            "items": [
+              {
+                "vlach": "dzîli",
+                "greek": "μέρες"
+              },
+              {
+                "vlach": "mŭshati",
+                "greek": "όμορφες"
+              },
+              {
+                "vlach": "tutsĭ di adunu",
+                "greek": "όλοι μαζί"
+              },
+              {
+                "vlach": "mi hârsii",
+                "greek": "χάρηκα"
+              },
+              {
+                "vlach": "nou",
+                "greek": "καινούριος"
+              },
+              {
+                "vlach": "sotsu",
+                "greek": "φίλος"
+              },
+              {
+                "vlach": "amu",
+                "greek": "έχω"
+              },
+              {
+                "vlach": "lucru",
+                "greek": "δουλειά"
+              },
+              {
+                "vlach": "aducu di a minte",
+                "greek": "θυμάμαι"
+              },
+              {
+                "vlach": "hâbâre",
+                "greek": "νέο, είδηση"
+              },
+              {
+                "vlach": "heretimati",
+                "greek": "χαιρετισμοί"
+              },
+              {
+                "vlach": "totŭna",
+                "greek": "πάντα"
+              },
+              {
+                "vlach": "largu",
+                "greek": "μακριά"
+              },
+              {
+                "vlach": "ta",
+                "greek": "για"
+              },
+              {
+                "vlach": "ninga",
+                "greek": "δίπλα, ακόμα"
+              },
+              {
+                "vlach": "ori",
+                "greek": "φορές"
+              }
+            ]
+          },
+          {
+            "title": "Επαγγέλματα και περιβάλλον",
+            "items": [
+              {
+                "vlach": "cathiyitrie",
+                "greek": "καθηγήτρια"
+              },
+              {
+                "vlach": "di limbe xeani",
+                "greek": "ξένων γλωσσών"
+              },
+              {
+                "vlach": "mathitadzĭ",
+                "greek": "μαθητές"
+              },
+              {
+                "vlach": "mâyâzie",
+                "greek": "μαγαζί"
+              },
+              {
+                "vlach": "ipuluyistadzĭ",
+                "greek": "υπολογιστές"
+              },
+              {
+                "vlach": "cumotrie",
+                "greek": "κομμώτρια"
+              },
+              {
+                "vlach": "bânâmu",
+                "greek": "ζούμε"
+              },
+              {
+                "vlach": "biemu",
+                "greek": "πίνουμε"
+              },
+              {
+                "vlach": "dhascalu",
+                "greek": "δάσκαλος"
+              },
+              {
+                "vlach": "carmele",
+                "greek": "καραμέλες"
+              }
+            ]
+          },
+          {
+            "title": "Περιγραφή προσώπου",
+            "items": [
+              {
+                "vlach": "tiniru",
+                "greek": "νεαρός, νέος"
+              },
+              {
+                "vlach": "însuratu",
+                "greek": "παντρεμένος"
+              },
+              {
+                "vlach": "mare",
+                "greek": "μεγάλος"
+              },
+              {
+                "vlach": "afiscu",
+                "greek": "άσχημος"
+              },
+              {
+                "vlach": "shcurtu",
+                "greek": "κοντός"
+              },
+              {
+                "vlach": "grosu",
+                "greek": "χοντρός"
+              },
+              {
+                "vlach": "minutu",
+                "greek": "αδύνατος, λεπτός"
+              },
+              {
+                "vlach": "avutu",
+                "greek": "πλούσιος"
+              },
+              {
+                "vlach": "ftohu",
+                "greek": "φτωχός"
+              },
+              {
+                "vlach": "analtu",
+                "greek": "ψηλός"
+              },
+              {
+                "vlach": "lungu",
+                "greek": "μακρύς"
+              },
+              {
+                "vlach": "peru",
+                "greek": "τρίχα, τρίχωμα"
+              },
+              {
+                "vlach": "unâ",
+                "greek": "μια"
+              },
+              {
+                "vlach": "unu",
+                "greek": "ένας"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "exercises-7",
+      "type": "exercises",
+      "title": "Ασκήσεις",
+      "order": 3,
+      "data": {
+        "unitNumber": 0,
+        "exercises": [
+          {
+            "id": "ex-7-reading",
+            "type": "open_production",
+            "title": "Απαντώ στις ερωτήσεις κατανόησης",
+            "content": {
+              "prompt": "Διάβασε ξανά το κείμενο «Fumealjea amea» και απάντησε σύντομα στις παρακάτω ερωτήσεις.",
+              "answer_count_requested": 5,
+              "official_answers": [
+                "Cari easte papŭlu?",
+                "Cumu s’ cljeamâ bârbâtŭlu ali Dine?",
+                "Ci fumealje are Tana?",
+                "A cui hiljiu easte Cola?",
+                "Cari i nipotŭlu alu Yiani?"
+              ]
+            }
+          },
+          {
+            "id": "ex-7-possessives",
+            "type": "fill_in_the_blank",
+            "title": "Συμπληρώνω με atâu, atae, atâi, atali",
+            "instruction": "Συμπλήρωσε το σωστό κτητικό τύπο.",
+            "items": [
+              {
+                "number": 1,
+                "prompt": "Mi hârsii multu ci hicĭ ghine em tine em fumealjea ____!",
+                "answer": "atae"
+              },
+              {
+                "number": 2,
+                "prompt": "La lucrulu acelu nou amu unu sotsu ____ ci s’ cljeamâ Tona.",
+                "answer": "atâu"
+              },
+              {
+                "number": 3,
+                "prompt": "Cathe dzuâ aducemu di a minte tine sh’ pârintsĭlji ____.",
+                "answer": "atâi"
+              },
+              {
+                "number": 4,
+                "prompt": "Cari suntu hâbârili ____?",
+                "answer": "atali"
+              },
+              {
+                "number": 5,
+                "prompt": "Sotsŭlu ____, Alexi.",
+                "answer": "atâu"
+              }
+            ]
+          },
+          {
+            "id": "ex-7-candu-anda",
+            "type": "fill_in_connector",
+            "title": "Συμπληρώνω με cându ή anda",
+            "instruction": "Διάλεξε τον κατάλληλο σύνδεσμο.",
+            "items": [
+              {
+                "number": 1,
+                "prompt": "____ ti duci la pârintsĭlji atâi?",
+                "answer": "Cându"
+              },
+              {
+                "number": 2,
+                "prompt": "Mi ducu ____ nu amu lucru.",
+                "answer": "cându"
+              },
+              {
+                "number": 3,
+                "prompt": "Mi ducu ____ nu amu lucru.",
+                "answer": "anda"
+              }
+            ]
+          },
+          {
+            "id": "ex-7-verbs",
+            "type": "fill_in_verb_form",
+            "title": "Συμπληρώνω τον σωστό τύπο των ρημάτων",
+            "instruction": "Βάλε τον σωστό τύπο από τα dau, aducu, yinu.",
+            "items": [
+              {
+                "number": 1,
+                "prompt": "Io ____.",
+                "answer_with_filled_form": "dau"
+              },
+              {
+                "number": 2,
+                "prompt": "Tu ____.",
+                "answer_with_filled_form": "dai"
+              },
+              {
+                "number": 3,
+                "prompt": "Elu ____.",
+                "answer_with_filled_form": "da"
+              },
+              {
+                "number": 4,
+                "prompt": "Noi ____.",
+                "answer_with_filled_form": "dâmu / dâdemu"
+              },
+              {
+                "number": 5,
+                "prompt": "Io ____ cartea.",
+                "answer_with_filled_form": "aducu"
+              },
+              {
+                "number": 6,
+                "prompt": "Tu ____ cartea.",
+                "answer_with_filled_form": "aduci"
+              },
+              {
+                "number": 7,
+                "prompt": "Ea ____.",
+                "answer_with_filled_form": "yine"
+              },
+              {
+                "number": 8,
+                "prompt": "Noi ____.",
+                "answer_with_filled_form": "yinimu"
+              },
+              {
+                "number": 9,
+                "prompt": "Voi ____.",
+                "answer_with_filled_form": "yinicĭ"
+              }
+            ]
+          },
+          {
+            "id": "ex-7-writing",
+            "type": "open_production",
+            "title": "Έκθεση: Μιλάω για την οικογένειά μου",
+            "content": {
+              "prompt": "Γράψε ένα μικρό κείμενο περίπου 50 λέξεων για την οικογένειά σου. Χρησιμοποίησε λέξεις συγγένειας, τουλάχιστον δύο κτητικές αντωνυμίες και μία φράση με cându ή anda.",
+              "answer_count_requested": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "flashcards-7",
+      "type": "flashcards",
+      "title": "Κάρτες",
+      "order": 4,
+      "data": {
+        "flashcards": [
+          {
+            "type": "vocabulary",
+            "front": "fumealjea",
+            "back": "οικογένεια"
+          },
+          {
+            "type": "vocabulary",
+            "front": "împrostu",
+            "back": "όρθιος"
+          },
+          {
+            "type": "vocabulary",
+            "front": "antreaptâ",
+            "back": "δεξιά"
+          },
+          {
+            "type": "vocabulary",
+            "front": "anâstângâ",
+            "back": "αριστερά"
+          },
+          {
+            "type": "vocabulary",
+            "front": "în bratsâ",
+            "back": "στην αγκαλιά"
+          },
+          {
+            "type": "vocabulary",
+            "front": "fiticâ",
+            "back": "κοριτσάκι"
+          },
+          {
+            "type": "vocabulary",
+            "front": "sotsu",
+            "back": "φίλος"
+          },
+          {
+            "type": "vocabulary",
+            "front": "hâbâre",
+            "back": "νέο, είδηση"
+          },
+          {
+            "type": "vocabulary",
+            "front": "ameu",
+            "back": "δικός μου (αρσενικό ενικός)"
+          },
+          {
+            "type": "vocabulary",
+            "front": "amea",
+            "back": "δική μου (θηλυκό ενικός)"
+          },
+          {
+            "type": "vocabulary",
+            "front": "ameali",
+            "back": "δικές μου (θηλυκό πληθυντικός)"
+          },
+          {
+            "type": "vocabulary",
+            "front": "atâu",
+            "back": "δικός σου (αρσενικό ενικός)"
+          },
+          {
+            "type": "vocabulary",
+            "front": "atâi",
+            "back": "δικοί σου (αρσενικό πληθυντικός)"
+          },
+          {
+            "type": "vocabulary",
+            "front": "atali",
+            "back": "δικές σου (θηλυκό πληθυντικός)"
+          },
+          {
+            "type": "vocabulary",
+            "front": "cându",
+            "back": "πότε, όταν"
+          },
+          {
+            "type": "vocabulary",
+            "front": "anda",
+            "back": "όταν, όποτε"
+          },
+          {
+            "type": "vocabulary",
+            "front": "dau",
+            "back": "δίνω"
+          },
+          {
+            "type": "vocabulary",
+            "front": "aducu",
+            "back": "φέρνω"
+          },
+          {
+            "type": "vocabulary",
+            "front": "yinu",
+            "back": "έρχομαι"
+          },
+          {
+            "type": "vocabulary",
+            "front": "aducu di a minte",
+            "back": "θυμάμαι"
+          }
+        ]
+      }
+    },
+    {
+      "id": "quiz-7",
+      "type": "quiz",
+      "title": "Quiz",
+      "order": 5,
+      "data": {
+        "flashcards": [
+          {
+            "front": "fumealjea",
+            "back": "οικογένεια"
+          },
+          {
+            "front": "antreaptâ",
+            "back": "δεξιά"
+          },
+          {
+            "front": "anâstângâ",
+            "back": "αριστερά"
+          },
+          {
+            "front": "fiticâ",
+            "back": "κοριτσάκι"
+          },
+          {
+            "front": "amea",
+            "back": "δική μου"
+          },
+          {
+            "front": "atâu",
+            "back": "δικός σου"
+          },
+          {
+            "front": "cându",
+            "back": "πότε, όταν"
+          },
+          {
+            "front": "anda",
+            "back": "όταν, όποτε"
+          },
+          {
+            "front": "dau",
+            "back": "δίνω"
+          },
+          {
+            "front": "yinu",
+            "back": "έρχομαι"
+          }
+        ],
+        "vocabulary": [
+          {
+            "title": "Βασικό λεξιλόγιο ενότητας 7",
+            "items": [
+              {
+                "vlach": "fumealjea",
+                "greek": "οικογένεια"
+              },
+              {
+                "vlach": "sotsu",
+                "greek": "φίλος"
+              },
+              {
+                "vlach": "hâbâre",
+                "greek": "είδηση"
+              },
+              {
+                "vlach": "dau",
+                "greek": "δίνω"
+              },
+              {
+                "vlach": "aducu",
+                "greek": "φέρνω"
+              },
+              {
+                "vlach": "yinu",
+                "greek": "έρχομαι"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
