@@ -8,6 +8,34 @@ function activeRegistrationKey(moduleId: string) {
   return `vlachika-active-registration-${moduleId}`;
 }
 
+function phraseAudioLinksKey(moduleId: string) {
+  return `vlachika-phrase-audio-${moduleId}`;
+}
+
+export function loadPhraseAudioLinks(
+  moduleId: string
+): Record<string, string> {
+  if (!canUseStorage()) return {};
+  try {
+    const raw = localStorage.getItem(phraseAudioLinksKey(moduleId));
+    return raw ? (JSON.parse(raw) as Record<string, string>) : {};
+  } catch {
+    return {};
+  }
+}
+
+export function savePhraseAudioLink(
+  moduleId: string,
+  phraseId: string,
+  audioId: string | null
+): void {
+  if (!canUseStorage()) return;
+  const links = loadPhraseAudioLinks(moduleId);
+  if (audioId === null) delete links[phraseId];
+  else links[phraseId] = audioId;
+  localStorage.setItem(phraseAudioLinksKey(moduleId), JSON.stringify(links));
+}
+
 function canUseStorage() {
   return typeof window !== "undefined";
 }

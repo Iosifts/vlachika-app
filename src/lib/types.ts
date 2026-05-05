@@ -217,6 +217,8 @@ export interface PhraseEntry {
   speakerAge?: string;
   speakerPlace?: string;
   audioFileName?: string;
+  /** Optional reference to a RegistrationAudioFile.id captured for THIS phrase. */
+  audioFileId?: string;
   dateRecorded?: string;
   notes?: string;
   status?: "draft" | "submitted" | "approved" | "flagged";
