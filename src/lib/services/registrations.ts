@@ -267,6 +267,7 @@ export async function addPhrase(
         context: data.context,
         notes: data.notes,
         status: data.status,
+        audioFileId: phrase.audioFileId,
       }
     : phrase;
 }

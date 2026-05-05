@@ -2,26 +2,26 @@
  * Module loader — the single source of truth for all modules.
  *
  * Loads:
- *  1. Legacy lesson JSONs (via adapter)
- *  2. Native module JSONs from src/data/modules/
+ *  1. Legacy lesson JSONs (via adapter) from static manifest
+ *  2. Native module JSONs from static manifest
+ *
+ * Uses static imports instead of filesystem access,
+ * so it works in Cloudflare Workers and any edge runtime.
  *
  * Exports a clean API identical to the old lessons.ts but for Modules.
  */
 
-import "server-only";
-
-import { readdirSync, readFileSync } from "node:fs";
-import path from "node:path";
-
 import type { Module } from "./types";
 import { legacyLessonToModule } from "./legacy-adapter";
+import nativeModulesRaw from "@/data/modules";
+import legacySourcesRaw from "@/data/legacy";
 
 // ─── Build all modules ──────────────────────────────────────
 
-function assertNativeModuleShape(moduleData: Module, sourceName: string) {
+function assertNativeModuleShape(moduleData: Module, index: number) {
   if (!moduleData?.id || !moduleData?.title || !Array.isArray(moduleData?.sections)) {
     throw new Error(
-      `Native module "${sourceName}" is missing one of the required fields: id, title, sections[].`
+      `Native module at index ${index} is missing one of the required fields: id, title, sections[].`
     );
   }
 
@@ -34,22 +34,15 @@ function assertNativeModuleShape(moduleData: Module, sourceName: string) {
       typeof section.order !== "number"
     ) {
       throw new Error(
-        `Native module "${sourceName}" has an invalid section. Required fields are id, type, title, order, data.`
+        `Native module "${moduleData.id}" has an invalid section. Required fields are id, type, title, order, data.`
       );
     }
   }
 }
 
 function loadNativeModules(): Module[] {
-  const modulesDir = path.join(process.cwd(), "src/data/modules");
-  const filenames = readdirSync(modulesDir).filter((filename) =>
-    filename.endsWith(".json")
-  );
-
-  return filenames.map((filename) => {
-    const absolutePath = path.join(modulesDir, filename);
-    const parsed = JSON.parse(readFileSync(absolutePath, "utf8")) as Module;
-    assertNativeModuleShape(parsed, filename);
+  return nativeModulesRaw.map((parsed, index) => {
+    assertNativeModuleShape(parsed, index);
 
     return {
       ...parsed,
@@ -61,19 +54,7 @@ function loadNativeModules(): Module[] {
 }
 
 function loadLegacySources(): Array<Record<string, unknown>> {
-  const legacyDir = path.join(process.cwd(), "src/data/legacy");
-  const filenames = readdirSync(legacyDir).filter((filename) =>
-    filename.endsWith(".json")
-  );
-
-  return filenames
-    .map((filename) => {
-      const absolutePath = path.join(legacyDir, filename);
-      return JSON.parse(readFileSync(absolutePath, "utf8")) as Record<
-        string,
-        unknown
-      >;
-    })
+  return legacySourcesRaw
     .filter((data) => {
       // Ignore native Module-format files that were accidentally placed in the
       // legacy directory. The legacy adapter expects the older lesson shape.
