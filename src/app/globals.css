@@ -129,24 +129,31 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* One subtle global tint, not many overlapping patches */
+/* Faded illustrated backdrop.
+ *
+ * The illustration sits underneath a soft page-color wash so it reads as
+ * atmosphere in the margins without bleeding through body text. Cards
+ * (.surface-card / .surface-panel) cover it where content lives.
+ *
+ * Tweak the alpha values in the gradient (0.55–0.85 range works) to make
+ * the illustration more or less visible.
+ */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: -1;
-  background:
-    radial-gradient(
-      1000px 360px at 50% -120px,
-      oklch(0.915 0.020 210 / 0.10),
-      transparent 72%
+  background-image:
+    linear-gradient(
+      180deg,
+      oklch(0.982 0.004 95 / 0.78) 0%,
+      oklch(0.965 0.004 95 / 0.82) 100%
     ),
-    radial-gradient(
-      720px 260px at 92% 0%,
-      oklch(0.930 0.018 350 / 0.06),
-      transparent 70%
-    );
+    url('/bg.png');
+  background-size: cover, cover;
+  background-position: center top, center top;
+  background-repeat: no-repeat, no-repeat;
 }
 
 ::selection {

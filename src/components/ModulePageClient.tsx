@@ -71,7 +71,7 @@ export default function ModulePageClient({ module: mod }: { module: Module }) {
       </Link>
 
       {/* Module header */}
-      <header className="mb-8">
+      <header className="surface-panel rounded-2xl px-5 py-5 sm:px-7 sm:py-6 mb-8">
         <div className="flex items-center gap-3 mb-2">
           <span
             className={`inline-block px-3 py-1 rounded-full text-xs font-medium text-white ${badgeBg}`}
@@ -102,34 +102,36 @@ export default function ModulePageClient({ module: mod }: { module: Module }) {
         <p className="text-warm-500 mt-2 leading-7">{mod.description}</p>
       </header>
 
-      {/* Section tabs */}
-      {sections.length > 1 && (
-        <nav className="flex flex-wrap gap-1 mb-8 border-b border-warm-200 pb-px">
-          {sections.map((sec) => (
-            <button
-              key={sec.id}
-              onClick={() => setActiveSectionId(sec.id)}
-              className={`px-4 py-2.5 text-sm font-medium rounded-t-lg transition-colors ${
-                activeSectionId === sec.id
-                  ? tabActive
-                  : "text-warm-500 hover:text-warm-700 hover:bg-warm-100"
-              }`}
-            >
-              {sec.title}
-            </button>
-          ))}
-        </nav>
-      )}
-
-      {/* Section content */}
-      <div className="min-h-[400px]">
-        {activeSection ? (
-          <SectionRenderer section={activeSection} moduleId={mod.id} />
-        ) : (
-          <div className="text-warm-400 text-center py-12">
-            Δεν υπάρχουν διαθέσιμες ενότητες.
-          </div>
+      {/* Section tabs + content live inside one continuous panel so the tab
+          row never floats directly over the body backdrop image. */}
+      <div className="surface-panel rounded-2xl overflow-hidden min-h-[400px]">
+        {sections.length > 1 && (
+          <nav className="flex flex-wrap gap-1 px-3 pt-3 sm:px-4 sm:pt-4 border-b border-warm-200">
+            {sections.map((sec) => (
+              <button
+                key={sec.id}
+                onClick={() => setActiveSectionId(sec.id)}
+                className={`px-4 py-2.5 text-sm font-medium rounded-t-lg transition-colors ${
+                  activeSectionId === sec.id
+                    ? tabActive
+                    : "text-warm-500 hover:text-warm-700 hover:bg-warm-100"
+                }`}
+              >
+                {sec.title}
+              </button>
+            ))}
+          </nav>
         )}
+
+        <div className="p-4 sm:p-6">
+          {activeSection ? (
+            <SectionRenderer section={activeSection} moduleId={mod.id} />
+          ) : (
+            <div className="text-warm-400 text-center py-12">
+              Δεν υπάρχουν διαθέσιμες ενότητες.
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
