@@ -116,20 +116,20 @@ export default function HomePageClient({ lessons, documentationModules }: Props)
           </span>
 
           <h2 className="mt-6 text-4xl sm:text-5xl font-semibold tracking-tight text-warm-900">
-            Μαθήματα Βλάχικης Γλώσσας
+            Μάθε Βλάχικα με τον δικό σου ρυθμό
           </h2>
 
           <p className="mt-4 text-warm-600 max-w-2xl mx-auto text-lg leading-8">
-            Μάθε βλάχικα βήμα-βήμα μέσα από οργανωμένες ενότητες με θεωρία,
-            λεξιλόγιο, ασκήσεις, κάρτες επανάληψης και quiz. Συμμετέχεις
-            στην καταγραφή και διατήρηση της γλώσσας.
+            Μικρές ενότητες με θεωρία, λεξιλόγιο, ασκήσεις και κάρτες
+            επανάληψης. Χωρίς λογαριασμό, χωρίς πίεση — μαθαίνεις λίγο κάθε
+            φορά και κρατάς τη γλώσσα ζωντανή.
           </p>
 
           <p className="mt-3 text-sm sm:text-base text-warm-500 max-w-xl mx-auto leading-7">
-            Η γραφή ακολουθεί ακριβώς το προτεινόμενο σύστημα εγγραφισμού.
+            Δωρεάν περιεχόμενο, φτιαγμένο για ελληνόφωνους.
           </p>
 
-          <div className="mt-8 flex justify-center">
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
             <button
               type="button"
               onClick={() => {
@@ -143,9 +143,78 @@ export default function HomePageClient({ lessons, documentationModules }: Props)
               }}
               className="inline-flex items-center rounded-2xl bg-sky-600 px-6 py-3 text-sm font-medium text-white shadow-sm transition-all duration-300 hover:bg-sky-700 hover:shadow-md"
             >
-              Συνέχισε στα μαθήματα
+              Ξεκίνα τα μαθήματα
             </button>
+            <a
+              href="#start-here"
+              className="inline-flex items-center rounded-2xl border border-warm-300 bg-white px-6 py-3 text-sm font-medium text-warm-700 transition-colors hover:border-warm-400 hover:bg-warm-50"
+            >
+              Πώς λειτουργεί;
+            </a>
           </div>
+        </div>
+      </section>
+
+      {/* ─── Start here / learner guidance ─── */}
+      <section id="start-here" className="pb-6 scroll-mt-6">
+        <div className="surface-card rounded-[28px] px-5 py-6 sm:px-8 sm:py-8">
+          <div className="flex items-center gap-2 flex-wrap">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-warm-500">
+              Πώς να ξεκινήσεις
+            </p>
+          </div>
+          <h3 className="mt-1.5 text-xl sm:text-2xl font-semibold text-warm-800">
+            Πέντε απλά βήματα σε κάθε μάθημα
+          </h3>
+          <p className="mt-1 text-sm leading-6 text-warm-500 max-w-2xl">
+            Κάθε ενότητα έχει την ίδια δομή. Ακολούθησε τη σειρά τη μία
+            φορά και μετά γύρνα ελεύθερα όπου χρειάζεσαι.
+          </p>
+
+          <ol className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+            {[
+              {
+                n: 1,
+                title: "Θεωρία",
+                desc: "Διάβασε με την ησυχία σου.",
+              },
+              {
+                n: 2,
+                title: "Λεξιλόγιο",
+                desc: "Δες τις λέξεις της ενότητας.",
+              },
+              {
+                n: 3,
+                title: "Κάρτες",
+                desc: "Επανάλαβε με flashcards.",
+              },
+              {
+                n: 4,
+                title: "Ασκήσεις",
+                desc: "Δοκίμασε ό,τι έμαθες.",
+              },
+              {
+                n: 5,
+                title: "Quiz",
+                desc: "Έλεγξε τι κράτησες.",
+              },
+            ].map((step) => (
+              <li
+                key={step.n}
+                className="rounded-2xl border border-warm-200 bg-white p-4"
+              >
+                <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-sky-50 text-xs font-semibold text-sky-700 ring-1 ring-sky-200">
+                  {step.n}
+                </span>
+                <p className="mt-3 text-sm font-semibold text-warm-800">
+                  {step.title}
+                </p>
+                <p className="mt-1 text-xs leading-5 text-warm-500">
+                  {step.desc}
+                </p>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 
@@ -187,68 +256,72 @@ export default function HomePageClient({ lessons, documentationModules }: Props)
       </CollapsibleSection>
 
       {/* ─── Documentation / preservation section ─── */}
-      <CollapsibleSection
-        ref={docRef}
-        id="documentation"
-        accent="rose"
-        eyebrow="Contribution"
-        title="Τεκμηρίωση & Διατήρηση"
-        subtitle="Κατέγραψε ομιλητές, φράσεις και ηχογραφήσεις σε έναν πιο οργανωμένο χώρο εργασίας."
-        count={allDocModules.length}
-        open={openSection === "documentation"}
-        onToggle={() => toggleSection("documentation")}
-      >
-        {allDocModules.length > 0 && (
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {allDocModules.map((mod) => {
-              const customMod = customModules.find((cm) => cm.id === mod.id);
-              return (
-                <ModuleCard
-                  key={mod.id}
-                  module={mod}
-                  isAdmin={isAdmin}
-                  onEdit={
-                    customMod
-                      ? () => {
-                          setEditingModule(customMod);
-                          setShowCreator(true);
-                        }
-                      : undefined
-                  }
-                  onDelete={
-                    customMod ? () => handleDeleteCustom(mod.id) : undefined
-                  }
-                />
-              );
-            })}
-          </div>
-        )}
-      </CollapsibleSection>
-
-      {/* ─── Other custom modules ─── */}
-      {otherCustomModules.filter((m) => m.type !== "lesson").length > 0 && (
-        <section className="pb-12">
-          <h3 className="text-lg font-semibold text-warm-700 mb-6 flex items-center gap-2">
-            <span>📂</span> Επιπλέον ενότητες
-          </h3>
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {otherCustomModules
-              .filter((m) => m.type !== "lesson")
-              .map((cm) => (
-                <ModuleCard
-                  key={cm.id}
-                  module={customToModule(cm)}
-                  isAdmin={isAdmin}
-                  onEdit={() => {
-                    setEditingModule(cm);
-                    setShowCreator(true);
-                  }}
-                  onDelete={() => handleDeleteCustom(cm.id)}
-                />
-              ))}
-          </div>
-        </section>
+      {/* Hidden from public; only visible when admin mode is on. */}
+      {isAdmin && (
+        <CollapsibleSection
+          ref={docRef}
+          id="documentation"
+          accent="rose"
+          eyebrow="Contribution"
+          title="Τεκμηρίωση & Διατήρηση"
+          subtitle="Κατέγραψε ομιλητές, φράσεις και ηχογραφήσεις σε έναν πιο οργανωμένο χώρο εργασίας."
+          count={allDocModules.length}
+          open={openSection === "documentation"}
+          onToggle={() => toggleSection("documentation")}
+        >
+          {allDocModules.length > 0 && (
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              {allDocModules.map((mod) => {
+                const customMod = customModules.find((cm) => cm.id === mod.id);
+                return (
+                  <ModuleCard
+                    key={mod.id}
+                    module={mod}
+                    isAdmin={isAdmin}
+                    onEdit={
+                      customMod
+                        ? () => {
+                            setEditingModule(customMod);
+                            setShowCreator(true);
+                          }
+                        : undefined
+                    }
+                    onDelete={
+                      customMod ? () => handleDeleteCustom(mod.id) : undefined
+                    }
+                  />
+                );
+              })}
+            </div>
+          )}
+        </CollapsibleSection>
       )}
+
+      {/* ─── Other custom modules (admin-only) ─── */}
+      {isAdmin &&
+        otherCustomModules.filter((m) => m.type !== "lesson").length > 0 && (
+          <section className="pb-12">
+            <h3 className="text-lg font-semibold text-warm-700 mb-6 flex items-center gap-2">
+              <span>📂</span> Επιπλέον ενότητες
+            </h3>
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              {otherCustomModules
+                .filter((m) => m.type !== "lesson")
+                .map((cm) => (
+                  <ModuleCard
+                    key={cm.id}
+                    module={customToModule(cm)}
+                    isAdmin={isAdmin}
+                    onEdit={() => {
+                      setEditingModule(cm);
+                      setShowCreator(true);
+                    }}
+                    onDelete={() => handleDeleteCustom(cm.id)}
+                  />
+                ))}
+            </div>
+          </section>
+        )}
 
       {/* ─── Admin: create module ─── */}
       {isAdmin && (

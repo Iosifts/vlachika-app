@@ -15,6 +15,10 @@ import type { Module } from "./types";
 import { legacyLessonToModule } from "./legacy-adapter";
 import nativeModulesRaw from "@/data/modules";
 import legacySourcesRaw from "@/data/legacy";
+import {
+  fetchAllOverrides,
+  fetchOverride,
+} from "./services/lesson-overrides";
 
 // ─── Build all modules ──────────────────────────────────────
 
@@ -150,6 +154,46 @@ export function getModulesByType(type: Module["type"]): Module[] {
 
 export function getPublishedModules(): Module[] {
   return getAllModules().filter(
+    (m) => m.status !== "draft" && m.status !== "archived"
+  );
+}
+
+// ─── Override-aware async API ──────────────────────────────
+//
+// These are the source of truth for live page rendering. They merge the
+// static base above with admin-published overrides stored in Supabase.
+// If Supabase isn't configured or the call fails, the static base wins.
+
+/** Like getAllModules() but with Supabase overrides applied. */
+export async function fetchAllModules(): Promise<Module[]> {
+  const base = getAllModules();
+  const overrides = await fetchAllOverrides();
+  if (overrides.size === 0) return base;
+
+  return base.map((m) => overrides.get(m.id) ?? m);
+}
+
+/** Like getModuleById() but with override applied. */
+export async function fetchModuleById(
+  id: string
+): Promise<Module | undefined> {
+  const override = await fetchOverride(id);
+  if (override) return override;
+  return getModuleById(id);
+}
+
+/** Like getModulesByType() but override-aware. */
+export async function fetchModulesByType(
+  type: Module["type"]
+): Promise<Module[]> {
+  const all = await fetchAllModules();
+  return all.filter((m) => m.type === type);
+}
+
+/** Like getPublishedModules() but override-aware. */
+export async function fetchPublishedModules(): Promise<Module[]> {
+  const all = await fetchAllModules();
+  return all.filter(
     (m) => m.status !== "draft" && m.status !== "archived"
   );
 }
