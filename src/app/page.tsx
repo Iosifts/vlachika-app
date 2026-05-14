@@ -1,17 +1,23 @@
-import { getPublishedModules, getModulesByType } from "@/lib/modules";
+import { fetchPublishedModules } from "@/lib/modules";
 import HomePageClient from "@/components/HomePageClient";
 
-export default function HomePage() {
-  const modules = getPublishedModules();
+// Homepage shows latest titles/descriptions/images, including admin edits.
+export const dynamic = "force-dynamic";
+
+export default async function HomePage() {
+  const modules = await fetchPublishedModules();
+
+  // Public homepage shows only learning content. PII-bearing module types
+  // (documentation/fieldwork/archive) never leave the server — even admin
+  // doesn't see them here; they manage those via /admin/lessons.
   const lessons = modules.filter(
     (m) => m.type === "lesson" || m.type === "coming_soon"
   );
-  const documentationModules = getModulesByType("documentation_project");
 
   return (
     <HomePageClient
       lessons={JSON.parse(JSON.stringify(lessons))}
-      documentationModules={JSON.parse(JSON.stringify(documentationModules))}
+      documentationModules={[]}
     />
   );
 }

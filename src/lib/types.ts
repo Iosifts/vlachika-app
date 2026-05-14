@@ -36,6 +36,22 @@ export type AccentColor =
   | "terra"
   | "warm";
 
+/**
+ * Reusable educational image descriptor.
+ *
+ * `src` can be:
+ *   - A path under /public, e.g. "/images/lessons/family.jpg"
+ *   - An absolute URL to Supabase Storage / any host
+ *
+ * Images are always optional; the UI degrades cleanly when missing.
+ */
+export interface LessonImage {
+  src: string;
+  alt: string;
+  caption?: string;
+  credit?: string;
+}
+
 // ─── Module ─────────────────────────────────────────────────
 
 export interface Module {
@@ -49,6 +65,8 @@ export interface Module {
   tags?: string[];
   order: number;
   accentColor: AccentColor;
+  /** Optional header image shown on the module card and lesson page. */
+  image?: LessonImage;
   sections: ModuleSection[];
   /** ISO date string of last edit */
   lastUpdated?: string;
@@ -102,6 +120,7 @@ export interface TheoryContentBlock {
     | "table"
     | "dialogue"
     | "youtube"
+    | "image"
     | "quote";
   title?: string;
   text?: string;
@@ -117,6 +136,9 @@ export interface TheoryContentBlock {
   }>;
   url?: string;
   caption?: string;
+  /** Image block: alt-text required, credit optional. */
+  alt?: string;
+  credit?: string;
   tone?: "info" | "warning" | "success" | "neutral";
 }
 
@@ -142,6 +164,8 @@ export interface VocabularyItem {
   definite?: string;
   indefinite?: string;
   meaning_source?: string;
+  /** Optional illustrative image. */
+  image?: LessonImage;
 }
 
 export interface VocabularySection {

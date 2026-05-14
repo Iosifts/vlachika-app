@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import Link from "next/link";
 import { AdminProvider } from "@/components/AdminContext";
 import AdminToggle from "@/components/AdminToggle";
+import MainNav from "@/components/MainNav";
 import "./globals.css";
 
 const geist = Geist({
@@ -40,26 +41,7 @@ export default function RootLayout({
                 </div>
               </Link>
               <div className="flex items-center gap-4">
-                <nav className="hidden sm:flex items-center gap-6 text-sm text-warm-600">
-                  <Link
-                    href="/"
-                    className="hover:text-warm-800 transition-colors"
-                  >
-                    Αρχική
-                  </Link>
-                  <Link
-                    href="/#lessons"
-                    className="hover:text-warm-800 transition-colors"
-                  >
-                    Μαθήματα
-                  </Link>
-                  <Link
-                    href="/#documentation"
-                    className="hover:text-warm-800 transition-colors"
-                  >
-                    Τεκμηρίωση
-                  </Link>
-                </nav>
+                <MainNav />
                 <AdminToggle />
               </div>
             </div>
@@ -70,15 +52,25 @@ export default function RootLayout({
 
           {/* ─── Footer ─── */}
           <footer className="border-t border-warm-200 bg-white/60 mt-16">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 text-center text-sm text-warm-500">
-              <p>
-                Η γραφή ακολουθεί ακριβώς το σύστημα εγγραφισμού της βλάχικης
-                γλώσσας, χωρίς αλλαγές χαρακτήρων.
-              </p>
-              <p className="mt-3 text-warm-600 font-medium">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 text-center text-sm text-warm-500 space-y-3">
+              <nav className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs">
+                <Link
+                  href="/writing-system"
+                  className="text-warm-500 hover:text-warm-700 transition-colors"
+                >
+                  Σύστημα γραφής
+                </Link>
+                <Link
+                  href="/feedback"
+                  className="text-warm-500 hover:text-warm-700 transition-colors"
+                >
+                  Σχόλια &amp; ιδέες
+                </Link>
+              </nav>
+              <p className="text-warm-600 font-medium">
                 Δημιουργήθηκε από τον Ιωσήφ Τσάνγκο για τον Σύλλογο Βλάχων Αθήνας
               </p>
-              <p className="mt-2 text-warm-400">
+              <p className="text-warm-400">
                 Μαθήματα Βλάχικων &copy; 2026
               </p>
             </div>

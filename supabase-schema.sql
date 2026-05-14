@@ -116,3 +116,94 @@ CREATE POLICY "Allow all for custom_modules"
 -- CREATE POLICY "Allow anon delete for audio"
 --   ON storage.objects FOR DELETE
 --   USING (bucket_id = 'audio');
+
+-- ═══════════════════════════════════════════════════════════════
+-- 8. Public Feedback / Σχόλια
+-- ═══════════════════════════════════════════════════════════════
+-- Run this block in SQL Editor to add the feedback feature.
+-- Stores only: text, status, created_at. No name/email/IP/UA.
+
+CREATE TABLE IF NOT EXISTS feedback (
+  id         uuid        PRIMARY KEY DEFAULT gen_random_uuid(),
+  text       text        NOT NULL CHECK (length(text) BETWEEN 1 AND 1200),
+  status     text        NOT NULL DEFAULT 'pending'
+                         CHECK (status IN ('pending', 'approved')),
+  created_at timestamptz NOT NULL DEFAULT now()
+);
+
+CREATE INDEX IF NOT EXISTS idx_feedback_status_created
+  ON feedback (status, created_at DESC);
+
+ALTER TABLE feedback ENABLE ROW LEVEL SECURITY;
+
+-- Anon may INSERT only with status = 'pending'
+DROP POLICY IF EXISTS "anon insert pending feedback" ON feedback;
+CREATE POLICY "anon insert pending feedback"
+  ON feedback FOR INSERT TO anon
+  WITH CHECK (status = 'pending');
+
+-- Anon may SELECT only approved rows
+DROP POLICY IF EXISTS "anon read approved feedback" ON feedback;
+CREATE POLICY "anon read approved feedback"
+  ON feedback FOR SELECT TO anon
+  USING (status = 'approved');
+
+-- No UPDATE/DELETE policies for anon — denied by default.
+-- Server (service_role) bypasses RLS for moderation actions.
+
+-- ═══════════════════════════════════════════════════════════════
+-- 9. Lesson overrides (cloud-published lesson edits)
+-- ═══════════════════════════════════════════════════════════════
+-- Each row overrides a static module JSON with an admin-edited copy.
+-- Public users can READ overrides (they need them to render the lesson);
+-- only the server (service_role) can WRITE them.
+
+CREATE TABLE IF NOT EXISTS lesson_overrides (
+  module_id   text        PRIMARY KEY,
+  module_data jsonb       NOT NULL,
+  updated_at  timestamptz NOT NULL DEFAULT now()
+);
+
+ALTER TABLE lesson_overrides ENABLE ROW LEVEL SECURITY;
+
+-- Public read so the live site can fetch the override on each request.
+DROP POLICY IF EXISTS "anon read lesson overrides" ON lesson_overrides;
+CREATE POLICY "anon read lesson overrides"
+  ON lesson_overrides FOR SELECT TO anon
+  USING (true);
+
+-- No anon insert/update/delete — only service_role (via /api/admin/lessons).
+
+-- Keep updated_at fresh on any change.
+DROP TRIGGER IF EXISTS trg_lesson_overrides_updated ON lesson_overrides;
+CREATE TRIGGER trg_lesson_overrides_updated
+  BEFORE UPDATE ON lesson_overrides
+  FOR EACH ROW EXECUTE FUNCTION update_updated_at();
+
+-- ═══════════════════════════════════════════════════════════════
+-- 10. Speaker PII lockdown (GDPR)
+-- ═══════════════════════════════════════════════════════════════
+-- Earlier policies left these tables wide open to the anon key.
+-- Speaker name + age + place + voice recording is personal data:
+-- it must NOT be readable or writable by the public.
+-- After this block, only the service_role key (server-side, via the
+-- admin API) can access these tables.
+
+DROP POLICY IF EXISTS "Allow all for speaker_registrations" ON speaker_registrations;
+DROP POLICY IF EXISTS "Allow all for registration_phrases"  ON registration_phrases;
+DROP POLICY IF EXISTS "Allow all for registration_audio"    ON registration_audio;
+
+-- (RLS is already enabled on all three. With no anon policies, anon is
+--  blocked from SELECT/INSERT/UPDATE/DELETE. service_role bypasses RLS.)
+
+-- Audio storage bucket lockdown.
+-- If you previously enabled public read/insert/delete policies on the
+-- 'audio' bucket from section 7, also drop those:
+DROP POLICY IF EXISTS "Allow public read for audio"   ON storage.objects;
+DROP POLICY IF EXISTS "Allow anon upload for audio"   ON storage.objects;
+DROP POLICY IF EXISTS "Allow anon delete for audio"   ON storage.objects;
+
+-- IMPORTANT (manual step): in Supabase Dashboard → Storage → audio bucket
+-- → Configuration, switch "Public bucket" OFF. The bucket must be private
+-- so recordings can't be fetched by anyone who guesses the URL.
+-- The admin app will need to use signed URLs (next iteration) to play back.

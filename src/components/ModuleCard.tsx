@@ -107,8 +107,22 @@ export default function ModuleCard({ module, isAdmin, onEdit, onDelete }: Module
   return (
     <div className="group flex flex-col">
       <div
-        className={`surface-card rounded-[26px] border-l-4 ${border} p-7 flex flex-col flex-1 transition-all duration-300 group-hover:-translate-y-1`}
+        className={`surface-card rounded-[26px] border-l-4 ${border} overflow-hidden flex flex-col flex-1 transition-all duration-300 group-hover:-translate-y-1`}
       >
+        {/* Optional header image */}
+        {module.image?.src && (
+          <div className="-mx-px -mt-px aspect-[16/9] overflow-hidden bg-warm-100">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={module.image.src}
+              alt={module.image.alt}
+              className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+              loading="lazy"
+            />
+          </div>
+        )}
+
+        <div className="p-7 flex flex-col flex-1">
         {/* Top row: type badge + status */}
         <div className="flex items-start justify-between mb-3">
           <div className="flex items-center gap-2">
@@ -216,6 +230,7 @@ export default function ModuleCard({ module, isAdmin, onEdit, onDelete }: Module
             ? "Ξεκίνα καταγραφή"
             : "Μπαίνω στο μάθημα"}
         </Link>
+        </div>
       </div>
 
       {/* Last update — below the card */}
