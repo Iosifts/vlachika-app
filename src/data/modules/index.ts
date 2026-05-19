@@ -12,6 +12,7 @@ import enotita_3_material from "./enotita_3_material.json";
 import enotita_4_material from "./enotita_4_material.json";
 import enotita_6_material from "./enotita_6_material.json";
 import enotita_7_material from "./enotita_7_material.json";
+import enotita_8_material from "./enotita_8_material.json";
 
 const nativeModules: Module[] = [
   doc_speakers as unknown as Module,
@@ -21,6 +22,7 @@ const nativeModules: Module[] = [
   enotita_4_material as unknown as Module,
   enotita_6_material as unknown as Module,
   enotita_7_material as unknown as Module,
+  enotita_8_material as unknown as Module,
 ];
 
 export default nativeModules;
